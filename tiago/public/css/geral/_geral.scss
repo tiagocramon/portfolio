@@ -1,0 +1,409 @@
+body,
+html {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  background-image: url("../../images/lines-background-XL.svg");
+  background-position: top center;
+  background-repeat: repeat-y;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+// LOADING
+body {
+  text-rendering: optimizeLegibility;
+
+  #preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    z-index: 9999999;
+
+    #status {
+      .logoRamon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 170px;
+        height: 132px;
+        margin: -66px 0 0 -85px;
+        background: url("../../images/logo-ramon.svg") no-repeat center;
+      }
+    }
+  }
+}
+
+// GERAL
+#chamada {
+  h2 {
+    @include tituloRegular($tamanho24, $k4, $tamanho24);
+
+    span {
+      @include tituloBold($tamanho24, $k4, $tamanho24);
+    }
+  }
+
+  h1 {
+    @include tituloBold($tamanho40, $k6, $tamanho40);
+  }
+
+  a {
+    @include tituloBold($tamanho16, $k4, $tamanho16);
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      text-decoration: none;
+      color: $k6;
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+  }
+}
+
+#dr-consulta {
+  a {
+    filter: drop-shadow(0px 16px 32px rgba(156, 218, 253, 0));
+    -webkit-filter: drop-shadow(0px 16px 32px rgba(156, 218, 253, 0));
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      @include tituloBold($tamanho32, $k6, $tamanho32);
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover {
+      filter: drop-shadow(0px 16px 32px rgba(156, 218, 253, 1));
+      -webkit-filter: drop-shadow(0px 16px 32px rgba(156, 218, 253, 1));
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      text-decoration: none;
+
+      h3 {
+        color: $b2;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+}
+
+#feiramix {
+  a {
+    filter: drop-shadow(0px 16px 32px rgba(142, 242, 200, 0));
+    -webkit-filter: drop-shadow(0px 16px 32px rgba(142, 242, 200, 0));
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      @include tituloBold($tamanho32, $k6, $tamanho32);
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover {
+      filter: drop-shadow(0px 16px 32px rgba(142, 242, 200, 1));
+      -webkit-filter: drop-shadow(0px 16px 32px rgba(142, 242, 200, 1));
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      text-decoration: none;
+
+      h3 {
+        color: $g2;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+}
+
+#trabalhos-diversos {
+  a {
+    filter: drop-shadow(0px 16px 32px rgba(255, 229, 150, 0));
+    -webkit-filter: drop-shadow(0px 16px 32px rgba(255, 229, 150, 0));
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      @include tituloBold($tamanho32, $k6, $tamanho32);
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover {
+      filter: drop-shadow(0px 16px 32px rgba(255, 229, 150, 1));
+      -webkit-filter: drop-shadow(0px 16px 32px rgba(255, 229, 150, 1));
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      text-decoration: none;
+
+      h3 {
+        color: $y2;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+}
+
+#footer {
+  p {
+    @include tituloBold($tamanho16, $k4, $tamanho16);
+  }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body,
+  html {
+    background-image: url("../../images/lines-background-LG.svg");
+    background-position: top center;
+    background-repeat: repeat-y;
+  }
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+  body,
+  html {
+    background-image: url("../../images/lines-background-MD.svg");
+    background-position: top center;
+    background-repeat: repeat-y;
+  }
+
+  // GERAL
+  #chamada {
+    h2 {
+      @include tituloRegular($tamanho20, $k4, $tamanho20);
+
+      span {
+        @include tituloBold($tamanho20, $k4, $tamanho20);
+      }
+    }
+
+    h1 {
+      @include tituloBold($tamanho32, $k6, $tamanho32);
+    }
+  }
+
+  #dr-consulta {
+    a {
+      h3 {
+        @include tituloBold($tamanho24, $k6, $tamanho24);
+      }
+    }
+  }
+
+  #feiramix {
+    a {
+      h3 {
+        @include tituloBold($tamanho24, $k6, $tamanho24);
+      }
+    }
+  }
+
+  #trabalhos-diversos {
+    a {
+      h3 {
+        @include tituloBold($tamanho24, $k6, $tamanho24);
+      }
+    }
+  }
+
+  #footer {
+    p {
+      @include tituloBold($tamanho16, $k4, $tamanho16);
+    }
+  }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+  body,
+  html {
+    background-image: url("../../images/lines-background-SM-XS.svg");
+    background-position: top center;
+    background-repeat: repeat-y;
+  }
+
+  // GERAL
+  #chamada {
+    h2 {
+      @include tituloRegular($tamanho20, $k4, $tamanho20);
+
+      span {
+        @include tituloBold($tamanho20, $k4, $tamanho20);
+      }
+    }
+
+    h1 {
+      @include tituloBold($tamanho32, $k6, $tamanho32);
+    }
+
+    a {
+      @include tituloBold($tamanho14, $k4, $tamanho14);
+    }
+  }
+
+  #dr-consulta {
+    a {
+      h3 {
+        @include tituloBold($tamanho24, $k6, $tamanho24);
+      }
+    }
+  }
+
+  #feiramix {
+    a {
+      h3 {
+        @include tituloBold($tamanho24, $k6, $tamanho24);
+      }
+    }
+  }
+
+  #trabalhos-diversos {
+    a {
+      h3 {
+        @include tituloBold($tamanho24, $k6, $tamanho24);
+      }
+    }
+  }
+
+  #footer {
+    p {
+      @include tituloBold($tamanho16, $k4, $tamanho16);
+    }
+  }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  body,
+  html {
+    background-image: url("../../images/lines-background-SM-XS.svg");
+    background-position: top center;
+    background-repeat: repeat-y;
+  }
+
+  // GERAL
+  #chamada {
+    h2 {
+      @include tituloRegular($tamanho20, $k4, $tamanho20);
+
+      span {
+        @include tituloBold($tamanho20, $k4, $tamanho20);
+      }
+    }
+
+    h1 {
+      @include tituloBold($tamanho32, $k6, $tamanho32);
+    }
+
+    a {
+      @include tituloBold($tamanho14, $k4, $tamanho14);
+    }
+  }
+
+  #dr-consulta {
+    a {
+      h3 {
+        @include tituloBold($tamanho24, $k6, $tamanho24);
+      }
+    }
+  }
+
+  #feiramix {
+    a {
+      h3 {
+        @include tituloBold($tamanho24, $k6, $tamanho24);
+      }
+    }
+  }
+
+  #trabalhos-diversos {
+    a {
+      h3 {
+        @include tituloBold($tamanho24, $k6, $tamanho24);
+      }
+    }
+  }
+
+  #footer {
+    p {
+      @include tituloBold($tamanho16, $k4, $tamanho16);
+    }
+  }
+}
+////////////////////
+// FIM RESPONSIVO
+////////////////////

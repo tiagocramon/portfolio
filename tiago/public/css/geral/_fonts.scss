@@ -1,0 +1,22 @@
+// FONTS
+@mixin tituloRegular($font-size, $color, $line-height) {
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+@mixin tituloBold($font-size, $color, $line-height) {
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+}

@@ -1,0 +1,263 @@
+// DETALHES
+#detalhes {
+  position: absolute;
+  z-index: 999999;
+
+  .row {
+    .detalhe01 {
+      position: absolute;
+      top: calc(539px - 80px);
+      right: 15px;
+    }
+
+    .detalhe02 {
+      position: absolute;
+      top: calc(641px - 80px);
+      left: 15px;
+    }
+
+    .detalhe03 {
+      position: absolute;
+      top: calc(800px - 80px);
+      right: 308px;
+    }
+
+    .detalhe04 {
+      position: absolute;
+      top: calc(1200px - 80px);
+      left: 205px;
+    }
+
+    .detalhe05 {
+      position: absolute;
+      top: calc(1643px - 80px);
+      right: 205px;
+    }
+
+    .detalhe06 {
+      position: absolute;
+      top: calc(1822px - 80px);
+      left: 15px;
+    }
+
+    .detalhe07 {
+      position: absolute;
+      top: calc(2175px - 80px);
+      right: 15px;
+    }
+  }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {  
+  #detalhes {
+    position: absolute;
+    z-index: 999999;
+  
+    .row {
+      .detalhe01 {
+        position: absolute;
+        top: calc(539px - 80px);
+        right: 15px;
+      }
+  
+      .detalhe02 {
+        position: absolute;
+        top: calc(697px - 80px);
+        left: 15px;
+      }
+  
+      .detalhe03 {
+        position: absolute;
+        top: calc(755px - 80px);
+        right: 249px;
+      }
+  
+      .detalhe04 {
+        position: absolute;
+        top: calc(1200px - 80px);
+        left: 175px;
+      }
+  
+      .detalhe05 {
+        position: absolute;
+        top: calc(1481px - 80px);
+        right: 175px;
+      }
+  
+      .detalhe06 {
+        position: absolute;
+        top: calc(1656px - 80px);
+        left: 15px;
+      }
+  
+      .detalhe07 {
+        position: absolute;
+        top: calc(1951px - 80px);
+        right: 15px;
+      }
+    }
+  }
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+  #detalhes {
+    position: absolute;
+    z-index: 999999;
+  
+    .row {
+      .detalhe01 {
+        position: absolute;
+        top: calc(459px - 80px);
+        right: 15px;
+      }
+  
+      .detalhe02 {
+        position: absolute;
+        top: calc(600px - 80px);
+        left: 15px;
+      }
+  
+      .detalhe03 {
+        position: absolute;
+        top: calc(820px - 80px);
+        right: 169px;
+      }
+  
+      .detalhe04 {
+        position: absolute;
+        top: calc(951px - 80px);
+        left: 135px;
+      }
+  
+      .detalhe05 {
+        position: absolute;
+        top: calc(1203px - 80px);
+        right: 135px;
+      }
+  
+      .detalhe06 {
+        position: absolute;
+        top: calc(1359px - 80px);
+        left: 15px;
+      }
+  
+      .detalhe07 {
+        position: absolute;
+        top: calc(1571px - 80px);
+        right: 15px;
+      }
+    }
+  }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+  #detalhes {
+    position: absolute;
+    z-index: 999999;
+  
+    .row {
+      .detalhe01 {
+        position: absolute;
+        top: calc(539px - 80px);
+        right: 15px;
+      }
+  
+      .detalhe02 {
+        position: absolute;
+        top: calc(698px - 80px);
+        left: 15px;
+      }
+  
+      .detalhe03 {
+        position: absolute;
+        top: calc(950px - 80px);
+        right: 109px;
+      }
+  
+      .detalhe04 {
+        position: absolute;
+        top: calc(1091px - 80px);
+        left: 105px;
+      }
+  
+      .detalhe05 {
+        position: absolute;
+        top: calc(1485px - 80px);
+        right: 74px;
+      }
+  
+      .detalhe06 {
+        position: absolute;
+        top: calc(1730px - 80px);
+        left: 15px;
+      }
+  
+      .detalhe07 {
+        position: absolute;
+        top: calc(2069px - 80px);
+        right: 15px;
+      }
+    }
+  }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  #detalhes {
+    position: absolute;
+    z-index: 999999;
+  
+    .row {
+      .detalhe01 {
+        position: absolute;
+        top: calc(590px - 80px);
+        right: 15px;
+      }
+  
+      .detalhe02 {
+        position: absolute;
+        top: calc(718px - 80px);
+        left: 15px;
+      }
+  
+      .detalhe03 {
+        position: absolute;
+        top: calc(950px - 80px);
+        right: 15px;
+      }
+  
+      .detalhe04 {
+        position: absolute;
+        top: calc(1035px - 80px);
+        left: 15px;
+      }
+  
+      .detalhe05 {
+        position: absolute;
+        top: calc(1355px - 80px);
+        right: 15px;
+      }
+  
+      .detalhe06 {
+        position: absolute;
+        top: calc(1430px - 80px);
+        left: 15px;
+      }
+  
+      .detalhe07 {
+        position: absolute;
+        top: calc(1730px - 80px);
+        right: 15px;
+      }
+    }
+  }
+}
+////////////////////
+// FIM RESPONSIVO
+////////////////////
