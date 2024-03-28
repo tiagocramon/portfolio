@@ -1,0 +1,50 @@
+// ALERTS
+.alertPadrao {
+    background: $b1;
+    padding: 16px;
+    margin: 0;
+
+    p {
+        @include textoRegular($tamanho14 !important, $k1 !important, $tamanho18 !important);
+    }
+}
+
+.alertSucesso {
+    background: $a1;
+    padding: 16px;
+    margin: 0;
+
+    p {
+        @include textoRegular($tamanho14 !important, $k1 !important, $tamanho18 !important);
+    }
+}
+
+.alertErro {
+    background: $a2;
+    padding: 16px;
+    margin: 0;
+
+    p {
+        @include textoRegular($tamanho14 !important, $k1 !important, $tamanho18 !important);
+    }
+}
+
+.alertAtencao {
+    background: $a3;
+    padding: 16px;
+    margin: 0;
+
+    p {
+        @include textoRegular($tamanho14 !important, $k1 !important, $tamanho18 !important);
+    }
+}
+
+.alertMensagem {
+    background: $k1;
+    padding: 16px;
+    margin: 0;
+
+    p {
+        @include textoRegular($tamanho14 !important, $k6 !important, $tamanho18 !important);
+    }
+}

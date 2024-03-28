@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/base.css">
+    <link href="public/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>Dr.Consulta</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="loadingGdeBlue"></div>
+        </div>
+    </div>
+    <!-- /#preloader -->
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <img src="public/images/logo-dr-consulta-reduzido-sistema.svg" class="mt-32-n mx-32-n" />
+            <ul class="sidebar-nav mt-40-n">
+                <li>
+                    <a href="variaveis.html">Váriaveis</a>
+                </li>
+                <li>
+                    <a href="cores.html">Cores</a>
+                </li>
+                <li>
+                    <a href="fontes.html">Fontes</a>
+                </li>
+                <li>
+                    <a href="margins-paddings.html">Margins e Paddings</a>
+                </li>
+                <li>
+                    <a href="botoes.html">Botões</a>
+                </li>
+                <li>
+                    <a href="logos.html">Logo</a>
+                </li>
+                <li>
+                    <a href="#" class="active">Forms</a>
+                </li>
+                <li>
+                    <a href="alerts.html">Alerts</a>
+                </li>
+                <li>
+                    <a href="modal.html">Modal</a>
+                </li>
+                <li>
+                    <a href="tooltips.html">Tooltip</a>
+                </li>
+                <li>
+                    <a href="popover.html">Popover</a>
+                </li>
+                <li>
+                    <a href="dropdown.html">Dropdown</a>
+                </li>
+                <li>
+                    <a href="collapse.html">Collapse</a>
+                </li>
+                <li>
+                    <a href="loading.html">Loading</a>
+                </li>
+                <li>
+                    <a href="paginacao.html">Paginação</a>
+                </li>
+                <li>
+                    <a href="icons-brand.html">Icons Brand</a>
+                </li>                 
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <!-- Header -->
+                <header id="header" class="d-flex flex-row align-items-center py-40-n">
+                    <a href="#menu-toggle" class="btn-hide-show-sidebar" id="menu-toggle"><img src="public/images/menu-toggle.svg" /></a>
+                    <h1 class="ml-24-n">Forms</h1>
+                </header>
+                <!-- /#header -->
+
+                <!-- Main -->
+                <main id="main">
+                    <!-- Forms Aplicacao -->
+                    <div class="forms-aplicacao mb-48-n">
+                        <h2>Aplicação</h2>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">inputLarge</h3>
+                            <input class="form-control inputLarge" type="text" placeholder="placeHolder" />
+                        </div>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">inputMedium</h3>
+                            <input class="form-control inputMedium" type="text" placeholder="placeHolder" />
+                        </div>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">inputSmall</h3>
+                            <input class="form-control inputSmall" type="text" placeholder="placeHolder" />
+                        </div>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">selectSmall</h3>
+                            <select class="form-control selectSmall">
+                                <option disabled selected value="">Placeholder</option>
+                                <option value="1">Lista select</option>
+                                <option value="2">Lista select</option>
+                                <option value="3">Lista select</option>
+                            </select>
+                        </div>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">textArea</h3>
+                            <textarea class="form-control textArea" placeholder="placeHolder"></textarea>
+                        </div>
+                        <div class="d-flex flex-row mt-24-n">
+                            <div class="box-forms-geral mr-80-n">
+                                <h3 class="mb-8-n">radioButton</h3>
+                                <div class="d-flex flex-row">
+                                    <div class="mr-8-n">
+                                        <div class="radio">
+                                            <input id="Radio1" name="Radios" type="radio" checked="checked" value="Item 1">
+                                            <label for="Radio1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="mr-8-n">
+                                        <div class="radio">
+                                            <input id="Radio2" name="Radios" type="radio" value="Item 2">
+                                            <label for="Radio2"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-forms-geral">
+                                <h3 class="mb-8-n">checkBox</h3>
+                                <div class="d-flex flex-row ">
+                                    <div class="mr-8-n">
+                                        <div class="check">
+                                            <input id="Check1" name="Checks" type="checkbox" checked="checked" value="Item 1">
+                                            <label for="Check1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="mr-8-n">
+                                        <div class="check">
+                                            <input id="Check2" name="Checks" type="checkbox" value="Item 2">
+                                            <label for="Check2"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.forms-aplicacao -->
+
+                    <!-- Forms Estados -->
+                    <div class="forms-estados mb-48-n">
+                        <h2>Estados</h2>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">Error</h3>
+                            <input class="form-control inputSmall error" type="text" placeholder="placeHolder" />
+                            <small class="msg-error pl-16-n">Mensagem de erro</small>
+                        </div>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">Valid</h3>
+                            <input class="form-control inputSmall valid" type="text" placeholder="placeHolder" />
+                        </div>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">Disable</h3>
+                            <input class="form-control inputSmall disable" disabled type="text" placeholder="placeHolder" />
+                        </div>
+                    </div>
+                    <!-- /.forms-estados -->
+
+                    <!-- Forms Layouts -->
+                    <div class="forms-layouts mb-48-n">
+                        <h2>Layouts</h2>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">Default</h3>
+                            <div class="form-group">
+                                <label>
+                                    Label
+                                </label>
+                                <input class="form-control inputSmall" type="text" placeholder="placeHolder" />
+                            </div>
+                        </div>
+                        <div class="box-forms-geral mt-24-n">
+                            <h3 class="mb-8-n">Inline</h3>
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label>
+                                        Label
+                                    </label>
+                                    <input class="form-control inputSmall" type="text" placeholder="placeHolder" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.forms-estados -->
+
+                    <!-- Classes Tamanhos -->
+                    <div class="classes-tamanhos mb-48-n">
+                        <h2>Classes Tamanhos</h2>
+                        <div class="d-flex flex-wrap flex-row align-content-stretch">
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">inputLarge</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.inputLarge</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">inputMedium</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.inputMedium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">inputSmall</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.inputSmall</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap flex-row align-content-stretch">
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">selectLarge</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.selectLarge</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">selectMedium</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.selectMedium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">selectSmall</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.selectSmall</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap flex-row align-content-stretch">
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">textArea</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.textArea</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.classes-tamanhos -->
+
+                    <!-- Classes Estados -->
+                    <div class="classes-estados mb-48-n">
+                        <h2>Classes Estados</h2>
+                        <div class="d-flex flex-wrap flex-row align-content-stretch">
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">Error</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.error</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">Valid</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.valid</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-codigo-geral mt-24-n">
+                                <h3 class="mb-8-n">Disable</h3>
+                                <div class="box-codigo box-codigo-fixo">
+                                    <ul>
+                                        <li>.disable</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.classes-estados -->
+
+                    <!-- Aplicacao radioButton e checkBox -->
+                    <div class="aplicacao-radio-e-check mb-48-n">
+                        <h2>Aplicação HTML radioButton e checkBox</h2>
+                        <div class="d-flex flex-wrap flex-column">
+                            <div class="box-codigo-geral box-codigo-geral-only mt-24-n">
+                                <h3 class="mb-8-n">radioButton</h3>
+                                <div class="box-codigo">
+                                    <p>
+                                        &lt;div class="radio"&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input id="Radio1" name="Radios" type="radio"
+                                        checked="checked" value="Item 1" /&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;label for="Radio1"&lt;/label&gt;<br />
+                                        &lt;/div&gt;
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-codigo-geral box-codigo-geral-only mt-24-n">
+                                <h3 class="mb-8-n">checkBox</h3>
+                                <div class="box-codigo">
+                                    <p>
+                                        &lt;div class="check"&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input id="Check1" name="Checks" type="checkbox"
+                                        checked="checked" value="Item 1" /&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;label for="Check1"&lt;/label&gt;<br />
+                                        &lt;/div&gt;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.aplicacao-radio-e-check -->
+
+                    <!-- Aplicacao Layouts -->
+                    <div class="aplicacao-layouts">
+                        <h2>Aplicação HTML Layouts</h2>
+                        <div class="d-flex flex-wrap flex-column">
+                            <div class="box-codigo-geral box-codigo-geral-only mt-24-n">
+                                <h3 class="mb-8-n">Default</h3>
+                                <div class="box-codigo">
+                                    <p>
+                                        &lt;div class="form-group"&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Label&lt;/label&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form-control inputSmall" type="text"
+                                        placeholder="placeHolder" /&gt;<br />
+                                        &lt;/div&gt;
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-codigo-geral box-codigo-geral-only mt-24-n">
+                                <h3 class="mb-8-n">Inline</h3>
+                                <div class="box-codigo">
+                                    <p>
+                                        &lt;div class="form-inline"&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="form-group"&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;Label&lt;/label&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form-control
+                                        inputSmall" type="text" placeholder="placeHolder" /&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+                                        &lt;/div&gt;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.aplicacao-layouts -->
+
+                </main>
+                <!-- /#main -->
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="public/js/plugins/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="public/js/geral/geral.js"></script>
+    <script src="public/js/plugins/jquery.cycle.all.js"></script>
+</body>
+
+</html>

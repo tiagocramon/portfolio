@@ -1,0 +1,287 @@
+// SIDEBAR
+.sidenav {
+    height: 100%;
+    width: 360px;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: -360px;
+    margin: 0;
+    padding: 0;
+    background-color: $b1;
+    overflow-x: hidden;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    .box-profile {
+        background-color: white;
+        .box-btn-fechar {
+            width: 100%;
+            position: absolute;
+            .close-btn {
+                float: right;
+                margin: 20px 48px 0 0;
+                padding: 0;
+                fill: $b1;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                cursor: pointer;
+                &:hover path {
+                    fill: $b2;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+        }
+        .profile {
+            padding: 80px 40px 40px 40px;
+            h2 {
+                @include tituloRegular($tamanho24, $b1, 100%);
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                @include tituloRegular($tamanho16, $k5, 100%);
+                margin: 0;
+                padding: 0;
+            }
+
+            h4 {
+                @include tituloBold($tamanho12, $g1, 100%);
+                margin: 8px 0 0 0;
+                padding: 4px 8px;
+                background-color: $b1;
+                border-radius: 4px;
+                display: inline-block;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                cursor: pointer;
+
+                &:after {
+                    content: url("../../images/seta-select-green-small.svg");
+                    padding: 0 0 0 8px;
+                    vertical-align: text-top;
+                }
+
+                &:hover {
+                    background-color: $b2;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+        }
+    }
+
+    .box-botoes-principais {
+        background-color: $g1;
+        margin: 0;
+        padding: 40px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                @include tituloBold($tamanho18, $b1, 100%);
+                margin: 0 0 16px 0;
+                padding: 0 0 16px 0;
+                border-bottom: 1px solid $g3;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                a {
+                    display: block;
+                    @include tituloBold($tamanho18, $b1, 100%);
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $b2;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+            }
+        }
+    }
+
+    .box-botoes-secundarios {
+        margin: 0;
+        padding: 40px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                @include tituloBold($tamanho18, $g1, 100%);
+                margin: 0 0 16px 0;
+                padding: 0;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                a {
+                    display: block;
+                    @include tituloBold($tamanho18, $g1, 100%);
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $g2;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    .sidenav {
+        .box-profile {
+            .box-btn-fechar {
+                max-width: 720px;
+                margin-left: -360px;
+                left: 50%;
+
+                .close-btn {
+                    margin: 20px 15px 0 0 !important;
+                }
+            }
+            .profile {
+                max-width: 720px;
+                margin: 0 auto;
+                padding: 80px 15px 24px 15px;
+            }
+        }
+
+        .box-botoes-principais {
+            padding: 24px 0;
+            ul {
+                max-width: 720px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+        }
+
+        .box-botoes-secundarios {
+            padding: 24px 0;
+            ul {
+                max-width: 720px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    .sidenav {
+        .box-profile {
+            .box-btn-fechar {
+                max-width: 540px;
+                margin-left: -270px;
+                left: 50%;
+
+                .close-btn {
+                    margin: 20px 15px 0 0 !important;
+                }
+            }
+            .profile {
+                max-width: 540px;
+                margin: 0 auto;
+                padding: 80px 15px 24px 15px;
+            }
+        }
+        .box-botoes-principais {
+            padding: 24px 0;
+            ul {
+                max-width: 540px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+        }
+
+        .box-botoes-secundarios {
+            padding: 24px 0;
+            ul {
+                max-width: 540px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    .sidenav {
+        .box-profile {
+            .box-btn-fechar {
+                max-width: 100%;
+                .close-btn {
+                    margin: 20px 15px 0 0 !important;
+                }
+            }
+            .profile {
+                max-width: 100%;
+                padding: 80px 15px 24px 15px;
+            }
+        }
+
+        .box-botoes-principais {
+            padding: 24px 0;
+            ul {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+        }
+
+        .box-botoes-secundarios {
+            padding: 24px 0;
+            ul {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

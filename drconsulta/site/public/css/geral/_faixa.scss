@@ -1,0 +1,122 @@
+// FAIXA
+#faixa {
+    background-color: $b2;
+    width: 100%;
+    margin: 0;
+    padding: 60px 0 0 0;
+
+    h2 {
+        @include tituloRegular($tamanho16, white, normal);
+        margin-left: 4px;
+    }
+
+    h3 {
+        @include tituloRegular($tamanho16, white, normal);
+        padding: 16px;
+    }
+}
+
+#faixa-interna {
+    background-color: $b2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    h2 {
+        @include tituloRegular($tamanho16, $g1, normal);
+        margin-left: 4px;
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+   
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #faixa {
+        padding: 53px 0 0 0;
+        
+        h2 {
+            @include tituloRegular($tamanho12, white, normal);
+            margin-left: 4px;
+            text-align: left;
+        }
+
+        h3 {
+            @include tituloRegular($tamanho12, $g1, normal);
+            padding: 8px;
+        }
+    }
+
+    #faixa-interna {
+        padding: 0;
+    
+        h2 {
+            @include tituloRegular($tamanho12, white, normal);
+            margin-left: 4px;
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #faixa {
+        padding: 53px 0 0 0;
+        
+        h2 {
+            @include tituloRegular($tamanho12, white, normal);
+            margin-left: 4px;
+            text-align: left;
+        }
+
+        h3 {
+            @include tituloRegular($tamanho12, $g1, normal);
+            padding: 8px;
+        }
+    }
+
+    #faixa-interna {
+        padding: 0;
+    
+        h2 {
+            @include tituloRegular($tamanho12, white, normal);
+            margin-left: 4px;
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #faixa {
+        padding: 53px 0 0 0;
+
+        h2 {
+            @include tituloRegular($tamanho12, white, normal);
+            margin-left: 4px;
+            text-align: left;
+        }
+
+        h3 {
+            @include tituloRegular($tamanho12, $g1, normal);
+            padding: 8px;
+        }
+    }
+
+    #faixa-interna {
+        padding: 0;
+    
+        h2 {
+            @include tituloRegular($tamanho12, white, normal);
+            margin-left: 4px;
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

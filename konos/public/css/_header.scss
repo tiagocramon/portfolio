@@ -1,0 +1,122 @@
+#header {
+    p {
+        @include fontBold(14px, $colorGrayLight);
+        span {
+            color: $colorBlue;
+        }
+    }
+    button.login {
+        pointer-events: all;
+        @include fontRegular(14px, $colorBlue);
+        height: 40px;
+        line-height: 40px;
+        background-color: transparent;
+        border-radius: 4px;
+        border: 1px solid $colorBlue;
+        padding: 0 20px;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $colorBlueHover;
+            color: $colorBlueHover;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+    button.cadastro {
+        pointer-events: all;
+        @include fontRegular(14px, $colorGrayLight);
+        height: 40px;
+        line-height: 40px;
+        background-color: $colorBlue;
+        border-radius: 4px;
+        border: none;
+        padding: 0 20px;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:hover {
+            background-color: $colorBlueHover;
+            color: $colorGrayLightTwo;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* FIM LARGE */
+
+/* MEDIUM */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #header {
+        p {
+            font-size: 12px;
+        }
+        button {
+            font-size: 12px;
+        }
+    }
+}
+
+/* FIM MEDIUM */
+
+/* SMALL */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #header {
+        p {
+            font-size: 12px;
+        }
+        button {
+            font-size: 12px;
+        }
+    }
+}
+
+/* FIM SMALL */
+
+/* EXTRA SMALL */
+
+@media (max-width: 575px) {
+    #header {
+        img {
+            height: 80px;
+        }
+        p {
+            font-size: 12px;
+        }
+        button {
+            font-size: 12px;
+        }
+    }
+}
+
+/* FIM EXTRA SMALL */
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

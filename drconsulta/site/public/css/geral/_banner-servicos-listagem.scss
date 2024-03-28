@@ -1,0 +1,369 @@
+// BANNER SERVICOS LISTAGEM
+#banner-servicos-listagem {
+    margin: 0;
+    padding: 140px 0 80px 0;
+    background-color: $b1;
+
+    h1 {
+        @include tituloBold($tamanho40, $g1, $tamanho40);
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    .owl-carousel {
+        margin: 0 0 32px 0;
+        padding: 0;
+
+        .owl-item {
+            margin: 0 0 0 -1px;
+            padding: 0;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+
+            &:first-child {
+                border: none;
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        .botao-servicos {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+
+                img {
+                    opacity: 0.5;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+
+                p {
+                    opacity: 0.5;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+
+            img {
+                opacity: 1;
+                width: 60px;
+                height: 52px;
+                margin: 0 0 8px 0;
+                padding: 0;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            p {
+                opacity: 1;
+                @include tituloRegular($tamanho18, white, normal);
+                margin: 0;
+                padding: 0;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            .active {
+                @include tituloBold($tamanho18, $p1, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .box-pesquisa {
+        background: white;
+        margin: 0;
+        padding: 8px 24px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+
+    .chamada-txt {
+        margin-top: 32px;
+
+        p {
+            @include textoRegular($tamanho14, white, normal);
+            margin: 0;
+            padding: 0;
+
+            span {
+                @include textoBold($tamanho14, white, normal);
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #banner-servicos-listagem {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background: $b1;
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+
+        .owl-carousel {
+            margin: 0 0 24px 0;
+            padding: 0;
+
+            .owl-item {
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+
+            .botao-servicos {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+
+                    p {
+                        opacity: 1;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+
+                img {
+                    display: none;
+                }
+
+                p {
+                    width: 130px;
+                    opacity: 1;
+                    pointer-events: all;
+                    @include tituloBold($tamanho14, white, normal);
+                    height: 32px;
+                    border-radius: 25px;
+                    border: 2px solid white;
+                    padding: 0 24px;
+                    background-color: transparent;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                }
+
+                .active {
+                    @include tituloBold($tamanho16, white, normal);
+                    margin: 0;
+                    padding: 0;
+                    background-color: $p1;
+                    border: 2px solid $p1;
+                }
+            }
+        }
+
+        .box-pesquisa {
+            background: white;
+            margin: 0;
+            padding: 8px 16px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+        }
+
+        .chamada-txt {
+            margin-top: 24px;
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #banner-servicos-listagem {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background: $b1;
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+
+        .owl-carousel {
+            margin: 0 0 24px 0;
+            padding: 0;
+
+            .owl-item {
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+
+            .botao-servicos {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+
+                    p {
+                        opacity: 1;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+
+                img {
+                    display: none;
+                }
+
+                p {
+                    width: 130px;
+                    opacity: 1;
+                    pointer-events: all;
+                    @include tituloBold($tamanho14, white, normal);
+                    height: 32px;
+                    border-radius: 25px;
+                    border: 2px solid white;
+                    padding: 0 24px;
+                    background-color: transparent;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                }
+
+                .active {
+                    @include tituloBold($tamanho16, white, normal);
+                    margin: 0;
+                    padding: 0;
+                    background-color: $p1;
+                    border: 2px solid $p1;
+                }
+            }
+        }
+
+        .box-pesquisa {
+            background: white;
+            margin: 0;
+            padding: 8px 16px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+        }
+
+        .chamada-txt {
+            margin-top: 24px;
+        }
+    }    
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #banner-servicos-listagem {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background: $b1;
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+
+        .owl-carousel {
+            margin: 0 0 24px 0;
+            padding: 0;
+
+            .owl-stage {
+                //padding-left: 0 !important;
+                //padding-right: 0 !important;
+            }
+
+            .owl-item {
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+
+            .botao-servicos {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+
+                    p {
+                        opacity: 1;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+
+                img {
+                    display: none;
+                }
+
+                p {
+                    width: 130px;
+                    opacity: 1;
+                    pointer-events: all;
+                    @include tituloBold($tamanho14, white, normal);
+                    height: 32px;
+                    border-radius: 25px;
+                    border: 2px solid white;
+                    padding: 0 24px;
+                    background-color: transparent;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                }
+
+                .active {
+                    @include tituloBold($tamanho16, white, normal);
+                    margin: 0;
+                    padding: 0;
+                    background-color: $p1;
+                    border: 2px solid $p1;
+                }
+            }
+        }
+
+        .box-pesquisa {
+            background: white;
+            margin: 0;
+            padding: 8px 16px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+        }
+
+        .chamada-txt {
+            margin-top: 24px;
+        }
+    }    
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

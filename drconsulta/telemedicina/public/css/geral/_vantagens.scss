@@ -1,0 +1,112 @@
+// VANTAGENS
+#vantagens {
+    background-color: $b1;
+    margin: 0;
+    padding: 80px 0;
+
+    h2 {
+        @include tituloBold($tamanho32, $g1, $tamanho32);
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    .box-vantagens {
+        border: 1px solid $g1;
+        border-radius: 4px;
+        margin: 0;
+        padding: 24px;
+
+        img {
+            margin: 0 0 8px 0;
+            width: 80px;
+            height: 80px;
+        }
+
+        p {
+            @include textoRegular($tamanho18, white, $tamanho20);
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #vantagens {
+        background-color: $b1;
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $g1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+
+        .box-vantagens {
+            p {
+                @include textoRegular($tamanho16, white, $tamanho18);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #vantagens {
+        background-color: $b1;
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $g1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+
+        .box-vantagens {
+            p {
+                @include textoRegular($tamanho16, white, $tamanho18);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #vantagens {
+        background-color: $b1;
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $g1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+
+        .box-vantagens {
+            p {
+                @include textoRegular($tamanho16, white, $tamanho18);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

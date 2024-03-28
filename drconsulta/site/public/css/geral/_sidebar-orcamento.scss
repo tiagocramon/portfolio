@@ -1,0 +1,405 @@
+// SIDEBAR ORCAMENTO
+.icon-orcamento {
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    background-color: $g1;
+    margin: 140px 0 0 0;
+    padding: 16px;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;        
+
+    &:hover {
+        background-color: $g2;
+        -moz-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        
+        h3 {
+            opacity: 1;
+            -moz-transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;   
+        }
+    }
+
+    h3 {
+        @include tituloRegular($tamanho14, $k1, $tamanho16);
+        position: absolute;
+        background: $k6 !important;
+        padding: 8px;
+        margin: -2px 0 0 -101px!important;
+        box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.2);
+        border-radius: 4px;
+        opacity: 0;
+        -moz-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;   
+    }
+
+    p {
+        @include tituloBold($tamanho12, white, 100%);
+        position: absolute;
+        border-radius: 4px;
+        background-color: $p1;
+        margin: -16px 0 0 -27px!important;
+        padding: 4px 8px;
+    }
+}
+
+.sidenav-orcamento {
+    height: 100%;
+    width: 360px;
+    position: fixed;
+    z-index: 9997;
+    top: 0;
+    right: -360px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    .box-header-orcamento {
+        background-color: white;
+        .box-btn-fechar {
+            width: 100%;
+            position: absolute;
+            .close-btn {
+                float: right;
+                margin: 20px 48px 0 0;
+                padding: 0;
+                fill: $b1;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                cursor: pointer;
+                &:hover path {
+                    fill: $b2;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+        }
+
+        .header {
+            padding: 80px 40px 32px 40px;
+            h2 {
+                @include tituloRegular($tamanho18, $b1, 100%);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .sem-exames {
+        display: none;
+        p {
+            @include textoRegular($tamanho14, $k5, 100%);
+            margin: 0;
+            padding: 0 40px;
+
+            span {
+                @include textoBold($tamanho14, $k5, 100%);
+            }
+        }
+    }
+
+    .exames-orcamento {
+        .box-lista-exames {
+            margin: 0;
+            padding: 0 40px 32px 40px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    cursor: pointer;
+                    @include textoRegular($tamanho14, $k5, 100%);
+                    margin: 0;
+                    padding: 16px;
+                    border-bottom: 1px solid $k3;
+                    background-color: white;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;                
+
+                    &:hover {
+                        text-decoration: none;
+                        background-color: $k1;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    } 
+
+                    p {
+                        @include textoRegular($tamanho14, $k5, 100%);
+                    }
+                }
+            }
+        }
+
+        .box-selecione-cm {
+            margin: 0;
+            padding: 0 40px 32px 40px;
+        }
+
+        .btn-gerar-orcamento {
+            margin: 0;
+            padding: 0 40px;
+        }
+    } 
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    .icon-orcamento {
+        margin: 100px 0 0 0;
+        -moz-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        
+        h3 {
+            display: none;
+        }
+
+    }  
+
+    .sidenav-orcamento {
+        .box-header-orcamento {
+            .box-btn-fechar {
+                max-width: 720px;
+                margin-left: -360px;
+                left: 50%;
+
+                .close-btn {
+                    margin: 20px 15px 0 0 !important;
+                }
+            }
+            .header {
+                max-width: 720px;
+                margin: 0 auto;
+                padding: 80px 15px 24px 15px;
+            }
+        }
+
+        .sem-exames {
+            display: none;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 15px;
+
+            p {
+                @include textoRegular($tamanho14, $k5, 100%);
+                margin: 0;
+                padding: 0;
+    
+                span {
+                    @include textoBold($tamanho14, $k5, 100%);
+                }
+            }
+        }
+
+        .exames-orcamento {
+            .box-lista-exames {
+                margin: 0;
+                padding: 0 15px 24px 15px;
+        
+                ul {
+                    max-width: 720px;
+                    margin: 0 auto;
+                    padding: 0 15px;
+                }
+            }
+        
+            .box-selecione-cm {
+                max-width: 720px;
+                margin: 0 auto;
+                padding: 0 15px 24px 15px;
+            }
+        
+            .btn-gerar-orcamento {
+                max-width: 720px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    .icon-orcamento {
+        margin: 100px 0 0 0;
+        -moz-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;        
+
+        h3 {
+            display: none;
+        }
+
+    } 
+
+    .sidenav-orcamento {
+        .box-header-orcamento {
+            .box-btn-fechar {
+                max-width: 540px;
+                margin-left: -270px;
+                left: 50%;
+
+                .close-btn {
+                    margin: 20px 15px 0 0 !important;
+                }
+            }
+            .header {
+                max-width: 540px;
+                margin: 0 auto;
+                padding: 80px 15px 24px 15px;
+            }
+        }
+
+        .sem-exames {
+            display: none;
+            max-width: 540px;
+            margin: 0 auto;
+            padding: 0 15px;
+
+            p {
+                @include textoRegular($tamanho14, $k5, 100%);
+                margin: 0;
+                padding: 0;
+    
+                span {
+                    @include textoBold($tamanho14, $k5, 100%);
+                }
+            }
+        }
+
+        .exames-orcamento {
+            .box-lista-exames {
+                margin: 0;
+                padding: 0 15px 24px 15px;
+        
+                ul {
+                    max-width: 540px;
+                    margin: 0 auto;
+                    padding: 0 15px;
+                }
+            }
+        
+            .box-selecione-cm {
+                max-width: 540px;
+                margin: 0 auto;
+                padding: 0 15px 24px 15px;
+            }
+        
+            .btn-gerar-orcamento {
+                max-width: 540px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }        
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    .icon-orcamento {
+        margin: 100px 0 0 0;
+        -moz-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;      
+        
+        h3 {
+            display: none;
+        }
+    } 
+
+    .sidenav-orcamento {
+        .box-header-orcamento {
+            .box-btn-fechar {
+                max-width: 100%;
+                .close-btn {
+                    margin: 20px 15px 0 0 !important;
+                }
+            }
+            .header {
+                max-width: 100%;
+                padding: 80px 15px 24px 15px;
+            }
+        }
+
+        .sem-exames {
+            display: none;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+            p {
+                @include textoRegular($tamanho14, $k5, 100%);
+                margin: 0;
+                padding: 0;
+    
+                span {
+                    @include textoBold($tamanho14, $k5, 100%);
+                }
+            }
+        }
+
+        .exames-orcamento {
+            .box-lista-exames {
+                margin: 0;
+                padding: 0 0 24px 0;
+        
+                ul {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 0 15px;
+                }
+            }
+        
+            .box-selecione-cm {
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 0 15px 24px 15px;
+            }
+        
+            .btn-gerar-orcamento {
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 0 15px;
+            }      
+        }    
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

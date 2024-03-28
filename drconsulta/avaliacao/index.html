@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>Dr.Consulta</title>
+    <style>
+        /* Fonts */
+        @font-face {
+            font-family: 'Regular';
+            src: url('fonts/Suadrconsulta-Regular_WebOnly.eot');
+            src: url('fonts/Suadrconsulta-Regular_WebOnly.eot?#iefix') format('embedded-opentype'),
+                url('fonts/Suadrconsulta-Regular_WebOnly.woff2') format('woff2'),
+                url('fonts/Suadrconsulta-Regular_WebOnly.woff') format('woff'),
+                url('fonts/Suadrconsulta-Regular_WebOnly.ttf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Bold';
+            src: url('fonts/Suadrconsulta-Bold_WebOnly.eot');
+            src: url('fonts/Suadrconsulta-Bold_WebOnly.eot?#iefix') format('embedded-opentype'),
+                url('fonts/Suadrconsulta-Bold_WebOnly.woff2') format('woff2'),
+                url('fonts/Suadrconsulta-Bold_WebOnly.woff') format('woff'),
+                url('fonts/Suadrconsulta-Bold_WebOnly.ttf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        /* Fim Fonts */
+
+        /* Geral */
+        html {
+            touch-action: manipulation;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            touch-action: manipulation;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            
+        }
+
+        :root {
+            --blue-dark: #0341AD;
+            --blue: #055DF9;
+            --green: #01EFAD;
+            --orange: #F9B61E;
+            --yellow: #FFE818;
+            --magenta: #FC5BB3;
+            --gray: #797979;
+            --gray-medium: #DDDDDD;
+            --gray-medium02: #AAAAAA;
+            --gray-light: #E5E5E5;
+            touch-action: manipulation;
+        }
+
+        .mt-16 {
+            margin-top: 16px !important;
+        }
+
+        .mt-24 {
+            margin-top: 24px !important;
+        }
+
+        .mt-40 {
+            margin-top: 40px !important;
+        }
+
+        .mb-4 {
+            margin-bottom: 4px !important;
+        }
+
+        .mb-8 {
+            margin-bottom: 8px !important;
+        }
+
+        .mb-16 {
+            margin-bottom: 16px !important;
+        }
+
+        .mb-24 {
+            margin-bottom: 24px !important;
+        }
+
+        .display-none {
+            display: none !important;
+            -moz-transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        .display-block {
+            display: block !important;
+            -moz-transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        button {
+            outline: none !important;
+        }
+        /* Fim Geral */
+
+        /* Header */
+        #header {
+            position: fixed;
+            z-index: 999999;
+            top: 0;
+            width: calc(100% - 32px) !important;
+            background-color: var(--blue);
+            padding: 16px;
+            text-align: center;
+            touch-action: manipulation;
+            overflow: auto;
+        }
+
+        .sub-header {
+            margin: 0 auto;
+            max-width: 500px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .voltar {
+            /*display: none;*/
+            position: absolute;
+            left: 16px;
+            visibility: hidden;
+            
+        }
+
+        #header img {
+            margin: 0;
+            padding: 0;
+            touch-action: manipulation;
+        }
+
+        #header h1 {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 16px !important;
+            color: var(--green);
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+            width: 100%;
+        }
+
+        .obrigado {
+            display: none;
+            height: calc(100% - 66px) !important;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 0 32px;
+        }
+
+        .obrigado p {
+            color: white;
+            touch-action: manipulation;
+            font-size: 16px !important;
+        }
+
+        .obrigado-indicacao {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            max-width: 500px;
+            margin: 40px auto;
+        }
+
+        .obrigado-indicacao .base-obrigado {
+            margin: 0;
+        }
+
+        .obrigado-indicacao .indicacao {
+            background-color: white;
+            padding: 16px;
+            border-radius: 4px;
+        }
+
+        .obrigado-indicacao .indicacao h3 {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 24px !important;
+            color: var(--blue);
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .obrigado-indicacao .indicacao p {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 14px !important;
+            color: var(--gray) !important;
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .obrigado-indicacao .indicacao .txt-compartilhe {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 14px !important;
+            color: var(--blue) !important;
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .obrigado-indicacao .txt-obrigado img {
+            width: 80px;
+            height: 69px;
+        }
+
+        .obrigado-indicacao .txt-obrigado p {
+            color: white;
+            touch-action: manipulation;
+            font-size: 16px !important;
+        }
+
+        .obrigado-indicacao .indicacao p {
+            color: white;
+            touch-action: manipulation;
+        }
+
+        .obrigado-indicacao .share-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .obrigado-indicacao .share-icons p {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 10px !important;
+            color: var(--blue);
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .obrigado-indicacao .share-icons img {
+            width: 56px;
+            height: 56px;
+        }
+
+        .botao {
+            max-width: 500px;
+            margin: a auto;
+        }
+
+        .acessar-cupom {
+            touch-action: manipulation;
+            width: 100%;
+            height: 40px;
+            margin: 0;
+            background-color: var(--green);
+            border-radius: 50px;
+            border: none;
+            font-family: "Bold", Arial, Sans-serif;
+            font-size: 14px !important;
+            text-transform: uppercase;
+            color: var(--blue);
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        /* Fim Header */
+
+        /* Navegacao */
+        #base-navegacao {
+            /*display: none;*/
+            position: fixed;
+            width: 100%;
+            margin: 82px 0 0 0;
+            background-color: white;
+            z-index: 999999;
+        }
+
+        .navegacao {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .navegacao h3.ativo {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--blue);
+            font-style: normal;
+            font-weight: normal;
+            border-bottom: 2px solid var(--blue);
+            padding: 8px;
+            margin: 0;
+            width: 100%;
+        }
+
+        .navegacao h3.desativo {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--gray-medium);
+            font-style: normal;
+            font-weight: normal;
+            border-bottom: 2px solid var(--gray-medium);
+            padding: 8px;
+            margin: 0;
+            width: 100%;
+        }
+        /* Fim Navegacao */
+
+        /* Section */
+        #section {
+            max-width: 500px;
+            margin: 0 auto;
+            /*padding: 98px 0 80px 0;*/
+            padding: 138px 0 80px 0;
+            touch-action: manipulation;
+        }
+
+        .nps,
+        .medico,
+        .recepcao {
+            text-align: center;
+            margin: 0 16px;
+            touch-action: manipulation;
+        }
+
+        .medico,
+        .recepcao {
+            display: none;
+        }
+
+
+        h2 {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 24px !important;
+            color: var(--blue);
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+            touch-action: manipulation;
+        }
+
+        p {
+            width: 100%;
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 14px !important;
+            color: var(--gray);
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+            touch-action: manipulation;
+        }
+
+        .img-medico {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto;
+            padding: 0;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+            touch-action: manipulation;
+            background-image: url("images/img-medico.png");
+        }
+
+        .img-avatar-man {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto;
+            padding: 0;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+            touch-action: manipulation;
+            background-image: url("images/img-avatar-man.svg");
+            background-size: 80px 80px;
+        }
+
+        .img-avatar-woman {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto;
+            padding: 0;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+            touch-action: manipulation;
+            background-image: url("images/img-avatar-woman.svg");
+            background-size: 80px 80px;
+        }
+
+        .nome-medico h3 {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 18px !important;
+            color: var(--gray);
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+            touch-action: manipulation;
+        }
+
+        .nome-medico h4 {
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 14px !important;
+            color: var(--gray);
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+            touch-action: manipulation;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .rating span {
+            margin-right: 8px;
+        }
+
+        .rating-nps {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .rating-nps span {
+            height: 24px;
+            width: 24px;
+            margin-right: 4px;
+            background-color: var(--gray-medium);
+            border-radius: 50%;
+            display: inline-block;
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 14px !important;
+            color: var(--gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .txt-rating-nps {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .txt-rating-nps p {
+            font-size: 12px !important;
+            width: auto !important;
+            color: var(--gray-medium02);
+        }
+
+        .rating span:last-child,
+        .rating-nps span:last-child {
+            margin-right: 0;
+        }
+
+        .fa-star {
+            font-size: 48px;
+            color: var(--gray-light);
+        }
+
+        .star-1,
+        .star-2,
+        .star-3,
+        .star-4,
+        .star-5 {
+            -moz-transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        .answers h3 {
+            font-family: "Bold", Arial, Sans-serif;
+            font-size: 16px !important;
+            color: var(--gray);
+            margin: 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+            touch-action: manipulation;
+        }
+
+        .answers label {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 14px !important;
+            color: var(--gray);
+            margin: 0 0 8px 0;
+            padding: 0;
+            font-style: normal;
+            font-weight: normal;
+            touch-action: manipulation;
+        } 
+
+        .answers textarea {
+            width: calc(100% - 32px) !important;
+            border-radius: 4px;
+            height: 96px;
+            border: 1px solid var(--gray-medium);
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 14px !important;
+            color: var(--gray);
+            margin: 0;
+            padding: 16px;
+            font-style: normal;
+            font-weight: normal;
+            touch-action: manipulation;
+            resize: none;
+            box-shadow: 0 0 0 0;
+            -webkit-appearance: none;
+            outline: 0;
+        }
+
+        .answers textarea:focus, input:focus, select:focus {
+            box-shadow: 0 0 0 0;
+            outline: 0;
+        } 
+
+        .five-stars,
+        .nps-9-or-10 {
+            display: none;
+        }
+
+        .four-stars-or-less,
+        .nps-8-or-less {
+            display: none;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            -moz-transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        .four-stars-or-less button,
+        .nps-8-or-less button {
+            touch-action: manipulation;
+            padding: 0 16px;
+            height: 40px;
+            background-color: var(--gray-light);
+            border-radius: 50px;
+            border: none;
+            font-family: "Regular", Arial, Sans-serif;
+            font-size: 12px;
+            color: var(--gray);
+            margin: 0 2px 8px 2px;
+            font-style: normal;
+            font-weight: normal;
+            -moz-transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        .four-stars-or-less button:last-child,
+        .nps-8-or-less button:last-child {
+            touch-action: manipulation;
+            margin: 0 0 8px 0;
+        }
+
+        .button-ativo-vote {
+            background-color: var(--blue) !important;
+            color: white !important;
+            all: 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        button.enviar-nps {
+            opacity: 0.5;
+            -moz-transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+        }
+
+        /* Fim Section */
+
+        /* Footer */
+        #footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: white;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px -8px 20px rgba(51, 51, 51, 0.2);
+        }
+
+        #footer button {
+            touch-action: manipulation;
+            width: 100%;
+            height: 40px;
+            margin: 0 16px;
+            background-color: var(--green);
+            border-radius: 50px;
+            border: none;
+            font-family: "Bold", Arial, Sans-serif;
+            font-size: 16px !important;
+            text-transform: uppercase;
+            color: var(--blue);
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        #footer .enviar-nps {
+            touch-action: manipulation;
+            width: 100%;
+            height: 40px;
+            margin: 0 16px;
+            background-color: var(--green);
+            border-radius: 50px;
+            border: none;
+            font-family: "Bold", Arial, Sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: var(--blue);
+            font-style: normal;
+            font-weight: normal;
+        }        
+
+        #footer .enviar-medico {
+            touch-action: manipulation;
+            width: 100%;
+            height: 40px;
+            margin: 0 16px;
+            background-color: var(--green);
+            border-radius: 50px;
+            border: none;
+            font-family: "Bold", Arial, Sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: var(--blue);
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        #footer .enviar-recepcao {
+            touch-action: manipulation;
+            width: 100%;
+            height: 40px;
+            margin: 0 16px;
+            background-color: var(--green);
+            border-radius: 50px;
+            border: none;
+            font-family: "Bold", Arial, Sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: var(--blue);
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        /* Fim Footer */
+
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <img src="images/logo-dr-consulta.svg" class="mb-8" />
+        <div class="sub-header">
+            <img src="images/icon-voltar.svg" class="voltar" />
+            <h1>Como foi a sua experiência?</h1>
+        </div>
+        <div class="obrigado">
+            <img src="images/icon-obrigado.svg" alt="Ícone Obrigado" class="mb-16" />
+            <p>
+                Recebemos sua resposta.<br />
+                Obrigado por participar.
+            </p>
+        </div>
+        <div class="obrigado-indicacao">
+            <div class="base-obrigado">
+                <div class="txt-obrigado">
+                    <img src="images/icon-obrigado.svg" alt="Ícone Obrigado" class="mb-8" />
+                    <p>
+                        Recebemos sua resposta.<br />
+                        Obrigado por participar.
+                    </p>
+                </div>
+                <div class="indicacao mt-24">
+                    <h3 class="mb-16">
+                        Promova o acesso a saúde!
+                    </h3>
+                    <p class="mb-16">
+                        Indique seus amigos: eles <strong>ganham R$ 25</strong> de desconto na primeira consulta e você ganha um <strong>cupom de R$ 20.</strong>
+                    </p>
+                    <p class="txt-compartilhe mb-16">
+                        Clique e compartilhe!
+                    </p>
+                    <div class="share-icons">
+                        <div class="share-whatsapp">
+                            <img src="images/share-whatsapp-blue.svg" alt="WhatsApp" />
+                            <p>WhatsApp</p>
+                        </div>
+                        <div class="share-facebook">
+                            <img src="images/share-facebook-blue.svg" alt="Facebook" />
+                            <p>Facebook</p>
+                        </div>
+                        <div class="share-email">
+                            <img src="images/share-email-blue.svg" alt="E-mail" />
+                            <p>E-mail</p>
+                        </div>
+                        <div class="share-copiar">
+                            <img src="images/share-copiar-blue.svg" alt="Copiar link" />
+                            <p>Copiar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="botao mt-24">
+                    <button class="acessar-cupom">Acesse e visualize seus cupons</button>
+                </div>
+            </div>                
+        </div>
+    </header>
+    <section id="base-navegacao">
+        <div class="navegacao">
+            <h3 class="nav-nps ativo">NPS</h3>
+            <h3 class="nav-medico desativo">MEDICO</h3>
+            <h3 class="nav-recepcao desativo">ATENDIMENTO</h3 class="ativo">
+        </div>
+    </section>    
+    <section id="section">
+        <div class="nps">
+            <h2 class="mb-4">Avalie o <strong>dr.consulta</strong></h2>
+            <p class="mb-8">Em uma escala de 0 a 10, qual é a chance de você indicar o dr.consulta para um amigo ou familiar?</p>
+            <div class="rating-nps mb-8">
+                <span class="botao-nps nps-00">0</span>
+                <span class="botao-nps nps-01">1</span>
+                <span class="botao-nps nps-02">2</span>
+                <span class="botao-nps nps-03">3</span>
+                <span class="botao-nps nps-04">4</span>
+                <span class="botao-nps nps-05">5</span>
+                <span class="botao-nps nps-06">6</span>
+                <span class="botao-nps nps-07">7</span>
+                <span class="botao-nps nps-08">8</span>
+                <span class="botao-nps nps-09">9</span>
+                <span class="botao-nps nps-10">10</span>
+            </div>
+            <div class="txt-rating-nps mb-16">
+                <!-- 
+                <p>Não indicaria</p>
+                <p>Indicaria</p>
+                -->
+                <p>Pouco<br />provável</p>
+                <p>Muito<br />provável</p>
+            </div>
+
+            <div class="answers">
+                <div class="nps-9-or-10">
+                    <div>
+                        <label>Se quiser, deixe um comentário sobre sua experiência:</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="nps-8-or-less">
+                    <p class="mb-16">
+                        Qual o motivo desta nota?<br />Escolha um ou mais itens.
+                    </p>
+                    <div class="botoes mb-16">
+                        <button class="botao-answers">Atraso na Consulta</button>
+                        <button class="botao-answers">Atraso na Recepção</button>
+                        <button class="botao-answers">Atendimento do Médico</button>
+                        <button class="botao-answers">Instalações da Clínica</button>
+                        <button class="botao-answers">Atendimento da Recepção</button>
+                        <button class="botao-answers">Preços</button>
+                        <button class="botao-answers">Dificuldade no Agendamento</button>
+                        <button class="botao-answers">Problemas com Exames </button>
+                        <button class="botao-answers">Outros</button>
+                    </div>
+                    <div>
+                        <label>Se quiser, deixe um comentário sobre sua experiência:</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="medico">
+            <h2 class="mb-4">Avalie o Médico</h2>
+            <p class="mb-8">Escolha de 1 a 5 estrelas para classificar</p>
+            <div class="img-medico mb-8"></div>
+            <div class="nome-medico mb-8">
+                <h3>Dr. Roberto Carlos</h3>
+                <h4>Cardiologia</h4>
+            </div>
+            <div class="rating mb-8">
+                <span class="fa fa-star star-1"></span>
+                <span class="fa fa-star star-2"></span>
+                <span class="fa fa-star star-3"></span>
+                <span class="fa fa-star star-4"></span>
+                <span class="fa fa-star star-5"></span>
+            </div>
+            <div class="answers">
+                <div class="five-stars">
+                    <h3 class="mb-16">TEXTO</h3>
+                    <div>
+                        <label>Se quiser, deixe um comentário sobre sua experiência:</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="four-stars-or-less">
+                    <h3 class="mb-16">TEXTO</h3>
+                    <p class="mb-16">
+                        Qual o motivo desta nota?<br />Escolha um ou mais itens.
+                    </p>
+                    <div class="botoes mb-16">
+                        <button class="botao-answers">Não me recepcionou</button>
+                        <button class="botao-answers">Não me ouviu</button>
+                        <button class="botao-answers">Não higienizou as mãos</button>
+                        <button class="botao-answers">Não me examinou</button>
+                        <button class="botao-answers">Não se despediu</button>
+                        <button class="botao-answers">Fiquei com dúvidas</button>
+                        <button class="botao-answers">Outros</button>
+                    </div>
+                    <div>
+                        <label>Se quiser, deixe um comentário sobre sua experiência:</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recepcao">
+            <h2 class="mb-4">Avalie o Atendimento da Recepção e Enfermagem</h2>
+            <p class="mb-8">Escolha de 1 a 5 estrelas para classificar</p>
+            <div class="rating mb-8">
+                <span class="fa fa-star star-1"></span>
+                <span class="fa fa-star star-2"></span>
+                <span class="fa fa-star star-3"></span>
+                <span class="fa fa-star star-4"></span>
+                <span class="fa fa-star star-5"></span>
+            </div>
+            <div class="answers">
+                <div class="five-stars">
+                    <h3 class="mb-16">TEXTO</h3>
+                    <div>
+                        <label>Se quiser, deixe um comentário sobre sua experiência:</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="four-stars-or-less">
+                    <h3 class="mb-16">TEXTO</h3>
+                    <p class="mb-16">
+                        Qual o motivo desta nota?<br />Escolha um ou mais itens.
+                    </p>
+                    <div class="botoes mb-16">
+                        <button class="botao-answers">Não foi atencioso(a)</button>
+                        <button class="botao-answers">Orientações incorretas</button>
+                        <button class="botao-answers">Fiquei com dúvidas</button>
+                        <button class="botao-answers">Outros</button>
+                    </div>
+                    <div>
+                        <label>Se quiser, deixe um comentário sobre sua experiência:</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <button class="enviar-nps">ENVIAR</button>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/geral.js?"></script>
+</body>
+
+</html>

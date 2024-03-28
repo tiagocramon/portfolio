@@ -1,0 +1,895 @@
+// MUTIRAO DA SAUDE
+#banner-mutirao {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $b1;
+
+    h2 {
+        @include tituloBold($tamanho32, $g1, $tamanho32);
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-mutirao-home {
+        background-color: white;
+        margin: 0;
+        padding: 32px 80px;
+        border-radius: 4px;
+
+        h3 {
+            @include tituloBold($tamanho24, $b1, $tamanho24);
+        }
+
+        p {
+            @include textoRegular($tamanho14, $b1, $tamanho14);
+        }
+    }
+}
+
+#mutirao-saude {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k1;
+
+    .img-mutirao-saude {
+        height: 320px;
+        background-image: url("../../images/img-mutirao-xl.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+    }
+
+    .box-mutirao-interna {
+        background-color: white;
+        margin: 0;
+        padding: 32px 80px;
+        border-radius: 4px;
+
+        h3 {
+            @include tituloBold($tamanho24, $b1, $tamanho24);
+        }
+
+        p {
+            @include textoRegular($tamanho14, $b1, $tamanho14);
+        }
+    }
+
+    p {
+        @include textoRegular($tamanho16, $k5, $tamanho18);
+    }
+}
+
+#listagem-especialidades-mutirao {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k2;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            //width: calc(50% - 8px);
+            margin: 0;
+            padding: 24px;
+            background-color: white;
+            border-radius: 4px;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            h2 {
+                @include tituloBold($tamanho16, $k5, normal);
+            }
+
+            p {
+                @include textoRegular($tamanho14, $k5, normal);
+            }
+        }
+    }
+}
+
+#listagem-unidades-mutirao {
+    margin: 0;
+    padding: 80px 0;
+    background-color: white;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 16px;
+            background-color: white;
+            border-bottom: 1px solid $k3;
+
+            &:last-of-type {
+                margin: 0;
+            }
+
+            h2 {
+                @include textoBold($tamanho14, $k5, normal);
+            }
+
+            p {
+                @include textoRegular($tamanho14, $k5, normal);
+            }
+        }
+    }
+}
+
+#chamada-mutirao {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $b1;
+
+    .box-chamada-mutirao {
+        border: 1px solid $g1;
+        border-radius: 4px;
+        margin: 0;
+        padding: 24px 40px;
+
+        h2 {
+            @include tituloBold($tamanho18, $g1, normal);
+        }
+
+        p {
+            @include textoRegular($tamanho16, white, normal);
+        }
+    }
+
+    p.restricao {
+        @include textoRegular($tamanho14, white, normal);
+    }
+}
+
+#fotos-mutirao {
+    margin: 0;
+    padding: 80px 0;
+    background-color: white;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+    }
+
+    img {
+        border-radius: 4px;
+    }
+}
+
+#apoiadores {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k1;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    .owl-stage-outer {
+        margin: 0 0 32px 0;
+    }
+
+    .owl-dots {
+        height: 16px;
+        margin: 0;
+        padding: 0;
+
+        .owl-dot {
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+            span {
+                width: 16px;
+                height: 16px;
+                margin: 0 8px;
+                padding: 0;
+                background: transparent;
+                border: 1px solid $k3;
+
+                &:hover {
+                    background: $k3;
+                }
+            }
+        }
+
+        .owl-dot.active {
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+            span {
+                width: 16px;
+                height: 16px;
+                margin: 0 8px;
+                padding: 0;
+                background: $k4;
+                border: none;
+            }
+        }
+    }
+
+    .box-logo {
+        border: 1px solid $k3;
+        border-radius: 4px;
+        height: 168px;
+        margin: 0;
+        padding: 0;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            background: #ffffff;
+            border: 1px solid $k1;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        .logo-br-supply {
+            width: 155px;
+            height: 54px;
+        }
+
+        .logo-drogaria-soares {
+            width: 155px;
+            height: 51px;
+        }
+
+        .logo-magistral {
+            width: 155px;
+            height: 55px;
+        }
+
+        .logo-ophtalmed {
+            width: 107px;
+            height: 79px;
+        }
+
+        .logo-uptec {
+            width: 90px;
+            height: 81px;
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #mutirao-saude {
+        .img-mutirao-saude {
+            height: 320px;
+            background-image: url("../../images/img-mutirao-lg.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+    }
+
+    #apoiadores {
+        .box-logo {
+            .logo-br-supply {
+                width: 119px;
+                height: 42px;
+            }
+    
+            .logo-drogaria-soares {
+                width: 119px;
+                height: 39px;
+            }
+    
+            .logo-magistral {
+                width: 119px;
+                height: 43px;
+            }
+    
+            .logo-ophtalmed {
+                width: 83px;
+                height: 61px;
+            }
+    
+            .logo-uptec {
+                width: 71px;
+                height: 63px;
+            }
+        }
+    }     
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #banner-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $b1;
+    
+        h2 {
+            @include tituloBold($tamanho28, $g1, $tamanho28);
+            margin: 0;
+            padding: 0;
+        }
+    
+        .box-mutirao-home {
+            background-color: white;
+            margin: 0;
+            padding: 24px 40px;
+            border-radius: 4px;
+
+            .logo-mutirao {
+                width: 220px;
+                height: 89px;
+            }
+    
+            h3 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, $tamanho14);
+            }
+        }
+    }
+
+    #mutirao-saude {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k1;
+    
+        .img-mutirao-saude {
+            height: 250px;
+            background-image: url("../../images/img-mutirao-md.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+        
+        .box-mutirao-interna {
+            background-color: white;
+            margin: 0;
+            padding: 24px 40px;
+            border-radius: 4px;
+
+            .logo-mutirao {
+                width: 220px;
+                height: 89px;
+            }
+    
+            h3 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, $tamanho14);
+            }
+        }        
+    
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho16);
+        }
+        
+    }
+    
+    #listagem-especialidades-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k2;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    
+        ul {
+            margin: 0;
+            padding: 0;
+    
+            li {
+                width: 100%;
+    
+                h2 {
+                    @include tituloBold($tamanho14, $k5, normal);
+                }
+            }
+        }
+    }
+    
+    #listagem-unidades-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: white;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    }
+    
+    #chamada-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $b1;
+    
+        .box-chamada-mutirao {    
+            h2 {
+                @include tituloBold($tamanho16, $g1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, white, normal);
+            }
+        }
+
+        p.restricao {
+            @include textoRegular($tamanho12, white, normal);
+        }
+    }    
+
+    #fotos-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: white;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    }
+
+    #apoiadores {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k1;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+
+        .owl-dots {
+            height: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-logo {
+            &:hover {
+                background-color: transparent;
+            }  
+            
+            .logo-br-supply {
+                width: 155px;
+                height: 54px;
+            }
+    
+            .logo-drogaria-soares {
+                width: 155px;
+                height: 51px;
+            }
+    
+            .logo-magistral {
+                width: 155px;
+                height: 55px;
+            }
+    
+            .logo-ophtalmed {
+                width: 107px;
+                height: 79px;
+            }
+    
+            .logo-uptec {
+                width: 90px;
+                height: 81px;
+            }
+        }              
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #banner-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $b1;
+    
+        h2 {
+            @include tituloBold($tamanho28, $g1, $tamanho28);
+            margin: 0;
+            padding: 0;
+        }
+    
+        .box-mutirao-home {
+            background-color: white;
+            margin: 0;
+            padding: 24px 40px;
+            border-radius: 4px;
+
+            .logo-mutirao {
+                width: 220px;
+                height: 89px;
+            }
+    
+            h3 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, $tamanho14);
+            }
+        }
+    }
+
+    #mutirao-saude {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k1;
+    
+        .img-mutirao-saude {
+            height: 250px;
+            background-image: url("../../images/img-mutirao-sm.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+        
+        .box-mutirao-interna {
+            background-color: white;
+            margin: 0;
+            padding: 24px 40px;
+            border-radius: 4px;
+
+            .logo-mutirao {
+                width: 220px;
+                height: 89px;
+            }
+    
+            h3 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, $tamanho14);
+            }
+        }        
+    
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho16);
+        }
+    }
+    
+    #listagem-especialidades-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k2;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    
+        ul {
+            margin: 0;
+            padding: 0;
+    
+            li {
+                width: 100%;
+    
+                h2 {
+                    @include tituloBold($tamanho14, $k5, normal);
+                }
+            }
+        }
+    }
+    
+    #listagem-unidades-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: white;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    }
+    
+    #chamada-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $b1;
+    
+        .box-chamada-mutirao {    
+            h2 {
+                @include tituloBold($tamanho16, $g1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, white, normal);
+            }
+        }
+
+        p.restricao {
+            @include textoRegular($tamanho12, white, normal);
+        }
+    }    
+
+    #fotos-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: white;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    }
+
+    #apoiadores {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k1;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+
+        .owl-dots {
+            height: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-logo {
+            &:hover {
+                background-color: transparent;
+            }  
+            
+            .logo-br-supply {
+                width: 155px;
+                height: 54px;
+            }
+    
+            .logo-drogaria-soares {
+                width: 155px;
+                height: 51px;
+            }
+    
+            .logo-magistral {
+                width: 155px;
+                height: 55px;
+            }
+    
+            .logo-ophtalmed {
+                width: 107px;
+                height: 79px;
+            }
+    
+            .logo-uptec {
+                width: 90px;
+                height: 81px;
+            }
+        }              
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #banner-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $b1;
+    
+        h2 {
+            @include tituloBold($tamanho28, $g1, $tamanho28);
+            margin: 0;
+            padding: 0;
+        }
+    
+        .box-mutirao-home {
+            background-color: white;
+            margin: 0;
+            padding: 24px 40px;
+            border-radius: 4px;
+
+            .logo-mutirao {
+                width: 220px;
+                height: 89px;
+            }
+    
+            h3 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, $tamanho14);
+            }
+        }
+    }
+
+    #mutirao-saude {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k1;
+    
+        .img-mutirao-saude {
+            height: 250px;
+            background-image: url("../../images/img-mutirao-xs.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+        
+        .box-mutirao-interna {
+            background-color: white;
+            margin: 0;
+            padding: 24px 40px;
+            border-radius: 4px;
+
+            .logo-mutirao {
+                width: 220px;
+                height: 89px;
+            }
+    
+            h3 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, $tamanho14);
+            }
+        }        
+    
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho16);
+        }
+    }
+    
+    #listagem-especialidades-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k2;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    
+        ul {
+            margin: 0;
+            padding: 0;
+    
+            li {
+                width: 100%;
+    
+                h2 {
+                    @include tituloBold($tamanho14, $k5, normal);
+                }
+            }
+        }
+    }
+    
+    #listagem-unidades-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: white;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    }
+    
+    #chamada-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $b1;
+    
+        .box-chamada-mutirao {    
+            h2 {
+                @include tituloBold($tamanho16, $g1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, white, normal);
+            }
+        }
+
+        p.restricao {
+            @include textoRegular($tamanho12, white, normal);
+        }
+    }    
+
+    #fotos-mutirao {
+        margin: 0;
+        padding: 40px 0;
+        background-color: white;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    }
+
+    #apoiadores {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k1;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+
+        .owl-dots {
+            height: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-logo {
+            &:hover {
+                background-color: transparent;
+            }  
+
+            .logo-br-supply {
+                width: 155px;
+                height: 54px;
+            }
+    
+            .logo-drogaria-soares {
+                width: 155px;
+                height: 51px;
+            }
+    
+            .logo-magistral {
+                width: 155px;
+                height: 55px;
+            }
+    
+            .logo-ophtalmed {
+                width: 107px;
+                height: 79px;
+            }
+    
+            .logo-uptec {
+                width: 90px;
+                height: 81px;
+            }
+        }              
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

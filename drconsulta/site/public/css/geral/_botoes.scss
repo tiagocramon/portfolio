@@ -1,0 +1,397 @@
+// TAMANHO
+.buttonLarge {
+    pointer-events: all;
+    @include tituloBold($tamanho18, $k1, normal);
+    height: 48px;
+    background-color: $b1;
+    border-radius: 25px;
+    border: none;
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+.buttonMedium {
+    pointer-events: all;
+    @include tituloBold($tamanho16, $k1, normal);
+    height: 40px;
+    background-color: $b1;
+    border-radius: 25px;
+    border: none;
+    padding: 0 32px;
+    cursor: pointer;
+}
+
+
+.buttonSmall {
+    pointer-events: all;
+    @include tituloBold($tamanho14, $k1, normal);
+    height: 32px;
+    background-color: $b1;
+    border-radius: 25px;
+    border: none;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+// CORES
+.buttonBlue {
+    color: $k1 !important;
+    background-color: $b1 !important;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $b2 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+}
+
+.buttonPink {
+    color: $k1 !important;
+    background-color: $p1 !important;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $p2 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.buttonYellow {
+    color: $k1 !important;
+    background-color: $y1 !important;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $y2 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.buttonGreen {
+    color: $b1 !important;
+    background-color: $g1 !important;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $g2 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.buttonGray {
+    color: $b1 !important;
+    background-color: $k2 !important;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $k3 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.buttonRed {
+    color: white !important;
+    background-color: $a2 !important;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $a2 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.buttonDisable {
+    color: $k3 !important;
+    background-color: $k1 !important;
+    cursor: not-allowed !important;
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    .buttonMedium-md {
+        pointer-events: all;
+        @include tituloBold($tamanho16, $k1, normal);
+        height: 40px;
+        background-color: $b1;
+        border-radius: 25px;
+        border: none;
+        padding: 0 32px;
+        cursor: pointer;
+    }
+
+    .buttonSmall-md {
+        pointer-events: all;
+        @include tituloBold($tamanho14, $k1, normal);
+        height: 32px;
+        background-color: $b1;
+        border-radius: 25px;
+        border: none;
+        padding: 0 24px;
+        cursor: pointer;
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    .buttonMedium-sm {
+        pointer-events: all;
+        @include tituloBold($tamanho16, $k1, normal);
+        height: 40px;
+        background-color: $b1;
+        border-radius: 25px;
+        border: none;
+        padding: 0 32px;
+        cursor: pointer;
+    }
+
+    .buttonSmall-sm {
+        pointer-events: all;
+        @include tituloBold($tamanho14, $k1, normal);
+        height: 32px;
+        background-color: $b1;
+        border-radius: 25px;
+        border: none;
+        padding: 0 24px;
+        cursor: pointer;
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    .buttonMedium-xs {
+        pointer-events: all;
+        @include tituloBold($tamanho16, $k1, normal);
+        height: 40px;
+        background-color: $b1;
+        border-radius: 25px;
+        border: none;
+        padding: 0 32px;
+        cursor: pointer;
+    }
+
+    .buttonSmall-xs {
+        pointer-events: all;
+        @include tituloBold($tamanho14, $k1, normal);
+        height: 32px;
+        background-color: $b1;
+        border-radius: 25px;
+        border: none;
+        padding: 0 24px;
+        cursor: pointer;
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////
+
+// LINE
+.buttonLineBlue {
+    color: $b1 !important;
+    background-color: transparent !important;
+    border: 2px solid $b1;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        color: $b2 !important;
+        border-color: $b2 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.buttonLinePink {
+    color: $b1 !important;
+    background-color: transparent !important;
+    border: 2px solid $p1;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        color: $b2 !important;
+        border-color: $p2 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.buttonLineYellow {
+    color: $b1 !important;
+    background-color: transparent !important;
+    border: 2px solid $y1;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        color: $b2 !important;
+        border-color: $y2 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.buttonLineGreen {
+    color: $b1 !important;
+    background-color: transparent !important;
+    border: 2px solid $g1;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        color: $b2 !important;
+        border-color: $g2 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.buttonLineGray {
+    color: $b1 !important;
+    background-color: transparent !important;
+    border: 2px solid $k2;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        color: $b2 !important;
+        border-color: $k3 !important;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}

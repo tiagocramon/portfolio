@@ -1,0 +1,83 @@
+#features {
+    pointer-events: all;
+    
+    h3 {
+        background-color: $colorBlue;
+        @include fontRegular(10px, $colorGrayLight);
+        text-transform: uppercase;
+        padding: 5px 20px;
+        border-radius: 50px;
+        display: inline-block;
+    }
+
+    h4 {
+        @include fontRegular(22px, $colorGrayDark);
+    }
+
+    p {
+        @include fontRegular(14px, $colorGrayDark);
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* FIM LARGE */
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #features {
+        h4 {
+            font-size: 18px;
+        }
+    
+        p {
+            font-size: 12px;
+        }
+    }    
+}
+/* FIM MEDIUM */
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #features {
+        img {
+            width: 100%;
+        }
+        
+        h4 {
+            font-size: 18px;
+        }
+    
+        p {
+            font-size: 12px;
+        }
+    } 
+}
+/* FIM SMALL */
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #features {
+        img {
+            width: 100%;
+        }
+                
+        h4 {
+            font-size: 18px;
+        }
+    
+        p {
+            font-size: 12px;
+        }
+    } 
+}
+/* FIM EXTRA SMALL */
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

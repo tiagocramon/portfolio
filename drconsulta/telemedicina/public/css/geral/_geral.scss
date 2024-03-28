@@ -1,0 +1,116 @@
+// BODY
+body,
+html {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $k1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// FIM BODY
+
+// LOADING
+body {
+    text-rendering: optimizeLegibility;
+
+    #preloader {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        z-index: 9999999;
+
+        #status {
+            .loadingGdeBlue {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 80px;
+                height: 80px;
+                margin: -40px 0 0 -40px;
+                background: url("../../images/loading-gde-blue.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+        }
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(359deg);
+            }
+        }
+    }
+
+    .loading img {
+        -webkit-animation: rotation 0.5s infinite linear;
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(359deg);
+            }
+        }
+    }
+}
+
+// BG DARKEN
+.bg-darken {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9997;
+    background-color: rgba(10,17,109,0.7);
+    transition: background-color 0.5s ease-out;
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

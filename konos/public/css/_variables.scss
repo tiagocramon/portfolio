@@ -1,0 +1,209 @@
+// Colors
+$colorWhite: #FFFFFF;
+$colorGrayLight: #F7F7F7;
+$colorGrayLightTwo: #E0E0E0;
+$colorGrayNormal: #BFBFBF;
+$colorGrayDark: #4F4F4F;
+$colorBlue: #544AF9;
+$colorBlueHover: #3A34AD;
+$colorBlueDark: #16102E;
+$colorPurple: #9F3BF9;
+$colorPurpleHover: #6F29AD;
+// Margins e Paddings
+.mt-20-n {
+    margin-top: 20px !important;
+}
+
+.mt-50-n {
+    margin-top: 50px !important;
+}
+
+.mb-10-n {
+    margin-bottom: 10px !important;
+}
+
+.mb-15-n {
+    margin-bottom: 15px !important;
+}
+
+.mb-30-n {
+    margin-bottom: 30px !important;
+}
+
+.mb-50-n {
+    margin-bottom: 50px !important;
+}
+
+.mb-100-n {
+    margin-bottom: 100px !important;
+}
+
+.mb-200-n {
+    margin-bottom: 200px !important;
+}
+
+.mr-15-n {
+    margin-right: 15px !important;
+}
+
+.my-50-n {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.px-0-n {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.px-70-n {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+}
+
+// Fonts
+@mixin fontBlack($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+}
+
+@mixin fontBold($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+}
+
+@mixin fontRegular($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* FIM LARGE */
+
+/* MEDIUM */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mb-0-n-md {
+        margin-bottom: 0 !important;
+    }
+    .mb-15-n-md {
+        margin-bottom: 15px !important;
+    }
+    .mb-30-n-md {
+        margin-bottom: 30px !important;
+    }
+    .mb-50-n-md {
+        margin-bottom: 50px !important;
+    }
+    .my-50-n-md {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+    .px-0-n-md {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .py-50-n-md {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
+/* FIM MEDIUM */
+
+/* SMALL */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .mb-0-n-sm {
+        margin-bottom: 0 !important;
+    }
+    .mb-15-n-sm {
+        margin-bottom: 15px !important;
+    }
+    .mb-30-n-sm {
+        margin-bottom: 30px !important;
+    }
+    .mb-50-n-sm {
+        margin-bottom: 50px !important;
+    }
+    .mb-100-n-sm {
+        margin-bottom: 100px !important;
+    }
+    .my-50-n-sm {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+    .px-0-n-sm {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .py-50-n-sm {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
+/* FIM SMALL */
+
+/* EXTRA SMALL */
+
+@media (max-width: 575px) {
+    .mb-0-n-xs {
+        margin-bottom: 0 !important;
+    }
+    .mb-15-n-xs {
+        margin-bottom: 15px !important;
+    }
+    .mb-30-n-sm {
+        margin-bottom: 30px !important;
+    }
+    .mb-50-n-xs {
+        margin-bottom: 50px !important;
+    }
+    .mb-100-n-xs {
+        margin-bottom: 100px !important;
+    }
+    .px-30-n-xs {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .my-50-n-xs {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+    .px-0-n-xs {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .py-50-n-xs {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
+/* FIM EXTRA SMALL */
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

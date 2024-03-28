@@ -1,0 +1,201 @@
+#banner {
+  h1 {
+    @include fontBold(35px, $colorBlue);
+    text-align: center;
+  }
+  h2 {
+    @include fontRegular(28px, $colorGrayLight);
+    text-align: center;
+    span {
+      @include fontBold(28px, $colorGrayLight);
+    }
+  }
+  p {
+    @include fontRegular(14px, $colorGrayLight);
+    text-align: center;
+  }
+
+  form {
+    label {
+      @include fontRegular(10px, $colorGrayLight);
+      text-transform: uppercase;
+    }
+
+    input {
+      pointer-events: all;
+      @include fontRegular(14px, $colorGrayDark);
+      height: 40px;
+      line-height: 40px;
+      background-color: $colorGrayLight;
+      border-radius: 4px;
+      border: none;
+      padding: 0 20px;
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px $colorGrayLight inset !important;
+      }
+    }
+
+    button {
+      pointer-events: all;
+      @include fontRegular(14px, $colorGrayLight);
+      height: 40px;
+      line-height: 40px;
+      background-color: $colorBlue;
+      border-radius: 4px;
+      border: none;
+      padding: 0 20px;
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      &:hover {
+        background-color: $colorBlueHover;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+
+    #ImputNome {
+      width: 160px;
+    }
+  
+    #InputEmail {
+      width: 350px;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0px 1000px $colorGrayLight inset;
+    }    
+  }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* FIM LARGE */
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+  #banner {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 23px;
+      span {
+        font-size: 23px;
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+
+    form {
+      button {
+        font-size: 12px;
+      }
+      
+      #ImputNome {
+        width: 140px;
+      }
+    
+      #InputEmail {
+        width: 320px;
+      }   
+    } 
+  }
+}
+/* FIM MEDIUM */
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+  #banner {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 23px;
+      span {
+        font-size: 23px;
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+
+    form {
+      button {
+        font-size: 12px;
+      }
+      
+      #ImputNome {
+        width: 100%;
+      }
+    
+      #InputEmail {
+        width: 100%;
+      }   
+    } 
+  }  
+}
+/* FIM SMALL */
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  #banner {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 23px;
+      span {
+        font-size: 23px;
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+
+    form {
+      button {
+        width: 100%;
+        font-size: 12px;
+      }
+      
+      #ImputNome {
+        width: 100%;
+      }
+    
+      #InputEmail {
+        width: 100%;
+      }   
+    } 
+  } 
+}
+/* FIM EXTRA SMALL */
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

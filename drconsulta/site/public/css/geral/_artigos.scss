@@ -1,0 +1,222 @@
+// ARTIGOS
+#artigos {
+    padding: 80px 0;
+    background: white;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, normal);
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0 0 16px 0;
+            padding: 24px;
+            background-color: white;
+            border: 1px solid $k3;
+            border-radius: 4px;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+
+            &:last-of-type {
+                margin: 0;
+            }
+
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            .chamada {
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                h3 {
+                    @include tituloBold($tamanho16, $k5, $tamanho16);
+                    margin: 0 56px 0 0;
+                    padding: 0;
+                    white-space: nowrap;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+    
+                p {
+                    @include textoRegular($tamanho14, $k5, normal);
+                    margin: 0 56px 0 0;
+                    padding: 0;
+                    white-space: nowrap;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }                
+            }
+        }
+    }
+}
+
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #artigos {
+        padding: 40px 0;
+        background: white;
+    
+        h2 {
+            @include tituloBold($tamanho24, $b1, normal);
+        }
+    
+        ul {
+            margin: 0;
+            padding: 0;
+    
+            li {
+                margin: 0 0 8px 0;
+
+                .chamada {
+                    white-space: nowrap;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+    
+                    h3 {
+                        @include tituloBold($tamanho14, $k5, $tamanho14);
+                        margin: 0;
+                        padding: 0;
+                        white-space: nowrap;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+        
+                    p {
+                        @include textoRegular($tamanho12, $k5, normal);
+                        margin: 0;
+                        padding: 0;
+                        white-space: nowrap;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }                
+                }
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #artigos {
+        padding: 40px 0;
+        background: white;
+    
+        h2 {
+            @include tituloBold($tamanho24, $b1, normal);
+        }
+    
+        ul {
+            margin: 0;
+            padding: 0;
+    
+            li {
+                margin: 0 0 8px 0;
+
+                .chamada {
+                    white-space: nowrap;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+    
+                    h3 {
+                        @include tituloBold($tamanho14, $k5, $tamanho14);
+                        margin: 0;
+                        padding: 0;
+                        white-space: nowrap;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+        
+                    p {
+                        @include textoRegular($tamanho12, $k5, normal);
+                        margin: 0;
+                        padding: 0;
+                        white-space: nowrap;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }                
+                }
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #artigos {
+        padding: 40px 0;
+        background: white;
+
+    
+        h2 {
+            @include tituloBold($tamanho24, $b1, normal);
+        }
+    
+        ul {
+            margin: 0;
+            padding: 0;
+    
+            li {
+                margin: 0 0 8px 0;
+
+                .chamada {
+                    white-space: nowrap;
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+    
+                    h3 {
+                        @include tituloBold($tamanho14, $k5, $tamanho14);
+                        margin: 0;
+                        padding: 0;
+                        white-space: nowrap;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+        
+                    p {
+                        @include textoRegular($tamanho12, $k5, normal);
+                        margin: 0;
+                        padding: 0;
+                        white-space: nowrap;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }                
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

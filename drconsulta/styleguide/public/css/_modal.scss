@@ -1,0 +1,86 @@
+// MODAL
+.modal-dialog {
+    max-width: 600px;
+}
+
+.modal-lg {
+    max-width: 900px;
+}
+
+.modal-sm {
+    max-width: 400px;
+}
+
+body.modal-open {
+    overflow: hidden !important;
+}
+
+.modal-backdrop {
+    background: $b4 !important;
+    &.show {
+        opacity: 0.7;
+    }
+}
+
+.modal {
+    overflow: inherit;
+    padding-right: 0 !important;
+    .modal-content {
+        border: none;
+        .modal-header {
+            background: $k1;
+            border-radius: 4px 4px 0 0;
+            padding: 32px;
+            border: none;
+            button.close {
+                font-size: 21px;
+                color: $k4;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                filter: alpha(opacity=100);
+                -moz-opacity: 1;
+                -khtml-opacity: 1;
+                opacity: 1;
+                text-shadow: none;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                &:hover {
+                    color: $k5;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+            h5 {
+                @include tituloRegular($tamanho24, $b1,normal);
+            }
+        }
+        .modal-body {
+            background: $k1;
+            //max-height: calc(100vh - 210px);
+            overflow-y: auto;
+            border-top: 1px solid $k3;
+            border-bottom: 1px solid $k3;
+            padding: 16px 32px;
+            h3 {
+                @include textoBold ($tamanho18 !important, $k6 !important, normal !important);
+            }
+            p {
+                @include textoRegular($tamanho16 !important, $k6 !important, normal !important);
+            }
+        }
+        .modal-footer {
+            border: none;
+            text-align: center;
+            background-color: $k1;
+            padding: 16px 32px;
+            border-radius: 0 0 4px 4px;
+
+            button {
+                margin: 0;
+            }
+        }
+    }
+}

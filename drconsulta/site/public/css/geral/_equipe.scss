@@ -1,0 +1,351 @@
+// EQUIPE
+#equipe {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k2;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    .owl-stage-outer {
+        margin: 0 0 32px 0;
+    }
+
+    .owl-dots {
+        height: 16px;
+        margin: 0 0 32px 0;
+        padding: 0;
+
+        .owl-dot {
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+            span {
+                width: 16px;
+                height: 16px;
+                margin: 0 8px;
+                padding: 0;
+                background: transparent;
+                border: 1px solid $k3;
+
+                &:hover {
+                    background: $k3;
+                }
+            }
+        }
+
+        .owl-dot.active {
+                &:focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+                span {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0 8px;
+                    padding: 0;
+                    background: $k4;
+                    border: none;
+                }
+        }        
+    }
+
+    .pesquisa-5-estrelas {
+        margin: 0 0 32px 0;
+        padding: 0;
+
+        .qual-especialidade,
+        .qual-unidade {
+            margin: 0;
+            padding: 0;
+
+            label {
+                margin: 0 8px 0 0;
+            }
+
+            select {
+                background-color: white !important;
+            }
+        }
+    }
+
+    .box-equipe {
+        cursor: pointer;
+        background-image: url("../../images/circle-bg-equipe.svg");
+        background-position: center -144px;
+        background-repeat: no-repeat;
+        background-color: white;
+        border-radius: 4px;
+        border: 1px solid $k2;
+        margin: 0;
+        padding: 24px;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+
+        .img-sem-imagem-man {
+            background-color: white;
+            background-image: url("../../images/img-equipe-man.svg");
+            background-position: center 0;
+            width: 160px;
+            height: 160px;
+            margin: 16px auto 0 auto;
+            padding: 0;
+            border-radius: 100px;
+            border: 1px solid $b1;
+        }
+
+        .img-sem-imagem-woman {
+            background-color: white;
+            background-image: url("../../images/img-equipe-woman.svg");
+            background-position: center 0;
+            width: 160px;
+            height: 160px;
+            margin: 16px auto 0 auto;
+            padding: 0;
+            border-radius: 100px;
+            border: 1px solid $b1;
+        }        
+
+        .img {
+            background-image: url("https://s2pics.s3.amazonaws.com/profissionais/fotos/102033_m.jpg");
+            background-position: center 0;
+            background-size: 160px 228px;
+            width: 160px;
+            height: 160px;
+            margin: 16px auto 0 auto;
+            padding: 0;
+            border-radius: 100px;
+            border: 1px solid $b1;
+        }
+
+        h3 {
+            @include tituloBold($tamanho24, $b1, $tamanho20);
+            margin: 24px 0 8px 0;
+            padding: 0;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        .crm {
+            @include textoRegular($tamanho12, $k5, normal);
+            margin: 0;
+            padding: 0;
+        }
+
+        .especialidade {
+            @include textoRegular($tamanho14, $k5, normal);
+            margin: 0;
+            padding: 0;
+        }
+
+        .disponibilidade {
+            @include textoRegular($tamanho12, $b1, normal);
+            margin: 8px 0 0 0;
+            padding: 0;
+        }
+
+        .estrelas {
+            width: 96px;
+            height: 16px;
+            margin: 8px 0 0 0;
+            padding: 0;
+            border: none;
+        }
+
+        .pacientes-recomendam {
+            @include tituloBold($tamanho12, $k4, normal);
+            margin: 0;
+            padding: 0;
+        }
+
+        &:hover {
+            text-decoration: none;
+            border: 1px solid $k3;
+            background-color: $k2;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+
+            h3 {
+                color: $b2;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+   
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #equipe {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k1;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+    
+        .owl-dots {
+            height: 16px;
+            margin: 0 0 24px 0;
+            padding: 0;       
+        }
+
+        .pesquisa-5-estrelas {
+            margin: 0 0 24px 0;
+            padding: 0;
+
+            .qual-especialidade,
+            .qual-unidade {
+                margin: 0;
+                padding: 0;
+
+                label {
+                    margin: 0 0 4px 0;
+                }
+            }
+        }
+    
+        .box-equipe {
+    
+            h3 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+                margin: 24px 0 8px 0;
+                padding: 0;
+            }
+        }
+    } 
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #equipe {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k2;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+    
+        .owl-dots {
+            height: 16px;
+            margin: 0 0 24px 0;
+            padding: 0;       
+        }
+
+        .pesquisa-5-estrelas {
+            margin: 0 0 24px 0;
+            padding: 0;
+
+            .qual-especialidade,
+            .qual-unidade {
+                margin: 0;
+                padding: 0;
+
+                label {
+                    margin: 0 0 4px 0;
+                }
+            }
+        }
+    
+        .box-equipe {
+    
+            h3 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+                margin: 24px 0 8px 0;
+                padding: 0;
+            }
+        }
+    }     
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #equipe {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k2;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+    
+        .owl-dots {
+            height: 16px;
+            margin: 0 0 24px 0;
+            padding: 0;       
+        }
+
+        .pesquisa-5-estrelas {
+            margin: 0 0 24px 0;
+            padding: 0;
+
+            .qual-especialidade,
+            .qual-unidade {
+                margin: 0;
+                padding: 0;
+
+                label {
+                    margin: 0 0 4px 0;
+                }
+            }
+        }
+    
+        .box-equipe {
+            text-align: center;
+
+            h3 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+                margin: 24px 0 8px 0;
+                padding: 0;
+            }
+
+            .estrelas {
+                margin: 16px auto 0 auto;
+            }
+        }
+    }      
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

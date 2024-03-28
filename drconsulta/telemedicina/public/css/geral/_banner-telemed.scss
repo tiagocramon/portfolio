@@ -1,0 +1,197 @@
+// BANNER
+#banner {
+    margin: 0;
+    padding: 140px 0 80px 0;
+    background-image: url("../../images/banner-principal-xl.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .logo-drc-online {
+        width: 394px;
+        height: 74px;
+        margin: 0 0 24px 0;
+    }
+
+    h1 {
+        @include tituloBold($tamanho40, $g1, $tamanho40);
+        margin: 0 0 16px 0;
+        padding: 0;
+    }
+    
+    p {
+        @include tituloRegular($tamanho24, white, $tamanho28);
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#botao-flutuante-agendar {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+
+    a {
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #banner {
+        background-image: url("../../images/banner-principal-lg.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #banner {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background-image: url("../../images/banner-principal-md.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        
+        .logo-drc-online {
+            width: 310px;
+            height: 58px;
+            margin: 0 0 24px 0;
+        }
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0 0 16px 0;
+            padding: 0;
+        }
+        
+        p {
+            @include tituloRegular($tamanho20, white, $tamanho24);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    #botao-flutuante-agendar {
+        position: fixed;
+        bottom: 24px;
+        z-index: 999;
+        left: 50%;
+        margin-left: -360px;
+        a {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #banner {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background-image: none;
+        background-color: $b1;
+        
+        .logo-drc-online {
+            width: 100%;
+            max-width: 310px;
+            height: 58px;
+            margin: 0 0 24px 0;
+        }
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0 0 16px 0;
+            padding: 0;
+        }
+        
+        p {
+            @include tituloRegular($tamanho20, white, $tamanho24);
+            margin: 0;
+            padding: 0;
+        }
+       
+    }
+
+    /*
+    #banner-sm-xs {
+        height: 250px;
+        margin: 0;
+        padding: 0;
+        background-image: url("../../images/banner-principal-sm.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    */
+
+    #botao-flutuante-agendar {
+        position: fixed;
+        bottom: 24px;
+        z-index: 999;
+        left: 50%;
+        margin-left: -270px;
+        a {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #banner {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background-image: none;
+        background-color: $b1;
+        
+        .logo-drc-online {
+            width: 100%;
+            max-width: 310px;
+            height: 58px;
+            margin: 0 0 24px 0;
+        }
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0 0 16px 0;
+            padding: 0;
+        }
+        
+        p {
+            @include tituloRegular($tamanho20, white, $tamanho24);
+            margin: 0;
+            padding: 0;
+        }
+       
+    }
+
+    /*
+    #banner-sm-xs {
+        height: 250px;
+        margin: 0;
+        padding: 0;
+        background-image: url("../../images/banner-principal-xs.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    */
+
+    #botao-flutuante-agendar {
+        position: fixed;
+        bottom: 24px;
+        z-index: 999;
+        right: auto;
+
+        a {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

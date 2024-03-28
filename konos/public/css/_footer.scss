@@ -1,0 +1,79 @@
+footer {
+    pointer-events: all;
+    position: relative;
+    z-index: 3;
+    background-image: url(../images/bg-footer.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: -74px;
+    padding: 274px 0 100px 0;
+
+    .apps {
+        p {
+            @include fontRegular(10px, $colorGrayLight);
+            text-transform: uppercase;
+        }
+
+        .imgs-apps {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .contato {
+        a {
+            @include fontRegular(10px, $colorGrayLight);
+            text-transform: uppercase;
+            &:hover {
+                color: $colorGrayLightTwo;
+              }
+        }
+    }
+
+    .restricao {
+        @include fontRegular(12px, $colorGrayLight);
+
+        span {
+            @include fontBold(12px, $colorGrayLight);
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* FIM LARGE */
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        padding: 274px 0 50px 0;
+    }    
+}
+/* FIM MEDIUM */
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    footer {
+        margin-top: -150px;
+        padding: 274px 0 50px 0;
+    }
+}
+/* FIM SMALL */
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    footer {
+        margin-top: -150px;
+        padding: 274px 0 50px 0;
+    }    
+}
+/* FIM EXTRA SMALL */
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

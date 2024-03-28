@@ -1,0 +1,54 @@
+// COLLAPSE
+.collapseOnly {
+    margin: 8px 0 0 0;
+
+    .card-body {
+        padding: 24px !important;
+        background: $k1;
+        @include textoRegular($tamanho14, $k5, $tamanho16);
+        border: none;
+        border-radius: 4px;
+    }
+}
+
+// ACCORDION
+#accordion {
+    .card {
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        .card-header {
+            padding: 16px;
+            border: none;
+            background: $k2;
+            border-radius: 4px;
+            h5 {
+                .btnLinkAccordion {
+                    @include textoBold($tamanho14, $b1, $tamanho16);
+                    background: transparent;
+                    &:hover {
+                        color: $b2;
+                    }
+                    &:focus {
+                        outline: none !important;
+                        box-shadow: none !important;
+                    }
+                }
+                [aria-expanded="true"]{
+                    color: $b3;
+                }
+            }
+        }
+        .card-body {
+            padding: 16px !important;
+            background: $k1;
+            @include textoRegular($tamanho14, $k5, $tamanho16);
+            border-radius: 4px;
+        }  
+        &:last-child {
+            margin-bottom: 0;
+        }   
+    }
+}
+
+

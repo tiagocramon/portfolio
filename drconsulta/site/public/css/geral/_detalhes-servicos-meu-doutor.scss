@@ -1,0 +1,506 @@
+// DETALHES SERVICOS E MEU DOUTOR
+#detalhes-servicos-meu-doutor {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k1;
+
+    .nao-agendar {
+        background-color: white;
+        border-radius: 4px;
+        margin: 0;
+        padding: 32px;
+
+        h2 {
+            @include tituloBold($tamanho18, $b1, normal);
+            margin: 0;
+            padding: 0;
+
+            a {
+                text-decoration: none;
+                @include tituloBold($tamanho18, $b1, normal);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .content {
+        h2 {
+            @include tituloBold($tamanho18, $k5, normal);
+            border-bottom: 1px solid $k3;
+            margin: 0 0 24px 0;
+            padding: 0 0 8px 0;
+        }
+
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho22);
+        }
+
+        .box-medico {
+            background: $k2;
+            padding: 32px;
+            margin: 0;
+            border-radius: 4px;
+
+            .img-sem-imagem-man {
+                background-color: white;
+                background-image: url("../../images/img-equipe-man.svg");
+                background-position: center 0;
+                width: 120px;
+                height: 120px;
+                margin: 0;
+                padding: 0;
+                border-radius: 100px;
+            }
+    
+            .img-sem-imagem-woman {
+                background-color: white;
+                background-image: url("../../images/img-equipe-woman.svg");
+                background-position: center 0;
+                width: 120px;
+                height: 120px;
+                margin: 0;
+                padding: 0;
+                border-radius: 100px;
+            }        
+    
+            .img {
+                background-image: url("https://s2pics.s3.amazonaws.com/profissionais/fotos/102033_m.jpg");
+                background-position: center 0;
+                background-size: 120px 171px;
+                width: 120px;
+                height: 120px;
+                margin: 0;
+                padding: 0;
+                border-radius: 100px;
+            }
+
+            .txt {
+                h3 {
+                    @include textoBold($tamanho14, $k5, normal);
+                }
+
+                h4 {
+                    @include textoRegular($tamanho14, $k5, normal);
+                }
+
+                .especialidade {
+                    p {
+                        @include textoRegular($tamanho14, $k5, normal);
+                        text-transform: uppercase;
+                    }
+                }
+
+            }
+        }
+
+        .base-especialidade {
+            div {
+                margin-bottom: 16px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .formacao-academica, .residencia, .idiomas {
+            p {
+                @include textoRegular($tamanho14, $k5, $tamanho22);
+                margin-bottom: 0;
+            }
+            
+        }
+
+        .tags {
+            p {
+                @include textoRegular($tamanho12, $k5, normal);
+                background: white;
+                height: 32px;
+                border-radius: 4px;
+                padding: 8px;
+                margin-right: 8px;
+
+                &:last-of-type {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .base-funcionamento-e-coleta {
+            p {
+                margin-bottom: 16px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }        
+
+        .base-rt-unidades {
+            p {
+                margin-bottom: 16px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .sidebar-agendar, .sidebar-nao-agendar {
+        background-color: white;
+        //box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.16);
+        border-radius: 4px;
+        margin: 0;
+        padding: 32px;
+
+        h2 {
+            @include tituloBold($tamanho18, $b1, normal);
+            margin: 0 0 32px 0;
+            padding: 0;
+        }
+
+        .endereco, .atencao {
+            border-bottom: 1px solid $k3;
+            padding: 0 0 16px 0;
+            p {
+                @include textoRegular($tamanho12, $k5, normal);
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                @include textoBold($tamanho12, $b1, normal);
+                text-transform: uppercase;
+                margin: 0;
+                padding: 0;
+                text-decoration: underline;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;              
+
+                &:hover {
+                    color: $b2;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;                  
+                }
+            }
+        }
+
+        .profissional {
+            border-bottom: 1px solid $k3;
+            padding: 0 0 16px 0;
+
+            .img-sem-imagem-man-small {
+                background-color: white;
+                background-image: url("../../images/img-equipe-man-small.svg");
+                background-position: center 0;
+                width: 36px;
+                height: 36px;
+                margin: 0;
+                padding: 0;
+                border-radius: 100px;
+                border: 1px solid $k3;
+            }
+    
+            .img-sem-imagem-woman-small {
+                background-color: white;
+                background-image: url("../../images/img-equipe-woman-small.svg");
+                background-position: center 0;
+                width: 36px;
+                height: 36px;
+                margin: 0;
+                padding: 0;
+                border-radius: 100px;
+                border: 1px solid $k3;
+            } 
+
+            .img {
+                background-image: url("https://s2pics.s3.amazonaws.com/profissionais/fotos/103606_s.jpg");
+                background-position: center 0;
+                background-size: 36px 51.43px;
+                width: 36px;
+                height: 36px;
+                margin: 0;
+                padding: 0;
+                border-radius: 100px;
+                border: 1px solid $k3;
+            }
+
+            p {
+                @include textoRegular($tamanho12, $k5, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .preco {
+
+            h3 {
+                @include tituloBold($tamanho16, $b1, normal);
+            }
+
+            p {
+                @include textoRegular($tamanho14, $k5, normal);
+            }
+
+            .tag-assinatura {
+                margin: 0 0 0 8px;
+                h4 {
+                    @include tituloBold($tamanho12, $g1, normal);
+                    margin: 0;
+                    padding: 4px 8px;
+                    background-color: $b1;
+                    border-radius: 4px;
+                    word-wrap: break-word;
+                }
+            }
+        }
+
+        .box-horarios {
+            margin: 24px 0 0 0;
+
+            .data {
+                background-color: $k1;
+                border-radius: 25px;
+                margin: 0;
+                padding: 4px;
+
+                .seta-esquerda, .seta-direita {
+                    cursor: pointer;
+                    width: 24px;
+                    height: 24px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: $b1;
+                    margin: 0;
+                    padding: 0;
+                    -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out; 
+
+                    &:hover {
+                        background-color: $b2;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out; 
+                    }
+                }
+
+                .disable {
+                    cursor: default !important;
+                    background-color: $k3 !important;
+                }
+
+                .dia {
+                    @include tituloBold($tamanho16, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                    
+                }
+            }
+
+            .horarios {
+                margin: 0 -4px;
+                padding: 0;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        width: calc(33.3% - 8px);;
+                        margin: 4px;
+
+                        button {
+                            width: 100%;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #detalhes-servicos-meu-doutor {
+        margin: 0;
+        padding: 40px 0;
+
+        .nao-agendar {
+            background-color: white;
+            border-radius: 4px;
+            margin: 0;
+            padding: 24px;
+        }        
+
+        .content {
+            h2 {
+                @include tituloBold($tamanho16, $k5, normal);
+                margin: 0 0 16px 0;
+            }
+            
+        }
+
+        .sidebar-agendar, .sidebar-nao-agendar {
+            margin: 0 0 32px 0;
+            padding: 24px;
+
+            h2 {
+                margin: 0 0 24px 0;
+            }
+
+            .preco {
+    
+                h3 {
+                    @include tituloBold($tamanho16, $b1, normal);
+                }
+    
+                p {
+                    @include textoRegular($tamanho14, $k5, normal);
+                }
+            }
+
+            .box-horarios {
+                margin: 24px 0 0 0;
+                
+                .horarios {
+                    ul {
+                        li {
+                            width: calc(25% - 8px);;    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #detalhes-servicos-meu-doutor {
+        margin: 0;
+        padding: 40px 0;
+
+        .nao-agendar {
+            background-color: white;
+            border-radius: 4px;
+            margin: 0;
+            padding: 24px;
+        } 
+
+        .content {
+            h2 {
+                @include tituloBold($tamanho16, $k5, normal);
+                margin: 0 0 16px 0;
+            }
+        }        
+
+        .sidebar-agendar, .sidebar-nao-agendar {
+            margin: 0 0 32px 0;
+            padding: 24px;
+
+            h2 {
+                margin: 0 0 24px 0;
+            }
+
+            .preco {
+    
+                h3 {
+                    @include tituloBold($tamanho16, $b1, normal);
+                }
+    
+                p {
+                    @include textoRegular($tamanho14, $k5, normal);
+                }
+            }
+
+            .box-horarios {
+                margin: 24px 0 0 0;
+                
+                .horarios {
+                    ul {
+                        li {
+                            width: calc(25% - 8px);;    
+                        }
+                    }
+                }
+            }
+        }      
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #detalhes-servicos-meu-doutor {
+        margin: 0;
+        padding: 40px 0;
+
+        .nao-agendar {
+            background-color: white;
+            border-radius: 4px;
+            margin: 0;
+            padding: 24px;
+        } 
+
+        .content {
+            h2 {
+                @include tituloBold($tamanho16, $k5, normal);
+                margin: 0 0 16px 0;
+            }
+        }        
+
+        .sidebar-agendar, .sidebar-nao-agendar {
+            margin: 0 0 32px 0;
+            padding: 24px;
+
+            h2 {
+                margin: 0 0 24px 0;
+            }
+
+            .preco {
+    
+                h3 {
+                    @include tituloBold($tamanho16, $b1, normal);
+                }
+    
+                p {
+                    @include textoRegular($tamanho14, $k5, normal);
+                }
+            }
+
+            .box-horarios {
+                margin: 24px 0 0 0;
+                
+                .horarios {
+                    ul {
+                        li {
+                            width: calc(50% - 8px);;    
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

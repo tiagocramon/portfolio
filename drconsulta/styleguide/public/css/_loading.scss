@@ -1,0 +1,144 @@
+// LOADING
+body {
+    text-rendering: optimizeLegibility;
+    #preloader {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        z-index: 9999999;
+        #status {
+            .loadingGdeBlue {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 80px;
+                height: 80px;
+                margin: -40px 0 0 -40px;
+                background: url("../images/loading-gde-blue.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingGdePink {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 80px;
+                height: 80px;
+                margin: -40px 0 0 -40px;
+                background: url("../images/loading-gde-pink.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingGdePink {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 80px;
+                height: 80px;
+                margin: -40px 0 0 -40px;
+                background: url("../images/loading-gde-pink.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingGdeYellow {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 80px;
+                height: 80px;
+                margin: -40px 0 0 -40px;
+                background: url("../images/loading-gde-yellow.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingGdeGreen {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 80px;
+                height: 80px;
+                margin: -40px 0 0 -40px;
+                background: url("../images/loading-gde-green.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingGdeGray {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 80px;
+                height: 80px;
+                margin: -40px 0 0 -40px;
+                background: url("../images/loading-gde-gray.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingPeqBlue {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 40px;
+                height: 40px;
+                margin: -20px 0 0 -20px;
+                background: url("../images/loading-peq-blue.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingPeqPink {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 40px;
+                height: 40px;
+                margin: -20px 0 0 -20px;
+                background: url("../images/loading-peq-pink.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingPeqYellow {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 40px;
+                height: 40px;
+                margin: -20px 0 0 -20px;
+                background: url("../images/loading-peq-yellow.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingPeqGreen {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 40px;
+                height: 40px;
+                margin: -20px 0 0 -20px;
+                background: url("../images/loading-peq-green.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+            .loadingPeqGray {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 40px;
+                height: 40px;
+                margin: -20px 0 0 -20px;
+                background: url("../images/loading-peq-gray.svg") no-repeat center;
+                -webkit-animation: rotation 0.5s infinite linear;
+            }
+        }
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(359deg);
+            }
+        }
+    }
+    .loading img {
+        -webkit-animation: rotation 0.5s infinite linear;
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(359deg);
+            }
+        }
+    }
+}

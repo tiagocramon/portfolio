@@ -1,0 +1,538 @@
+// FONT APENAS SISTEMA
+@font-face {
+    font-family: 'sf_monoregular';
+    src: url('../fonts/system/sfmono-regular-webfont.woff2') format('woff2'), url('../fonts/system/sfmono-regular-webfont.woff') format('woff'), url('../fonts/system/sfmono-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin codigo($font-size,
+$color,
+$line-height) {
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    font-family: 'sf_monoregular', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+// GERAL SISTEMA
+html, 
+body {
+    height: 100%;
+}
+
+// RESIZE
+#resize {
+    h1 {
+        @include tituloRegular($tamanho16, $b1, $tamanho24);
+    }
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    &.toggled {
+        padding-left: 220px;
+        #sidebar-wrapper {
+            width: 220px;
+        }
+        #page-content-wrapper {
+            position: absolute;
+            margin-right: -220px;
+        }
+    }
+    #sidebar-wrapper {
+        z-index: 1000;
+        position: fixed;
+        left: 220px;
+        width: 0;
+        height: 100%;
+        margin-left: -220px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background: $b1;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        .logo-dr-consulta-sistema {
+            margin: 30px 30px 40px 30px;
+        }
+        .sidebar-nav {
+            width: 220px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                text-indent: 30px;
+                a {
+                    @include tituloRegular($tamanho16,
+                    $k1,
+                    $tamanho32);
+                    display: block;
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        text-decoration: none;
+                        color: $y1;
+                        -webkit-transition: all 0.5s ease;
+                        -moz-transition: all 0.5s ease;
+                        -o-transition: all 0.5s ease;
+                        transition: all 0.5s ease;
+                    }
+                    &:active {
+                        text-decoration: none;
+                    }
+                    &:focus {
+                        text-decoration: none;
+                    }
+                }
+                .active {
+                    color: $y1 !important;
+                }
+            }
+        }
+    }
+    #page-content-wrapper {
+        width: 100%;
+        position: absolute;
+        padding: 0 15px 100px 15px;
+        #header {
+            .btn-hide-show-sidebar {
+                position: relative;
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: $b1;
+                text-align: center;
+                margin: 0;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+                &:hover {
+                    background: $b2;
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                }
+            }
+            h1 {
+                @include tituloRegular($tamanho48,
+                $b1,
+                $tamanho48);
+            }
+        }
+        #main {
+            h2 {
+                @include tituloRegular($tamanho32,
+                $k5,
+                $tamanho32);
+            }
+            h3 {
+                @include tituloRegular($tamanho24,
+                $k4,
+                $tamanho24);
+            }
+            p {
+                @include textoRegular($tamanho16,
+                $k5,
+                $tamanho16);
+            }
+            .box-codigo-geral {
+                margin-right: 40px;
+                &.box-codigo-geral-only {
+                    margin-right: 0px !important;
+                }
+                .box-codigo {
+                    background: white;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                    border-radius: 4px;
+                    padding: 16px;
+                    &.box-codigo-fixo {
+                        width: 220px;
+                    }
+                    &.box-codigo-fixo-2 {
+                        width: 232px;
+                    }                    
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        li {
+                            @include codigo($tamanho14,
+                            $k5,
+                            $tamanho24);
+                            list-style: none;
+                        }
+                    }
+                    code {
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        @include codigo($tamanho14,
+                        $k5,
+                        $tamanho24);
+                        list-style: none;
+                    }
+                    p {
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        @include codigo($tamanho14,
+                        $k5,
+                        $tamanho24);
+                        list-style: none;
+                    }
+                }
+            }
+            .box-cores-geral {
+                margin-right: 80px;
+                .box-cores {
+                    margin-right: 40px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    .cor-blue-1 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $b1;
+                    }
+                    .cor-blue-2 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $b2;
+                    }
+                    .cor-blue-3 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $b3;
+                    }
+                    .cor-blue-4 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $b4;
+                    }
+                    .cor-pink-1 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $p1;
+                    }
+                    .cor-pink-2 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $p2;
+                    }
+                    .cor-pink-3 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $p3;
+                    }
+                    .cor-yellow-1 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $y1;
+                    }
+                    .cor-yellow-2 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $y2;
+                    }
+                    .cor-yellow-3 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $y3;
+                    }
+                    .cor-green-1 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $g1;
+                    }
+                    .cor-green-2 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $g2;
+                    }
+                    .cor-green-3 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $g3;
+                    }
+                    .cor-black-1 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $k1;
+                    }
+                    .cor-black-2 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $k2;
+                    }
+                    .cor-black-3 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $k3;
+                    }
+                    .cor-black-4 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $k4;
+                    }
+                    .cor-black-5 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $k5;
+                    }
+                    .cor-black-6 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $k6;
+                    }
+                    .cor-alert-1 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $a1;
+                    }
+                    .cor-alert-2 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $a2;
+                    }
+                    .cor-alert-3 {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 4px;
+                        background: $a3;
+                    }
+                }
+            }
+            .box-botao-geral {
+                button {
+                    margin-right: 40px;
+                }
+            }
+            .box-logo-geral {
+                margin-right: 80px;
+            }
+            .box-aplicacao-background-geral {
+                margin-right: 40px;
+                .back-blue img {
+                    background: $b1;
+                    padding: 16px;
+                }
+                .back-pink img {
+                    background: $p1;
+                    padding: 16px;
+                }
+                .back-yellow img {
+                    background: $y1;
+                    padding: 16px;
+                }
+                .back-green img {
+                    background: $g1;
+                    padding: 16px;
+                }
+            }
+            .box-forms-geral {
+                .form-control {
+                    width: 422px !important;
+                }
+                .form-inline {
+                    input {
+                        width: 381px !important;
+                    }
+                }                
+            }
+            .variaveis-tamanho {
+                .largura80 {
+                    background-color: $b1;
+                    width: 80px;
+                    height: 5px;
+                }
+                .largura48 {
+                    background-color: $b1;
+                    width: 48px;
+                    height: 5px;
+                }
+                .largura40 {
+                    background-color: $b1;
+                    width: 40px;
+                    height: 5px;
+                }
+                .largura32 {
+                    background-color: $b1;
+                    width: 32px;
+                    height: 5px;
+                }
+                .largura24 {
+                    background-color: $b1;
+                    width: 24px;
+                    height: 5px;
+                }
+                .largura16 {
+                    background-color: $b1;
+                    width: 16px;
+                    height: 5px;
+                }
+                .largura8 {
+                    background-color: $b1;
+                    width: 8px;
+                    height: 5px;
+                }                                                          
+            }
+
+            .box-modal-geral {
+                .box-modal {
+                    background: rgba(10, 17, 109, 0.7);
+                    padding: 24px;
+                }
+
+                .modal {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    bottom: auto;
+                    left: auto;
+                    z-index: 1;
+                    display: block;
+
+                    .modal-body {
+                        height: 100px !important;
+                    }
+
+                    .modal-dialog {
+                        margin: 0 auto !important;
+                        padding: 0 !important;
+                    }
+                }
+            }
+
+            .box-tooltip-geral {
+                .box-tooltip {
+                    background: $k1;
+                    padding: 24px;
+                    border-radius: 4px;
+                    p {
+                        @include textoRegular($tamanho16,
+                            $k5,
+                            $tamanho24);
+                            span {
+                                color: $b1;
+                                cursor: pointer;
+                                -moz-transition: all 0.2s ease-out;
+                                -webkit-transition: all 0.2s ease-out;
+                                -o-transition: all 0.2s ease-out;
+                                transition: all 0.2s ease-out;                                
+                                &:hover {
+                                    color: $b2;
+                                    -moz-transition: all 0.2s ease-out;
+                                    -webkit-transition: all 0.2s ease-out;
+                                    -o-transition: all 0.2s ease-out;
+                                    transition: all 0.2s ease-out;                                    
+                                }
+                            }
+                    }
+                }
+            }
+            .box-popover-geral {
+                .box-popover {
+                    background: $k1;
+                    padding: 24px;
+                    border-radius: 4px;
+                    p {
+                        @include textoRegular($tamanho16,
+                            $k5,
+                            $tamanho24);
+                            span {
+                                color: $b1;
+                                cursor: pointer;
+                                -moz-transition: all 0.2s ease-out;
+                                -webkit-transition: all 0.2s ease-out;
+                                -o-transition: all 0.2s ease-out;
+                                transition: all 0.2s ease-out;                                
+                                &:hover {
+                                    color: $b2;
+                                    -moz-transition: all 0.2s ease-out;
+                                    -webkit-transition: all 0.2s ease-out;
+                                    -o-transition: all 0.2s ease-out;
+                                    transition: all 0.2s ease-out;                                    
+                                }                                
+                                &:focus {
+                                    outline: none !important;
+                                    box-shadow: none !important;
+                                }
+                            }
+                    }
+                }
+            }       
+            .secundario-fundo-azul {
+                .box-secundario-fundo-azul {
+                    background: $b1;
+                    width: 250px;
+                    height: 150px;
+                }              
+            }     
+
+            .secundario-fundo-colorido {
+                .box-secundario-fundo-rosa {
+                    background: $p1;
+                    width: 250px;
+                    height: 150px;
+                }                
+                .box-secundario-fundo-verde {
+                    background: $g1;
+                    width: 250px;
+                    height: 150px;
+                }                
+                .box-secundario-fundo-amarelo {
+                    background: $y1;
+                    width: 250px;
+                    height: 150px;
+                }  
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+        &.toggled {
+            padding-left: 220px;
+            #page-content-wrapper {
+                position: relative;
+                margin-right: 0;
+            }
+        }
+        #sidebar-wrapper {
+            width: 0;
+        }
+    }
+}

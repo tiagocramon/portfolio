@@ -1,0 +1,254 @@
+// BANNER INTERNAS
+#banner-internas {
+    margin: 0;
+    padding: 140px 0 80px 0;
+    background-color: $b1;
+
+    .bread-crumb {
+        a {
+            @include textoBold($tamanho14, $g1, normal);
+            text-decoration: underline;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;  
+
+            &:hover {
+                color: $g2;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;  
+            }
+        }
+
+        span {
+            @include textoBold($tamanho14, white, normal);
+        }
+
+        p {
+            @include textoBold($tamanho14, white, normal);
+        }
+    }
+
+    .img-sem-imagem-man {
+        background-color: white;
+        background-image: url("../../images/img-equipe-man.svg");
+        background-position: center 0;
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        border-radius: 100px;
+    }
+
+    .img-sem-imagem-woman {
+        background-color: white;
+        background-image: url("../../images/img-equipe-woman.svg");
+        background-position: center 0;
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        border-radius: 100px;
+    }        
+
+    .img {
+        background-image: url("https://s2pics.s3.amazonaws.com/profissionais/fotos/102033_m.jpg");
+        background-position: center 0;
+        background-size: 120px 171px;
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        border-radius: 100px;
+    }
+
+    h1 {
+        @include tituloBold($tamanho40, $g1, $tamanho40);
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        @include textoRegular($tamanho16, white, normal);
+    }
+
+    .box-ver-preco {
+        margin: 0;
+        padding: 0;
+
+        h3 {
+            @include tituloBold($tamanho18, $g1, normal);
+            margin: 0 0 4px 0;
+            padding: 0;
+        }
+
+        p {
+            @include tituloRegular($tamanho14, white, normal);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .box-pesquisa {
+        background: white;
+        margin: 0;
+        padding: 8px 24px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+
+    .tag-assinatura {
+        h4 {
+            @include tituloBold($tamanho12, $b1, normal);
+            margin: 0;
+            padding: 4px 8px;
+            background-color: $g1;
+            border-radius: 4px;
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #banner-internas {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background: $b1;
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            @include textoRegular($tamanho14, white, normal);
+        }
+
+        .box-ver-preco {
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                @include tituloBold($tamanho18, $g1, normal);
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                @include tituloRegular($tamanho14, white, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }        
+
+        .box-pesquisa {
+            background: white;
+            margin: 0;
+            padding: 8px 16px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #banner-internas {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background: $b1;
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            @include textoRegular($tamanho14, white, normal);
+        }
+
+        .box-ver-preco {
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                @include tituloBold($tamanho18, $g1, normal);
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                @include tituloRegular($tamanho14, white, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .box-pesquisa {
+            background: white;
+            margin: 0;
+            padding: 8px 16px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #banner-internas {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background: $b1;
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            @include textoRegular($tamanho14, white, normal);
+        }
+
+        .box-ver-preco {
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                @include tituloBold($tamanho18, $g1, normal);
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                @include tituloRegular($tamanho14, white, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }  
+        
+        .box-pesquisa {
+            background: white;
+            margin: 0;
+            padding: 8px 16px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

@@ -1,0 +1,66 @@
+// FONTS
+@font-face {
+    font-family: 'DrConsultaRegular';
+    src: url('../fonts/Suadrconsulta-Regular_WebOnly.eot');
+    src: url('../fonts/Suadrconsulta-Regular_WebOnly.eot?#iefix') format('embedded-opentype'), url('../fonts/Suadrconsulta-Regular_WebOnly.woff2') format('woff2'), url('../fonts/Suadrconsulta-Regular_WebOnly.woff') format('woff'), url('../fonts/Suadrconsulta-Regular_WebOnly.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DrConsultaBold';
+    src: url('../fonts/Suadrconsulta-Bold_WebOnly.eot');
+    src: url('../fonts/Suadrconsulta-Bold_WebOnly.eot?#iefix') format('embedded-opentype'), url('../fonts/Suadrconsulta-Bold_WebOnly.woff2') format('woff2'), url('../fonts/Suadrconsulta-Bold_WebOnly.woff') format('woff'), url('../fonts/Suadrconsulta-Bold_WebOnly.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@mixin tituloRegular($font-size,
+$color,
+$line-height) {
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    font-family: 'DrConsultaRegular', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+@mixin tituloBold($font-size,
+$color,
+$line-height) {
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    font-family: 'DrConsultaBold', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+@mixin textoRegular($font-size,
+$color,
+$line-height) {
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+@mixin textoBold($font-size,
+$color,
+$line-height) {
+    font-size: $font-size;
+    color: $color;
+    line-height: $line-height;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+}

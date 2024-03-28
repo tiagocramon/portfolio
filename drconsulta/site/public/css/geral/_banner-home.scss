@@ -1,0 +1,241 @@
+// BANNER
+#banner {
+    margin: 0;
+    padding: 80px 0;
+    //background-image: url("../../images/banner-principal-xl.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    h1 {
+        @include tituloRegular($tamanho48, white, $tamanho48);
+        margin: 0 0 24px 0;
+        padding: 0;
+        span {
+            @include tituloBold($tamanho48, white, $tamanho48);
+        }
+    }
+    .box-agendar {
+        width: 100%;
+        background: white;
+        border-radius: 4px;
+        padding: 16px 32px;
+        margin: 0;
+
+        .selectBannerLarge {
+            margin: 0 32px 0 0;
+        }
+    }
+    p {
+        @include tituloRegular($tamanho24, white, $tamanho24);
+        margin: 24px 0 0 0;
+        padding: 0;
+        span {
+            @include tituloBold($tamanho24, white, $tamanho24);
+        }
+    }
+}
+
+.bannerChrome {
+    background-image: url("../../images/banner-principal-xl.webp") !important;
+}
+
+.bannerNotChrome {
+    background-image: url("../../images/banner-principal-xl.jpg") !important;
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #banner {
+        //background-image: url("../../images/banner-principal-lg.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+    .bannerChrome {
+        background-image: url("../../images/banner-principal-lg.webp") !important;
+    }
+    
+    .bannerNotChrome {
+        background-image: url("../../images/banner-principal-lg.jpg") !important;
+    }
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #banner {
+        margin: 0;
+        padding: 40px 0;
+        //background-image: url("../../images/banner-principal-md.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    
+        h1 {
+            @include tituloRegular($tamanho40, white, $tamanho40);
+            margin: 0 0 24px 0;
+            padding: 0;
+            span {
+                @include tituloBold($tamanho40, white, $tamanho40);
+            }
+        }
+        .box-agendar {
+            width: 100%;
+            background: white;
+            border-radius: 4px;
+            padding: 16px 24px;
+            margin: 0;
+    
+            .selectBannerLarge {
+                margin: 0 24px 0 0;
+            }
+        }
+        p {
+            @include tituloRegular($tamanho20, white, $tamanho20);
+            margin: 24px 0 0 0;
+            padding: 0;
+            span {
+                @include tituloBold($tamanho20, white, $tamanho20);
+            }
+        }
+    }
+
+    .bannerChrome {
+        background-image: url("../../images/banner-principal-md.webp") !important;
+    }
+    
+    .bannerNotChrome {
+        background-image: url("../../images/banner-principal-md.jpg") !important;
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #banner {
+        margin: 0;
+        padding: 40px 0;
+        background-image: none;
+        background-color: $b1;
+    
+        h1 {
+            @include tituloRegular($tamanho40, white, $tamanho40);
+            margin: 0 0 24px 0;
+            padding: 0;
+            span {
+                @include tituloBold($tamanho40, white, $tamanho40);
+            }
+        }
+        .box-agendar {
+            width: 100%;
+            background: white;
+            border-radius: 4px;
+            padding: 16px 24px;
+            margin: 0;
+    
+            .selectBannerLarge {
+                margin: 0 24px 0 0;
+            }
+        }
+        p {
+            @include tituloRegular($tamanho20, white, $tamanho20);
+            margin: 24px 0 0 0;
+            padding: 0;
+            span {
+                @include tituloBold($tamanho20, white, $tamanho20);
+            }
+        }
+    }
+
+    .bannerChrome {
+        background-image: none !important;
+    }
+    
+    .bannerNotChrome {
+        background-image: none !important;
+    }
+
+    #banner-sm-xs {
+        height: 250px;
+        margin: 0;
+        padding: 0;
+        //background-image: url("../../images/banner-principal-sm.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .bannerResponsiveChrome {
+        background-image: url("../../images/banner-principal-sm.webp") !important;
+    }
+    
+    .bannerNotResponsiveChrome {
+        background-image: url("../../images/banner-principal-sm.webp") !important;
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #banner {
+        margin: 0;
+        padding: 40px 0;
+        background-image: none;
+        background-color: $b1;
+    
+        h1 {
+            @include tituloRegular($tamanho40, white, $tamanho40);
+            margin: 0 0 24px 0;
+            padding: 0;
+            span {
+                @include tituloBold($tamanho40, white, $tamanho40);
+            }
+        }
+        .box-agendar {
+            width: 100%;
+            background: white;
+            border-radius: 4px;
+            padding: 16px 24px;
+            margin: 0;
+    
+            .selectBannerLarge {
+                margin: 0 0 8px 0;
+            }
+        }
+        p {
+            @include tituloRegular($tamanho20, white, $tamanho20);
+            margin: 24px 0 0 0;
+            padding: 0;
+            span {
+                @include tituloBold($tamanho20, white, $tamanho20);
+            }
+        }
+    }
+
+    .bannerChrome {
+        background-image: none !important;
+    }
+    
+    .bannerNotChrome {
+        background-image: none !important;
+    }    
+
+    #banner-sm-xs {
+        height: 250px;
+        margin: 0;
+        padding: 0;
+        //background-image: url("../../images/banner-principal-xs.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .bannerResponsiveChrome {
+        background-image: url("../../images/banner-principal-xs.webp") !important;
+    }
+    
+    .bannerNotResponsiveChrome {
+        background-image: url("../../images/banner-principal-xs.webp") !important;
+    }    
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

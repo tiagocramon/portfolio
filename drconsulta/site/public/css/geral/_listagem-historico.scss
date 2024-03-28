@@ -1,0 +1,439 @@
+// LISTAGEM HISTORICO
+#listagem-historico {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k1;
+
+    .nenhum-resultado-encontrado {
+        background-color: $k2;
+        padding: 24px;
+        border-radius: 4px;
+
+        h2 {
+            @include tituloBold($tamanho24, $a2, normal);
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            @include textoRegular($tamanho16, $a2, normal);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .chamada-yalo {
+        @include tituloRegular($tamanho14, $k5, $tamanho14);
+        margin: 0 0 32px 0;
+        padding: 16px;
+        border: 1px solid $k3;
+        border-radius: 4px;
+        text-align: center;
+
+        span {
+            @include tituloBold($tamanho14, $k5, $tamanho14);
+        }
+    }
+
+    .box-navegacao {
+        border: 1px solid $k3;
+        border-radius: 4px;
+        padding: 32px;
+    }
+
+    .sem-historico {
+        background: white;
+        border-radius: 4px;
+        padding: 32px;
+        margin: 0;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        h2 {
+            @include tituloBold($tamanho18, $b1, normal);
+        }
+
+        p {
+            @include textoRegular($tamanho16, $k5, normal);
+        }
+    }
+
+    .dados-agendamento {
+        background: white;
+        border-radius: 4px;
+        padding: 32px;
+        margin: 16px 0 0 0;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+
+        &:first-child {
+            margin: 0;
+        }
+
+        &:hover {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        h2 {
+            @include tituloBold($tamanho18, $b1, normal);
+        }
+
+        p {
+            @include textoBold($tamanho14, $k5, normal);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding: 16px 0;
+                border-bottom: 1px solid $k3;
+
+                h3 {
+                    @include textoBold($tamanho14, $k5, normal);
+                    margin-right: 16px;
+                }
+
+                p {
+                    @include textoRegular($tamanho14, $k5, normal);
+                }
+
+                a {
+                    @include textoRegular($tamanho12, $b1, normal);
+                    text-decoration: underline;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+
+                    &:hover {
+                        color: $b2;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+
+                .tag-assinatura {
+                    display: flex;
+                    h4 {
+                        @include tituloBold($tamanho12, $g1, normal);
+                        margin: 0;
+                        padding: 4px 8px;
+                        background-color: $b1;
+                        border-radius: 4px;
+                        width: max-content;
+                    }
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #listagem-historico {
+        margin: 0;
+        padding: 40px 0;
+
+        .nenhum-resultado-encontrado {
+            background-color: $k2;
+            padding: 16px;
+            border-radius: 4px;
+    
+            h2 {
+                @include tituloBold($tamanho20, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }        
+
+        .chamada-yalo {
+            @include tituloRegular($tamanho12, $k5, $tamanho12);
+            margin: 0 0 24px 0;
+            padding: 16px;
+            border: 1px solid $k3;
+            border-radius: 4px;
+            text-align: center;
+    
+            span {
+                @include tituloBold($tamanho12, $k5, $tamanho12);
+            }
+        }
+
+        .box-navegacao {
+            border: 1px solid $k3;
+            border-radius: 4px;
+            padding: 24px;
+        }
+
+        .sem-historico {
+            background: white;
+            border-radius: 4px;
+            padding: 24px;
+            margin: 0;
+    
+            h2 {
+                @include tituloBold($tamanho16, $b1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $k5, normal);
+            }
+        }        
+        
+        .dados-agendamento {
+            background: white;
+            border-radius: 4px;
+            padding: 24px;
+            margin: 8px 0 0 0;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+    
+            &:first-child {
+                margin: 0;
+            }
+    
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+    
+            h2 {
+                @include tituloBold($tamanho16, $b1, normal);
+            }
+        }        
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #listagem-historico {
+        margin: 0;
+        padding: 40px 0;
+
+        .nenhum-resultado-encontrado {
+            background-color: $k2;
+            padding: 16px;
+            border-radius: 4px;
+    
+            h2 {
+                @include tituloBold($tamanho20, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }          
+
+        .chamada-yalo {
+            @include tituloRegular($tamanho12, $k5, $tamanho12);
+            margin: 0 0 24px 0;
+            padding: 16px;
+            border: 1px solid $k3;
+            border-radius: 4px;
+            text-align: center;
+    
+            span {
+                @include tituloBold($tamanho12, $k5, $tamanho12);
+            }
+        }  
+
+        .box-navegacao {
+            border: 1px solid $k3;
+            border-radius: 4px;
+            padding: 24px;
+        } 
+
+        .sem-historico {
+            background: white;
+            border-radius: 4px;
+            padding: 24px;
+            margin: 0;
+    
+            h2 {
+                @include tituloBold($tamanho16, $b1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $k5, normal);
+            }
+        } 
+
+        .dados-agendamento {
+            background: white;
+            border-radius: 4px;
+            padding: 24px;
+            margin: 8px 0 0 0;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+    
+            &:first-child {
+                margin: 0;
+            }
+    
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+    
+            h2 {
+                @include tituloBold($tamanho16, $b1, normal);
+            }
+        }         
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #listagem-historico {
+        margin: 0;
+        padding: 40px 0;
+
+        .nenhum-resultado-encontrado {
+            background-color: $k2;
+            padding: 16px;
+            border-radius: 4px;
+    
+            h2 {
+                @include tituloBold($tamanho20, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }          
+
+        .chamada-yalo {
+            @include tituloRegular($tamanho12, $k5, $tamanho12);
+            margin: 0 0 24px 0;
+            padding: 16px;
+            border: 1px solid $k3;
+            border-radius: 4px;
+            text-align: center;
+    
+            span {
+                @include tituloBold($tamanho12, $k5, $tamanho12);
+            }
+        }  
+
+        .box-navegacao {
+            border: 1px solid $k3;
+            border-radius: 4px;
+            padding: 24px;
+        }        
+        
+        .sem-historico {
+            background: white;
+            border-radius: 4px;
+            padding: 24px;
+            margin: 0;
+    
+            h2 {
+                @include tituloBold($tamanho16, $b1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $k5, normal);
+            }
+        } 
+
+        .dados-agendamento {
+            background: white;
+            border-radius: 4px;
+            padding: 24px;
+            margin: 8px 0 0 0;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+    
+            &:first-child {
+                margin: 0;
+            }
+    
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+    
+            h2 {
+                @include tituloBold($tamanho16, $b1, normal);
+            }
+
+            ul {
+                li {
+                    padding: 8px 0;
+
+                    .tag-assinatura {
+                        display: flex;
+                        h4 {
+                            @include tituloBold($tamanho10, $g1, normal);
+                            margin: 0;
+                            padding: 4px 8px;
+                            background-color: $b1;
+                            border-radius: 4px;
+                            width: max-content;
+                        }
+                    }
+                }
+            }            
+        } 
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

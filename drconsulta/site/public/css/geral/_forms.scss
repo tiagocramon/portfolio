@@ -1,0 +1,605 @@
+// FORMS
+// placeHolder
+input::-webkit-input-placeholder {
+    color: $k5 !important;
+}
+
+input::-moz-placeholder {
+    color: $k5 !important;
+}
+
+input:-ms-input-placeholder {
+    color: $k5 !important;
+}
+
+input:-moz-placeholder {
+    color: $k5 !important;
+}
+
+input.disable::-webkit-input-placeholder {
+    color: $k3 !important;
+}
+
+input.disable::-moz-placeholder {
+    color: $k3 !important;
+}
+
+input.disable:-ms-input-placeholder {
+    color: $k3 !important;
+}
+
+input.disable:-moz-placeholder {
+    color: $k3 !important;
+}
+
+textarea::-webkit-input-placeholder {
+    color: $k5 !important;
+}
+
+textarea::-moz-placeholder {
+    color: $k5 !important;
+}
+
+textarea:-ms-input-placeholder {
+    color: $k5 !important;
+}
+
+textarea:-moz-placeholder {
+    color: $k5 !important;
+}
+
+textarea.disable::-webkit-input-placeholder {
+    color: $k3 !important;
+}
+
+textarea.disable::-moz-placeholder {
+    color: $k3 !important;
+}
+
+textarea.disable:-ms-input-placeholder {
+    color: $k3 !important;
+}
+
+textarea.disable:-moz-placeholder {
+    color: $k3 !important;
+}
+
+//Labels
+label {
+    @include textoRegular($tamanho14, $k5, $tamanho14);
+}
+
+// Select
+.selectBannerLarge {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    pointer-events: all;
+    @include tituloRegular($tamanho16, $k5, $tamanho16);
+    height: 48px !important;
+    background-color: white;
+    background: white url(../../images/seta-select-blue.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border-radius: 4px;
+    border: none;
+    padding: 0;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        color: $b1;
+        border: none;
+    }
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    &.disable {
+        background: $k1 !important;
+        border: none;
+        color: $k3 !important;
+        cursor: not-allowed !important;
+    }
+    &:invalid {
+        color: $k4;
+    }
+    &.has-placeholder {
+        color: $k4;
+    }
+    [disabled] {
+        color: $k4;
+    }
+    option {
+        color: $b3;
+    }
+}
+
+.selectSmall {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    pointer-events: all;
+    @include tituloRegular($tamanho14, $k5, $tamanho14);
+    height: 40px !important;
+    background-color: white;
+    background: white url(../../images/seta-select-blue.svg);
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    border-radius: 4px;
+    border: 1px solid $k3;
+    padding: 0 16px;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        color: $b1;
+        border: 1px solid $k3;
+    }
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    &.error {
+        background: url(../../images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        border: 1px solid $a2 !important;
+    }
+    &.valid {
+        background: url(../../images/icon-valid.svg);
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        border: 1px solid $b1 !important;
+    }
+    &.disable {
+        background: $k1 !important;
+        border: 1px solid $k3 !important;
+        color: $k3 !important;
+        cursor: not-allowed !important;
+    }
+    &:invalid {
+        color: $k4;
+    }
+    &.has-placeholder {
+        color: $k4;
+    }
+    [disabled] {
+        color: $k4;
+    }
+    option {
+        color: $b3;
+    }
+}
+
+.selectFiltroServicos {
+    width: 250px;
+}
+
+// Inputs
+.inputMediumServicos {
+    pointer-events: all;
+    @include tituloRegular($tamanho16, $k5, $tamanho16);
+    height: 48px !important;
+    background-color: white;
+    background: white url(../../images/icon-lupa.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border-radius: 4px;
+    border: none;
+    padding: 0;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        color: $b1;
+    }
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    &.error {
+        background: url(../../images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+    &.valid {
+        background: url(../../images/icon-valid.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+    &.disable {
+        background: $k1 !important;
+        color: $k3 !important;
+        cursor: not-allowed !important;
+    }
+}
+
+.inputSmall {
+    pointer-events: all;
+    @include tituloRegular($tamanho14, $k5, $tamanho14);
+    height: 40px !important;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid $k3;
+    padding: 0 16px;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        color: $b1;
+        border: 1px solid $k3;
+    }
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+    &.error {
+        background: url(../../images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        border: 1px solid $a2;
+    }
+    &.valid {
+        background: url(../../images/icon-valid.svg);
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+    }
+    &.disable {
+        background: $k1 !important;
+        border: 1px solid $k3 !important;
+        color: $k3 !important;
+        cursor: not-allowed !important;
+    }
+}
+
+// CheckBox
+.check {
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"] + label {
+        cursor: pointer;
+        background: url("../../images/forms-checkbox.svg");
+        background-repeat: no-repeat;
+        background-position-x: -28px;
+        width: 20px;
+        height: 20px;
+        &:hover {
+            background-position-x: -56px;
+        }
+    }
+
+    input[type="checkbox"]:checked + label{
+        background: url("../../images/forms-checkbox.svg");
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+// RadioButton
+.radio {
+    input[type="radio"] {
+        display: none;
+    }
+
+    input[type="radio"] + label {
+        cursor: pointer;
+        background: url("../../images/forms-radiobutton.svg");
+        background-repeat: no-repeat;
+        background-position-x: -28px;
+        width: 20px;
+        height: 20px;
+        &:hover {
+            background-position-x: -56px;
+        }
+    }
+
+    input[type="radio"]:checked + label{
+        background: url("../../images/forms-radiobutton.svg");
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    .selectBannerMedium-md {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        pointer-events: all;
+        @include tituloRegular($tamanho14, $k5, $tamanho14);
+        height: 40px !important;
+        background-color: white;
+        background: white url(../../images/seta-select-blue.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        border-radius: 4px;
+        border: none;
+        padding: 0;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            color: $b1;
+            border: none;
+        }
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+        &.disable {
+            background: $k1 !important;
+            border: none;
+            color: $k3 !important;
+            cursor: not-allowed !important;
+        }
+        &:invalid {
+            color: $k4;
+        }
+        &.has-placeholder {
+            color: $k4;
+        }
+        [disabled] {
+            color: $k4;
+        }
+        option {
+            color: $b3;
+        }
+    }
+
+    .selectFiltroServicos {
+        width: 100%;
+    }
+
+    .inputMediumServicos-md {
+        pointer-events: all;
+        @include tituloRegular($tamanho14, $k5, $tamanho14);
+        height: 40px !important;
+        background-color: white;
+        background: white url(../../images/icon-lupa.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        border-radius: 4px;
+        border: none;
+        padding: 0;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            color: $b1;
+        }
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+        &.error {
+            background: url(../images/icon-error.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        &.valid {
+            background: url(../images/icon-valid.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        &.disable {
+            background: $k1 !important;
+            color: $k3 !important;
+            cursor: not-allowed !important;
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    .selectBannerMedium-sm {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        pointer-events: all;
+        @include tituloRegular($tamanho14, $k5, $tamanho14);
+        height: 40px !important;
+        background-color: white;
+        background: white url(../../images/seta-select-blue.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        border-radius: 4px;
+        border: none;
+        padding: 0;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            color: $b1;
+            border: none;
+        }
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+        &.disable {
+            background: $k1 !important;
+            border: none;
+            color: $k3 !important;
+            cursor: not-allowed !important;
+        }
+        &:invalid {
+            color: $k4;
+        }
+        &.has-placeholder {
+            color: $k4;
+        }
+        [disabled] {
+            color: $k4;
+        }
+        option {
+            color: $b3;
+        }
+    }
+
+    .selectFiltroServicos {
+        width: 100%;
+    }
+
+    .inputMediumServicos-sm {
+        pointer-events: all;
+        @include tituloRegular($tamanho14, $k5, $tamanho14);
+        height: 40px !important;
+        background-color: white;
+        background: white url(../../images/icon-lupa.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        border-radius: 4px;
+        border: none;
+        padding: 0;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            color: $b1;
+        }
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+        &.error {
+            background: url(../images/icon-error.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        &.valid {
+            background: url(../images/icon-valid.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        &.disable {
+            background: $k1 !important;
+            color: $k3 !important;
+            cursor: not-allowed !important;
+        }
+    }    
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    .selectBannerMedium-xs {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        pointer-events: all;
+        @include tituloRegular($tamanho14, $k5, $tamanho14);
+        height: 40px !important;
+        background-color: white;
+        background: white url(../../images/seta-select-blue.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        border-radius: 4px;
+        border: none;
+        padding: 0;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            color: $b1;
+            border: none;
+        }
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+        &.disable {
+            background: $k1 !important;
+            border: none;
+            color: $k3 !important;
+            cursor: not-allowed !important;
+        }
+        &:invalid {
+            color: $k4;
+        }
+        &.has-placeholder {
+            color: $k4;
+        }
+        [disabled] {
+            color: $k4;
+        }
+        option {
+            color: $b3;
+        }
+    }
+
+    .selectFiltroServicos {
+        width: 100%;
+    }
+
+    .inputMediumServicos-xs {
+        pointer-events: all;
+        @include tituloRegular($tamanho14, $k5, $tamanho14);
+        height: 40px !important;
+        background-color: white;
+        background: white url(../../images/icon-lupa.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        border-radius: 4px;
+        border: none;
+        padding: 0;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            color: $b1;
+        }
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+        &.error {
+            background: url(../images/icon-error.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        &.valid {
+            background: url(../images/icon-valid.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+        &.disable {
+            background: $k1 !important;
+            color: $k3 !important;
+            cursor: not-allowed !important;
+        }
+    }    
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

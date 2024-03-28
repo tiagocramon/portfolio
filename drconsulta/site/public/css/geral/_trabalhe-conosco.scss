@@ -1,0 +1,346 @@
+// TRABALHE CONOSCO
+#trabalhe-conosco {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k1;
+
+    .img-trabalhe-conosco {
+        height: 320px;
+        background-image: url("../../images/img-trabalhe-conosco-xl.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+    }
+
+    p {
+        @include textoRegular($tamanho16, $k5, $tamanho18);
+        padding-bottom: 24px;
+    }
+
+    .baixe-live {
+        border-top: 1px solid $k3;
+        padding-top: 24px;
+
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho16);
+        }
+    }
+}
+
+#listagem-vagas {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k2;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0 0 16px 0;
+            padding: 24px;
+            background-color: white;
+            border-radius: 4px;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+
+            &:last-of-type {
+                margin: 0;
+            }
+
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            h2 {
+                @include tituloBold($tamanho24, $k5, normal);
+                margin: 0 56px 0 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            p {
+                @include textoRegular($tamanho14, $k5, normal);
+            }
+        }
+    }
+}
+
+#mundo-acredita {
+    margin: 0;
+    padding: 80px 0;
+    background-color: white;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 16px;
+            background-color: white;
+            border-bottom: 1px solid $k3;
+
+            &:last-of-type {
+                margin: 0;
+            }
+
+            h2 {
+                @include textoBold($tamanho14, $k5, normal);
+            }
+
+            p {
+                @include textoRegular($tamanho14, $k5, normal);
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #trabalhe-conosco {
+        margin: 0;
+        padding: 80px 0;
+        background-color: $k1;
+
+        .img-trabalhe-conosco {
+            height: 320px;
+            background-image: url("../../images/img-trabalhe-conosco-lg.jpg");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+
+    }
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #trabalhe-conosco {
+        margin: 0;
+        padding: 40px 0;
+
+        .img-trabalhe-conosco {
+            height: 250px;
+            background-image: url("../../images/img-trabalhe-conosco-md.jpg");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho16);
+            padding-bottom: 24px;
+        }
+    }
+
+    #listagem-vagas {
+        margin: 0;
+        padding: 40px 0;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 0 16px 0;
+                padding: 24px;
+                background-color: white;
+                border-radius: 4px;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                &:hover {
+                    box-shadow: 0;
+                }
+
+                h2 {
+                    @include tituloBold($tamanho18, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #mundo-acredita {
+        margin: 0;
+        padding: 40px 0;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #trabalhe-conosco {
+        margin: 0;
+        padding: 40px 0;
+
+        .img-trabalhe-conosco {
+            height: 250px;
+            background-image: url("../../images/img-trabalhe-conosco-sm.jpg");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho16);
+            padding-bottom: 24px;
+        }
+    }
+
+    #listagem-vagas {
+        margin: 0;
+        padding: 40px 0;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 0 16px 0;
+                padding: 24px;
+                background-color: white;
+                border-radius: 4px;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                &:hover {
+                    box-shadow: 0;
+                }
+
+                h2 {
+                    @include tituloBold($tamanho18, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #mundo-acredita {
+        margin: 0;
+        padding: 40px 0;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #trabalhe-conosco {
+        margin: 0;
+        padding: 40px 0;
+
+        .img-trabalhe-conosco {
+            height: 250px;
+            background-image: url("../../images/img-trabalhe-conosco-xs.jpg");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho16);
+            padding-bottom: 24px;
+        }
+    }
+
+    #listagem-vagas {
+        margin: 0;
+        padding: 40px 0;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 0 16px 0;
+                padding: 24px;
+                background-color: white;
+                border-radius: 4px;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                &:hover {
+                    box-shadow: 0;
+                }
+
+                h2 {
+                    @include tituloBold($tamanho18, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #mundo-acredita {
+        margin: 0;
+        padding: 40px 0;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

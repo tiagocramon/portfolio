@@ -1,0 +1,305 @@
+#avisamos {
+  pointer-events: all;
+  position: relative;
+  z-index: 999;
+
+    .box-avisamos {
+        background-color: $colorWhite;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        padding: 50px;
+
+        h3 {
+          @include fontRegular(22px, $colorGrayDark);
+        }
+
+        .traco {
+            background-color: $colorBlue;
+            width: 50px;
+            height: 2px;
+        }
+
+        p {
+            @include fontRegular(14px, $colorGrayDark);
+        }
+
+        form {
+            label {
+              @include fontRegular(10px, $colorGrayDark);
+              text-transform: uppercase;
+            }
+        
+            input {
+              @include fontRegular(14px, $colorGrayDark);
+              height: 40px;
+              line-height: 40px;
+              background-color: $colorGrayLightTwo;
+              border-radius: 4px;
+              border: none;
+              padding: 0 20px;
+              -moz-transition: all 0.2s ease-out;
+              -webkit-transition: all 0.2s ease-out;
+              -o-transition: all 0.2s ease-out;
+              transition: all 0.2s ease-out;
+              &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+              }
+              &:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0 30px $colorGrayLightTwo inset !important;
+              }
+            }
+        
+            button {
+              @include fontRegular(14px, $colorGrayLight);
+              height: 40px;
+              line-height: 40px;
+              background-color: $colorBlue;
+              border-radius: 4px;
+              border: none;
+              padding: 0 20px;
+              -moz-transition: all 0.2s ease-out;
+              -webkit-transition: all 0.2s ease-out;
+              -o-transition: all 0.2s ease-out;
+              transition: all 0.2s ease-out;
+              &:hover {
+                background-color: $colorBlueHover;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+              }
+              &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+              }
+            }
+        
+            #ImputNome {
+              width: 160px;
+            }
+          
+            #InputEmail {
+              width: 350px;
+            }
+
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            input:-webkit-autofill:active {
+              -webkit-box-shadow: 0 0 0px 1000px $colorGrayLightTwo inset;
+            }
+
+          }
+    }
+}
+
+#duvidas {
+  pointer-events: all;
+  position: relative;
+  z-index: 998;
+
+  .box-duvida {
+    border: 3px solid $colorGrayLight;
+    border-radius: 4px;
+    margin-top: -159px;
+    padding: 209px 0 50px 0;
+
+    h3 {
+      @include fontRegular(22px, $colorGrayLight);
+    }
+
+    p {
+      @include fontRegular(14px, $colorGrayLight);
+    }
+
+    button {
+      @include fontRegular(14px, $colorGrayLight);
+      height: 40px;
+      line-height: 40px;
+      background-color: $colorPurple;
+      border-radius: 4px;
+      border: none;
+      padding: 0 20px;
+      -moz-transition: all 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      &:hover {
+        background-color: $colorPurpleHover;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* FIM LARGE */
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+  #avisamos {
+      .box-avisamos {
+          padding: 50px 30px;
+  
+          h3 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 12px;
+          }
+  
+          form {
+            button {
+              font-size: 12px;
+            }
+
+            #ImputNome {
+              width: auto;
+            }
+            
+            #InputEmail {
+              width: auto;
+            }
+          }
+      }
+  }
+
+  #duvidas {    
+    .box-duvida {
+      padding: 202px 0 50px 0;
+      h3 {
+        font-size: 18px;
+      }
+  
+      p {
+        font-size: 12px;
+      }
+  
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+}
+/* FIM MEDIUM */
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+  #avisamos {
+    .box-avisamos {
+        padding: 50px 15px;
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+
+        form {
+          button {
+            font-size: 12px;
+          }
+
+          #ImputNome {
+            width: 100%;
+          }
+          
+          #InputEmail {
+            width: 100%;
+          }
+        }
+    }
+  }
+
+  #duvidas { 
+    .box-duvida {
+      margin-top: -10px;
+      padding: 60px 0 50px 0;
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+}
+/* FIM SMALL */
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  #avisamos {
+    .box-avisamos {
+        padding: 50px 15px;
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+
+        form {
+          button {
+            width: 100%;
+            font-size: 12px;
+          }
+
+          #ImputNome {
+            width: 100%;
+          }
+          
+          #InputEmail {
+            width: 100%;
+          }
+        }
+    }
+  }
+
+  #duvidas { 
+    .box-duvida {
+      margin-top: -10px;
+      padding: 60px 0 50px 0;
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      button {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+  }
+}
+/* FIM EXTRA SMALL */
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

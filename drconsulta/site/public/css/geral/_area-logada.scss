@@ -1,0 +1,591 @@
+// AREA LOGADA
+#area-logada {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k1;
+
+    .botoes {
+        h2 {
+            @include tituloBold($tamanho24, $b1, normal);
+        }
+
+        .owl-carousel {
+            margin: 0;
+            padding: 0;
+
+            .owl-item {
+                margin: 0 0 0 -1px;
+                padding: 0;
+                border-left: 1px solid $k3;
+                border-right: 1px solid $k3;
+
+                &:first-child {
+                    border: none;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            .botao-servicos {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+
+                    img {
+                        opacity: 0.5;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+
+                    p {
+                        opacity: 0.5;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+
+                img {
+                    opacity: 1;
+                    width: 60px;
+                    height: 52px;
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+
+                p {
+                    opacity: 1;
+                    @include tituloRegular($tamanho18, $b1, normal);
+                    margin: 0;
+                    padding: 0;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+        }
+    }
+    
+    .valide-sua-conta {
+        background: $k2;
+        border-radius: 4px;
+        padding: 24px;
+
+        h2 {
+            @include tituloBold($tamanho24, $a2, normal);
+        }
+
+        p {
+            @include textoRegular($tamanho16, $a2, normal);
+        } 
+    }
+
+    .retorno {
+        border: 1px solid $k3;
+        border-radius: 4px;
+        padding: 24px;
+
+        h2 {
+            @include tituloBold($tamanho24, $b1, normal);
+        }
+
+        p {
+            @include textoRegular($tamanho16, $b1, normal);
+        }
+
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+    
+        .owl-dots {
+            height: 16px;
+            margin: 0;
+            padding: 0;
+    
+            .owl-dot {
+                &:focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+                span {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0 8px;
+                    padding: 0;
+                    background: transparent;
+                    border: 1px solid $b1;
+    
+                    &:hover {
+                        background: $b1;
+                    }
+                }
+            }
+    
+            .owl-dot.active {
+                &:focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+                span {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0 8px;
+                    padding: 0;
+                    background: $b1;
+                    border: none;
+                }
+            }
+        }        
+    }
+
+    .chamadas {
+        .box-chamada {
+            &.sem-agendamentos, &.sem-historico, &.sem-resultado-de-exames {
+                h3 {
+                    @include tituloBold($tamanho16, $k5, normal);
+                }
+    
+                p {
+                    @include textoRegular($tamanho14, $k5, normal);
+                }
+            }
+
+            background-color: white;
+            border-radius: 4px;
+            padding: 24px;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+            
+
+            h2 {
+                @include tituloBold($tamanho24, $b1, normal);
+            }
+
+            h3 {
+                @include tituloBold($tamanho16, $b1, normal);
+            }
+
+            p {
+                @include tituloRegular($tamanho16, $b1, normal);
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: 0;
+                    padding: 8px 0 8px 0;
+                    border-bottom: 1px solid $k3;
+
+                    h3 {
+                        @include textoBold($tamanho14, $k5, normal);
+                    }
+
+                    p {
+                        @include textoRegular($tamanho14, $k5, normal);
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    a {
+                        @include textoRegular($tamanho12, $b1, normal);
+                        text-decoration: underline;
+                        text-transform: uppercase;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+
+                        &:hover {
+                            color: $b2;
+                            -moz-transition: all 0.2s ease-out;
+                            -webkit-transition: all 0.2s ease-out;
+                            -o-transition: all 0.2s ease-out;
+                            transition: all 0.2s ease-out;
+                        }
+                    }
+
+                    .tag-assinatura {
+                        h4 {
+                            @include tituloBold($tamanho12, $g1, normal);
+                            margin: 0;
+                            padding: 4px 8px;
+                            background-color: $b1;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #area-logada {
+        margin: 0;
+        padding: 40px 0;
+        
+        .botoes {
+            h2 {
+                @include tituloBold($tamanho20, $b1, normal);
+            }
+
+            .owl-carousel {
+                margin: 0;
+                padding: 0;
+
+                .owl-item {
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    text-align: center;
+                }
+
+                .botao-servicos {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+
+                        p {
+                            opacity: 1;
+                            -moz-transition: all 0.2s ease-out;
+                            -webkit-transition: all 0.2s ease-out;
+                            -o-transition: all 0.2s ease-out;
+                            transition: all 0.2s ease-out;
+                        }
+                    }
+
+                    img {
+                        display: none;
+                    }
+
+                    p {
+                        width: 130px;
+                        opacity: 1;
+                        pointer-events: all;
+                        @include tituloBold($tamanho14, $b1, normal);
+                        height: 32px;
+                        border-radius: 25px;
+                        border: 2px solid $g1;
+                        padding: 0 24px;
+                        background-color: transparent;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center
+                    }
+                }
+            }   
+        }
+
+        .retorno {
+            h2 {
+                @include tituloBold($tamanho20, $b1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, normal);
+            }
+    
+            .owl-stage-outer {
+                margin: 0 0 16px 0;
+            }       
+        }   
+        
+        .chamadas {
+            .box-chamada {
+                &.sem-agendamentos, &.sem-historico, &.sem-resultado-de-exames {
+                    h3 {
+                        @include tituloBold($tamanho14, $k5, normal);
+                    }
+        
+                    p {
+                        @include textoRegular($tamanho14, $k5, normal);
+                    }
+                }                  
+                h2 {
+                    @include tituloBold($tamanho20, $b1, normal);
+                }
+    
+                h3 {
+                    @include tituloBold($tamanho14, $b1, normal);
+                }
+    
+                p {
+                    @include tituloRegular($tamanho14, $b1, normal);
+                }  
+            }
+        }        
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #area-logada {
+        margin: 0;
+        padding: 40px 0;
+
+        .botoes {
+            h2 {
+                @include tituloBold($tamanho20, $b1, normal);
+            }
+
+            .owl-carousel {
+                margin: 0;
+                padding: 0;
+
+                .owl-item {
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    text-align: center;
+                }
+
+                .botao-servicos {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+
+                        p {
+                            opacity: 1;
+                            -moz-transition: all 0.2s ease-out;
+                            -webkit-transition: all 0.2s ease-out;
+                            -o-transition: all 0.2s ease-out;
+                            transition: all 0.2s ease-out;
+                        }
+                    }
+
+                    img {
+                        display: none;
+                    }
+
+                    p {
+                        width: 130px;
+                        opacity: 1;
+                        pointer-events: all;
+                        @include tituloBold($tamanho14, $b1, normal);
+                        height: 32px;
+                        border-radius: 23px;
+                        border: 2px solid $g1;
+                        padding: 0 24px;
+                        background-color: transparent;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center
+                    }
+                }
+            }   
+        }
+
+        .retorno {
+            h2 {
+                @include tituloBold($tamanho20, $b1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, normal);
+            }
+    
+            .owl-stage-outer {
+                margin: 0 0 16px 0;
+            }       
+        } 
+
+        .chamadas {
+            .box-chamada {
+                &.sem-agendamentos, &.sem-historico, &.sem-resultado-de-exames {
+                    h3 {
+                        @include tituloBold($tamanho14, $k5, normal);
+                    }
+        
+                    p {
+                        @include textoRegular($tamanho14, $k5, normal);
+                    }
+                }                
+                h2 {
+                    @include tituloBold($tamanho20, $b1, normal);
+                }
+    
+                h3 {
+                    @include tituloBold($tamanho14, $b1, normal);
+                }
+    
+                p {
+                    @include tituloRegular($tamanho14, $b1, normal);
+                }
+
+                .tag-assinatura {
+                    h4 {
+                        @include tituloBold($tamanho12, $g1, normal);
+                        margin: 0;
+                        padding: 4px 8px;
+                        background-color: $b1;
+                        border-radius: 4px;
+                    }
+                }   
+            }
+        }  
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #area-logada {
+        margin: 0;
+        padding: 40px 0;
+
+        .botoes {
+            h2 {
+                @include tituloBold($tamanho20, $b1, normal);
+            }
+
+            .owl-carousel {
+                margin: 0;
+                padding: 0;
+
+                .owl-item {
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    text-align: center;
+                }
+
+                .botao-servicos {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+
+                        p {
+                            opacity: 1;
+                            -moz-transition: all 0.2s ease-out;
+                            -webkit-transition: all 0.2s ease-out;
+                            -o-transition: all 0.2s ease-out;
+                            transition: all 0.2s ease-out;
+                        }
+                    }
+
+                    img {
+                        display: none;
+                    }
+
+                    p {
+                        width: 130px;
+                        opacity: 1;
+                        pointer-events: all;
+                        @include tituloBold($tamanho14, $b1, normal);
+                        height: 32px;
+                        border-radius: 23px;
+                        border: 2px solid $g1;
+                        padding: 0 24px;
+                        background-color: transparent;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center
+                    }
+                }
+            }   
+        }
+
+        .retorno {
+            h2 {
+                @include tituloBold($tamanho20, $b1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, normal);
+            }
+    
+            .owl-stage-outer {
+                margin: 0 0 16px 0;
+            }       
+        } 
+
+        .chamadas {
+            .box-chamada {
+                &.sem-agendamentos, &.sem-historico, &.sem-resultado-de-exames {
+                    h3 {
+                        @include tituloBold($tamanho14, $k5, normal);
+                    }
+        
+                    p {
+                        @include textoRegular($tamanho14, $k5, normal);
+                    }
+                }                   
+                h2 {
+                    @include tituloBold($tamanho20, $b1, normal);
+                }
+    
+                h3 {
+                    @include tituloBold($tamanho14, $b1, normal);
+                }
+    
+                p {
+                    @include tituloRegular($tamanho14, $b1, normal);
+                }
+
+                .buttonSmall-xs {
+                    width: 100% !important;
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+    
+                    li {
+                        .tag-assinatura {
+                            h4 {
+                                @include tituloBold($tamanho10, $g1, normal);
+                                margin: 0;
+                                padding: 4px 8px;
+                                background-color: $b1;
+                                border-radius: 4px;
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+        }  
+    }
+}
+////////////////////
+// FIM RESPONSIVO
+////////////////////

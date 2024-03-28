@@ -1,0 +1,67 @@
+// DUVIDAS
+#duvidas {
+    margin: 0;
+    padding: 80px 0;
+    background-color: white; 
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, normal);
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #duvidas {
+        margin: 0;
+        padding: 40px 0;
+        background-color: white; 
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #duvidas {
+        margin: 0;
+        padding: 40px 0;
+        background-color: white; 
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #duvidas {
+        margin: 0;
+        padding: 40px 0;
+        background-color: white; 
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    }
+}
+////////////////////
+// FIM RESPONSIVO
+////////////////////

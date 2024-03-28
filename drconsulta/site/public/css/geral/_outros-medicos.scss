@@ -1,0 +1,247 @@
+// BOX MEDICOS
+#outros-medicos {
+    padding: 80px 0;
+    background-color: $k2;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, normal);
+    }
+
+    .box-medicos {
+        background-color: white;
+        padding: 32px;
+        border-radius: 4px;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+
+        .img-sem-imagem-man {
+            background-color: white;
+            background-image: url("../../images/img-equipe-man.svg");
+            background-position: center 0;
+            width: 120px;
+            height: 120px;
+            margin: 0;
+            padding: 0;
+            border-radius: 100px;
+        }
+
+        .img-sem-imagem-woman {
+            background-color: white;
+            background-image: url("../../images/img-equipe-woman.svg");
+            background-position: center 0;
+            width: 120px;
+            height: 120px;
+            margin: 0;
+            padding: 0;
+            border-radius: 100px;
+        }        
+
+        .img {
+            background-image: url("https://s2pics.s3.amazonaws.com/profissionais/fotos/102033_m.jpg");
+            background-position: center 0;
+            background-size: 120px 171px;
+            width: 120px;
+            height: 120px;
+            margin: 0;
+            padding: 0;
+            border-radius: 100px;
+        }
+        
+        .content {
+            h3 {
+                @include tituloBold($tamanho24, $b1, $tamanho20);
+                margin: 0 0 8px 0;
+                padding: 0;
+            }
+    
+            .crm {
+                @include textoRegular($tamanho12, $k5, normal);
+                margin: 0;
+                padding: 0;
+            }
+    
+            .especialidade {
+                @include textoRegular($tamanho14, $k5, normal);
+                margin: 0;
+                padding: 0;
+            }
+    
+            .disponibilidade {
+                @include textoRegular($tamanho12, $b1, normal);
+                margin: 8px 0 0 0;
+                padding: 0;
+            }
+        }
+
+        &:hover {
+            text-decoration: none !important;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+    }
+    
+}
+
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #outros-medicos {
+        padding: 40px 0;
+        background-color: $k2;
+    
+        h2 {
+            @include tituloBold($tamanho24, $b1, normal);
+        }
+
+        .box-medicos {
+            padding: 24px;
+
+            .content {
+                h3 {
+                    @include tituloBold($tamanho20, $b1, normal);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                }
+        
+                .crm {
+                    @include textoRegular($tamanho12, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                .especialidade {
+                    @include textoRegular($tamanho14, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                .disponibilidade {
+                    @include textoRegular($tamanho12, $b1, normal);
+                    margin: 8px 0 0 0;
+                    padding: 0;
+                }
+            }
+
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+    
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #outros-medicos {
+        padding: 40px 0;
+        background-color: $k2;
+    
+        h2 {
+            @include tituloBold($tamanho24, $b1, normal);
+        }
+
+        .box-medicos {
+            padding: 24px;
+
+            .content {
+                h3 {
+                    @include tituloBold($tamanho20, $b1, normal);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                }
+        
+                .crm {
+                    @include textoRegular($tamanho12, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                .especialidade {
+                    @include textoRegular($tamanho14, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                }
+        
+                .disponibilidade {
+                    @include textoRegular($tamanho12, $b1, normal);
+                    margin: 8px 0 0 0;
+                    padding: 0;
+                }
+            }
+
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #outros-medicos {
+        padding: 40px 0;
+        background-color: $k2;
+    
+        h2 {
+            @include tituloBold($tamanho24, $b1, normal);
+        }
+
+        .box-medicos {
+            padding: 24px;
+            text-decoration: none;
+
+            .content {
+                h3 {
+                    @include tituloBold($tamanho20, $b1, normal);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                    text-align: center;
+                }
+        
+                .crm {
+                    @include textoRegular($tamanho12, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+        
+                .especialidade {
+                    @include textoRegular($tamanho14, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+        
+                .disponibilidade {
+                    @include textoRegular($tamanho12, $b1, normal);
+                    margin: 8px 0 0 0;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+
+        
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

@@ -1,0 +1,236 @@
+// ESPECIALIDADES
+#especialidades {
+    margin: 0;
+    padding: 80px 0;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    
+    .box-especialidades-esquerdo {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 8px;
+    }
+    
+    .box-especialidades-direito {
+        width: 50%;
+        padding-left: 8px;
+        padding-right: 15px;
+    }
+    
+    .box-especialidades {
+        background-color: white;
+        border-radius: 8px;
+        margin: 0;
+        padding: 24px;
+
+        p {
+            @include tituloBold($tamanho16, $k5, $tamanho16);
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        img {
+            width: 22px;
+            height: 16px;
+            margin-left: 16px;
+        }
+
+        &:hover {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            text-decoration: none;
+
+            p {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #especialidades {
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        
+        .box-especialidades-esquerdo {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .box-especialidades-direito {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .box-especialidades {
+            p {
+                @include tituloBold($tamanho14, $k5, $tamanho14);
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+    
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                text-decoration: none;
+    
+                p {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .botao-lista-completa {
+            width: calc(100% - 30px);
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #especialidades {
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        
+        .box-especialidades-esquerdo {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .box-especialidades-direito {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .box-especialidades {
+            p {
+                @include tituloBold($tamanho14, $k5, $tamanho14);
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+    
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                text-decoration: none;
+    
+                p {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .botao-lista-completa {
+            width: calc(100% - 30px);
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #especialidades {
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        
+        .box-especialidades-esquerdo {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .box-especialidades-direito {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .box-especialidades {
+            p {
+                @include tituloBold($tamanho14, $k5, $tamanho14);
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+    
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                text-decoration: none;
+    
+                p {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .botao-lista-completa {
+            width: calc(100% - 30px);
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

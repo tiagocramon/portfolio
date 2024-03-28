@@ -1,0 +1,157 @@
+// COMO AGENDAR
+#como-agendar {
+    background-color: $k2;
+    margin: 0;
+    padding: 80px 0;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    .box-como-agendar {
+        border-radius: 4px;
+        background-color: white;
+        margin: 0;
+        padding: 24px;
+
+        h3 {
+            width: 64px;
+            height: 64px;
+            background-color: $g1;
+            border-radius: 100%;
+            @include tituloBold($tamanho24, $b1, $tamanho24);
+            margin: 0;
+            padding: 0;
+        }
+
+        h4 {
+            @include tituloBold($tamanho24, $b1, $tamanho24);
+            margin: 0;
+            padding: 0 0 0 16px;
+            width: calc(100% - 80px);
+        }
+
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho18);
+            margin: 0;
+            padding: 0;
+        }
+    }
+  
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #como-agendar {
+        background-color: $k2;
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        .box-como-agendar {
+            h3 {
+                width: 56px;
+                height: 56px;
+                background-color: $g1;
+                border-radius: 100%;
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+                margin: 0;
+                padding: 0;
+            }
+    
+            h4 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+                margin: 0;
+                padding: 0 0 0 16px;
+                width: calc(100% - 72px);
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #como-agendar {
+        background-color: $k2;
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        .box-como-agendar {
+            h3 {
+                width: 56px;
+                height: 56px;
+                background-color: $g1;
+                border-radius: 100%;
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+                margin: 0;
+                padding: 0;
+            }
+    
+            h4 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+                margin: 0;
+                padding: 0 0 0 16px;
+                width: calc(100% - 72px);
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #como-agendar {
+        background-color: $k2;
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        .box-como-agendar {
+            h3 {
+                width: 56px;
+                height: 56px;
+                background-color: $g1;
+                border-radius: 100%;
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+                margin: 0;
+                padding: 0;
+            }
+    
+            h4 {
+                @include tituloBold($tamanho20, $b1, $tamanho20);
+                margin: 0;
+                padding: 0 0 0 16px;
+                width: calc(100% - 72px);
+            }
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

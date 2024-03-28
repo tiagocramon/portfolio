@@ -1,0 +1,148 @@
+#parallax {
+    position: absolute;
+    z-index: 1000;
+    width: 1920px;
+    margin: 0 0 0 -960px;
+    padding: 0;
+    left: 50%;
+    pointer-events: none;
+
+    .circle-01 {
+        position: absolute;
+        margin: -60px 0 0 926px;
+        pointer-events: none;
+      }
+
+      .circle-02 {
+        position: absolute;
+        margin: 157px 0 0 1363px;
+        pointer-events: none;
+      }
+
+      .circle-03 {
+        position: absolute;
+        margin: 355px 0 0 452px;
+        pointer-events: none;
+      }
+
+      .circle-04 {
+        position: absolute;
+        margin: 448px 0 0 1440px;
+        pointer-events: none;
+      }
+
+      .circle-05 {
+        position: absolute;
+        margin: 821px 0 0 253px;
+        pointer-events: none;
+      }
+
+      .circle-06 {
+        position: absolute;
+        margin: 1040px 0 0 1485px;
+        pointer-events: none;
+      }
+
+      .circle-07 {
+        position: absolute;
+        margin: 1600px 0 0 340px;
+        pointer-events: none;
+      }
+
+      .circle-08 {
+        position: absolute;
+        margin: 2150px 0 0 1716px;
+        pointer-events: none;
+      }
+
+      .circle-09 {
+        position: absolute;
+        margin: 2630px 0 0 1446px;
+        pointer-events: none;
+      }
+
+      .circle-10 {
+        position: absolute;
+        margin: 2810px 0 0 162px;
+        pointer-events: none;
+      }
+
+      .circle-11 {
+        position: absolute;
+        margin: 3090px 0 0 478px;
+        pointer-events: none;
+      }
+
+      .circle-12 {
+        position: absolute;
+        margin: 3235px 0 0 1272px;
+        pointer-events: none;
+      }
+
+      .circle-13 {
+        position: absolute;
+        margin: 3902px 0 0 340px;
+        pointer-events: none;
+      }
+
+      .circle-14 {
+        position: absolute;
+        margin: 3681px 0 0 1478px;
+        pointer-events: none;
+      }
+
+      .circle-01-obrigado {
+        position: absolute;
+        margin: -40px 0 0 1153px;
+        pointer-events: none;
+      }
+
+      .circle-02-obrigado {
+        position: absolute;
+        margin: 380px 0 0 496px;
+        pointer-events: none;
+      }
+
+      .circle-03-obrigado {
+        position: absolute;
+        margin: 475px 0 0 1355px;
+        pointer-events: none;
+      }      
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* FIM LARGE */
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+  #parallax {
+    display: none;
+  }
+}
+/* FIM MEDIUM */
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+  #parallax {
+    display: none;
+  }
+}
+/* FIM SMALL */
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  #parallax {
+    display: none;
+  }
+}
+/* FIM EXTRA SMALL */
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

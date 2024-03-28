@@ -1,0 +1,173 @@
+// BANNER SERVICOS DETALHES
+#banner-servicos-detalhes {
+    margin: 0;
+    padding: 140px 0 80px 0;
+    background-color: $b1;
+
+    .bread-crumb {
+        a {
+            @include textoBold($tamanho14, $g1, normal);
+            text-decoration: underline;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;  
+
+            &:hover {
+                color: $g2;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;  
+            }
+        }
+
+        span {
+            @include textoBold($tamanho14, white, normal);
+        }
+
+        p {
+            @include textoBold($tamanho14, white, normal);
+        }
+    }
+
+    h1 {
+        @include tituloBold($tamanho40, $g1, $tamanho40);
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-ver-preco {
+        margin: 0;
+        padding: 0;
+
+        h3 {
+            @include tituloBold($tamanho18, $g1, normal);
+            margin: 0 0 4px 0;
+            padding: 0;
+        }
+
+        p {
+            @include tituloRegular($tamanho14, white, normal);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .tag-assinatura {
+        h4 {
+            @include tituloBold($tamanho12, $b1, normal);
+            margin: 0;
+            padding: 4px 8px;
+            background-color: $g1;
+            border-radius: 4px;
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #banner-servicos-detalhes {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background: $b1;
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-ver-preco {
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                @include tituloBold($tamanho18, $g1, normal);
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                @include tituloRegular($tamanho14, white, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #banner-servicos-detalhes {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background: $b1;
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-ver-preco {
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                @include tituloBold($tamanho18, $g1, normal);
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                @include tituloRegular($tamanho14, white, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #banner-servicos-detalhes {
+        margin: 0;
+        padding: 93px 0 40px 0;
+        background: $b1;
+
+        h1 {
+            @include tituloBold($tamanho32, $g1, $tamanho32);
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-ver-preco {
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                @include tituloBold($tamanho18, $g1, normal);
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                @include tituloRegular($tamanho14, white, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

@@ -1,0 +1,1012 @@
+// LISTAGEM SERVICOS
+#listagem-servicos-doutores {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k1;
+
+    .pesquisa {
+        margin: 0 0 32px 0;
+        padding: 0;
+
+        button {
+            display: none;
+        }
+
+        .qual-unidade,
+        .qual-especialidade,
+        .ordenacao {
+            margin: 0;
+            padding: 0;
+
+            label {
+                margin: 0 8px 0 0;
+            }
+
+            select {
+                background-color: white !important;
+            }
+        }
+    }
+
+    .nenhum-resultado-encontrado {
+        background-color: $k2;
+        padding: 24px;
+        border-radius: 4px;
+
+        h2 {
+            @include tituloBold($tamanho24, $a2, normal);
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            @include textoRegular($tamanho16, $a2, normal);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .chamada-yalo {
+        @include tituloRegular($tamanho14, $k5, $tamanho14);
+        margin: 0 0 32px 0;
+        padding: 16px;
+        border: 1px solid $k3;
+        border-radius: 4px;
+        text-align: center;
+
+        span {
+            @include tituloBold($tamanho14, $k5, $tamanho14);
+        }
+    }
+
+    .escolhido-por-voce {
+        border: 1px solid $k3;
+        border-radius: 4px;
+        padding: 24px;
+
+        h2 {
+            @include tituloBold($tamanho24, $b1, normal);
+        }
+
+        p {
+            @include textoRegular($tamanho16, $b1, normal);
+        }
+
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+    
+        .owl-dots {
+            height: 16px;
+            margin: 0;
+            padding: 0;
+    
+            .owl-dot {
+                &:focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+                span {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0 8px;
+                    padding: 0;
+                    background: transparent;
+                    border: 1px solid $b1;
+    
+                    &:hover {
+                        background: $b1;
+                    }
+                }
+            }
+    
+            .owl-dot.active {
+                &:focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+                span {
+                    width: 16px;
+                    height: 16px;
+                    margin: 0 8px;
+                    padding: 0;
+                    background: $b1;
+                    border: none;
+                }
+            }
+        }        
+    }    
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0 0 16px 0;
+            padding: 24px;
+            background-color: white;
+            border-radius: 4px;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+
+            &:last-of-type {
+                margin: 0;
+            }
+
+            &:hover {
+                box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            a.link-detalhes {
+                @include tituloBold($tamanho16, $k5, $tamanho16);
+                margin: 0 56px 0 0;
+                padding: 0;
+                //white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    color: $p1;
+                    text-decoration: none;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+
+            p.link-detalhes {
+                @include tituloBold($tamanho16, $k5, $tamanho16);
+                margin: 0 56px 0 0;
+                padding: 0;
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            p.especialidade {
+                @include textoRegular($tamanho14, $k5, $tamanho14);
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            p.crm {
+                @include textoRegular($tamanho14, $k4, $tamanho14);
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+            }
+
+            .img-sem-imagem-man {
+                background-color: white;
+                background-image: url("../../images/img-equipe-man-small.svg");
+                background-position: center 0;
+                background-size: 52px 52px;
+                width: 52px;
+                height: 52px;
+                margin: 0;
+                padding: 0;
+                border-radius: 100px;
+                border: 2px solid $k3;
+            }
+    
+            .img-sem-imagem-woman {
+                background-color: white;
+                background-image: url("../../images/img-equipe-woman-small.svg");
+                background-position: center 0;
+                background-size: 52px 52px;
+                width: 52px;
+                height: 52px;
+                margin: 0;
+                padding: 0;
+                border-radius: 100px;
+                border: 2px solid $k3;
+            }        
+    
+            .img {
+                background-image: url("https://s2pics.s3.amazonaws.com/profissionais/fotos/102033_m.jpg");
+                background-position: center 0;
+                background-size: 52px 74px;
+                width: 52px;
+                height: 52px;
+                margin: 0;
+                padding: 0;
+                border-radius: 100px;
+            }
+
+            .txt {
+                width: 130.85px;
+                @include tituloRegular($tamanho14, $k5, normal);
+                margin: 0;
+                padding: 0;
+
+                span {
+                    @include tituloBold($tamanho14, $b1, normal);
+                }
+            }
+
+            .ver-preco {
+                margin: 0 8px 0 0;
+            }
+
+            .box-ver-preco {
+                margin: 0 8px 0 0;
+                padding: 0;
+                width: 143px;
+                min-height: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h3 {
+                    @include tituloBold($tamanho16, $b1, normal);
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p {
+                    @include tituloRegular($tamanho14, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .tag-assinatura {
+                width: max-content;
+                margin: 0 8px 0 0;
+                h4 {
+                    @include tituloBold($tamanho12, $g1, normal);
+                    margin: 0;
+                    padding: 4px 8px;
+                    background-color: $b1;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #listagem-servicos-doutores {
+        margin: 0;
+        padding: 40px 0;
+
+        .pesquisa {
+            margin: 0 0 24px 0;
+            padding: 0;
+
+            button {
+                display: inline-flex;
+                height: 20px;
+                pointer-events: all;
+                @include tituloBold($tamanho14, $b1, normal);
+                background-color: transparent;
+                border-radius: none;
+                border: none;
+                cursor: pointer;
+                width: max-content;
+
+                &:before {
+                    height: 20px;
+                    content: url("../../images/icon-filtro.svg");
+                    padding: 0 8px 0 0;
+                }
+
+                &:focus {
+                    box-shadow: none !important;
+                    outline: none !important;
+                }
+            }
+
+            .active {
+                @include tituloBold($tamanho14, $p1, normal);
+
+                &:before {
+                    content: url("../../images/icon-filtro-active.svg");
+                }
+            }
+
+            .qual-unidade,
+            .qual-especialidade,
+            .ordenacao {
+                margin: 0;
+                padding: 0;
+
+                label {
+                    margin: 0 0 4px 0;
+                }
+            }
+        }
+
+        .nenhum-resultado-encontrado {
+            background-color: $k2;
+            padding: 16px;
+            border-radius: 4px;
+    
+            h2 {
+                @include tituloBold($tamanho20, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }        
+
+        .chamada-yalo {
+            @include tituloRegular($tamanho12, $k5, $tamanho12);
+            margin: 0 0 24px 0;
+            padding: 16px;
+            border: 1px solid $k3;
+            border-radius: 4px;
+            text-align: center;
+    
+            span {
+                @include tituloBold($tamanho12, $k5, $tamanho12);
+            }
+        }  
+
+        .escolhido-por-voce {
+            h2 {
+                @include tituloBold($tamanho20, $b1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, normal);
+            }
+    
+            .owl-stage-outer {
+                margin: 0 0 16px 0;
+            }       
+        }  
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 0 8px 0;
+                padding: 24px;
+                background-color: white;
+                border-radius: 4px;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                &:hover {
+                    box-shadow: none;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+
+                a.link-detalhes {
+                    @include tituloBold($tamanho14, $k5, $tamanho14);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                    white-space: normal;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+
+                    &:hover {
+                        color: $p1;
+                        text-decoration: none;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+
+                p.link-detalhes {
+                    @include tituloBold($tamanho14, $k5, $tamanho14);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                    white-space: normal;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }          
+                
+                .btn-incluir-orcamento {
+                    pointer-events: all;
+                    @include tituloBold($tamanho12, $p1, normal);
+                    background-color: transparent;
+                    border-radius: none;
+                    border: none;
+                    cursor: pointer;
+                    width: max-content;
+                    margin-top: 0;
+                    margin-bottom: 8px;
+    
+                    &:focus {
+                        box-shadow: none !important;
+                        outline: none !important;
+                    }
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }                
+
+                .txt {
+                    width: 106.47px;
+                    @include tituloRegular($tamanho12, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                    span {
+                        @include tituloBold($tamanho12, $b1, normal);
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .base-ver-preco {
+                    width: calc(100% - 106.47px);
+                }
+
+                .ver-preco {
+                    margin: 0 0 0 8px;
+                }
+
+                .box-ver-preco {
+                    margin: 0 0 0 8px;
+                    padding: 0;
+                    width: max-content;
+                    min-height: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h3 {
+                        @include tituloBold($tamanho14, $b1, normal);
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    p {
+                        @include tituloRegular($tamanho12, $k5, normal);
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .tag-assinatura {
+                    margin: 0;
+                    h4 {
+                        @include tituloBold($tamanho12, $g1, normal);
+                        margin: 0;
+                        padding: 4px 8px;
+                        background-color: $b1;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #listagem-servicos-doutores {
+        margin: 0;
+        padding: 40px 0;
+
+        .pesquisa {
+            margin: 0 0 24px 0;
+            padding: 0;
+
+            button {
+                display: inline-flex;
+                height: 20px;
+                pointer-events: all;
+                @include tituloBold($tamanho14, $b1, normal);
+                background-color: transparent;
+                border-radius: none;
+                border: none;
+                cursor: pointer;
+                width: max-content;
+
+                &:before {
+                    height: 20px;
+                    content: url("../../images/icon-filtro.svg");
+                    padding: 0 8px 0 0;
+                }
+
+                &:focus {
+                    box-shadow: none !important;
+                    outline: none !important;
+                }
+            }
+
+            .active {
+                @include tituloBold($tamanho14, $p1, normal);
+
+                &:before {
+                    content: url("../../images/icon-filtro-active.svg");
+                }
+            }
+
+            .qual-unidade,
+            .qual-especialidade,
+            .ordenacao {
+                margin: 0;
+                padding: 0;
+
+                label {
+                    margin: 0 0 4px 0;
+                }
+            }
+        }
+
+        .nenhum-resultado-encontrado {
+            background-color: $k2;
+            padding: 16px;
+            border-radius: 4px;
+    
+            h2 {
+                @include tituloBold($tamanho20, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }          
+
+        .chamada-yalo {
+            @include tituloRegular($tamanho12, $k5, $tamanho12);
+            margin: 0 0 24px 0;
+            padding: 16px;
+            border: 1px solid $k3;
+            border-radius: 4px;
+            text-align: center;
+    
+            span {
+                @include tituloBold($tamanho12, $k5, $tamanho12);
+            }
+        }  
+
+        .escolhido-por-voce {
+            h2 {
+                @include tituloBold($tamanho20, $b1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, normal);
+            }
+    
+            .owl-stage-outer {
+                margin: 0 0 16px 0;
+            }       
+        } 
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 0 8px 0;
+                padding: 24px;
+                background-color: white;
+                border-radius: 4px;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                &:hover {
+                    box-shadow: none;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+
+                a.link-detalhes {
+                    @include tituloBold($tamanho14, $k5, $tamanho14);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                    white-space: normal;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+
+                    &:hover {
+                        color: $p1;
+                        text-decoration: none;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+
+                p.link-detalhes {
+                    @include tituloBold($tamanho14, $k5, $tamanho14);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                    white-space: normal;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }   
+
+                .btn-incluir-orcamento {
+                    pointer-events: all;
+                    @include tituloBold($tamanho12, $p1, normal);
+                    background-color: transparent;
+                    border-radius: none;
+                    border: none;
+                    cursor: pointer;
+                    width: max-content;
+                    margin-top: 0;
+                    margin-bottom: 8px;
+    
+                    &:focus {
+                        box-shadow: none !important;
+                        outline: none !important;
+                    }
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }                  
+
+                .txt {
+                    width: 106.47px;
+                    @include tituloRegular($tamanho12, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                    span {
+                        @include tituloBold($tamanho12, $b1, normal);
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .base-ver-preco {
+                    width: calc(100% - 106.47px);
+                }                
+
+                .ver-preco {
+                    margin: 0 0 0 8px;
+                }
+
+                .box-ver-preco {
+                    margin: 0 0 0 8px;
+                    padding: 0;
+                    width: max-content;
+                    min-height: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h3 {
+                        @include tituloBold($tamanho14, $b1, normal);
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    p {
+                        @include tituloRegular($tamanho12, $k5, normal);
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .tag-assinatura {
+                    margin: 0;
+                    h4 {
+                        @include tituloBold($tamanho12, $g1, normal);
+                        margin: 0;
+                        padding: 4px 8px;
+                        background-color: $b1;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #listagem-servicos-doutores {
+        margin: 0;
+        padding: 40px 0;
+
+        .pesquisa {
+            margin: 0 0 24px 0;
+            padding: 0;
+
+            button {
+                display: inline-flex;
+                height: 20px;
+                pointer-events: all;
+                @include tituloBold($tamanho14, $b1, normal);
+                background-color: transparent;
+                border-radius: none;
+                border: none;
+                cursor: pointer;
+                width: max-content;
+
+                &:before {
+                    height: 20px;
+                    content: url("../../images/icon-filtro.svg");
+                    padding: 0 8px 0 0;
+                }
+
+                &:focus {
+                    box-shadow: none !important;
+                    outline: none !important;
+                }
+            }
+
+            .active {
+                @include tituloBold($tamanho14, $p1, normal);
+
+                &:before {
+                    content: url("../../images/icon-filtro-active.svg");
+                }
+            }
+
+            .qual-unidade,
+            .qual-especialidade,
+            .ordenacao {
+                margin: 0;
+                padding: 0;
+
+                label {
+                    margin: 0 0 4px 0;
+                }
+            }
+        }
+
+        .nenhum-resultado-encontrado {
+            background-color: $k2;
+            padding: 16px;
+            border-radius: 4px;
+    
+            h2 {
+                @include tituloBold($tamanho20, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $a2, normal);
+                margin: 0;
+                padding: 0;
+            }
+        }          
+
+        .chamada-yalo {
+            @include tituloRegular($tamanho12, $k5, $tamanho12);
+            margin: 0 0 24px 0;
+            padding: 16px;
+            border: 1px solid $k3;
+            border-radius: 4px;
+            text-align: center;
+    
+            span {
+                @include tituloBold($tamanho12, $k5, $tamanho12);
+            }
+        }  
+
+        .escolhido-por-voce {
+            h2 {
+                @include tituloBold($tamanho20, $b1, normal);
+            }
+    
+            p {
+                @include textoRegular($tamanho14, $b1, normal);
+            }
+    
+            .owl-stage-outer {
+                margin: 0 0 16px 0;
+            }       
+        } 
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+            
+                margin: 0 0 8px 0;
+                padding: 24px;
+                background-color: white;
+                border-radius: 4px;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                &:hover {
+                    box-shadow: none;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+
+                a.link-detalhes {
+                    @include tituloBold($tamanho14, $k5, $tamanho14);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                    white-space: normal;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+
+                    &:hover {
+                        color: $p1;
+                        text-decoration: none;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;
+                    }
+                }
+
+                p.link-detalhes {
+                    @include tituloBold($tamanho14, $k5, $tamanho14);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                    white-space: normal;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }   
+
+                .btn-incluir-orcamento {
+                    pointer-events: all;
+                    @include tituloBold($tamanho12, $p1, normal);
+                    background-color: transparent;
+                    border-radius: none;
+                    border: none;
+                    cursor: pointer;
+                    width: max-content;
+                    margin-top: 0;
+                    margin-bottom: 8px;
+    
+                    &:focus {
+                        box-shadow: none !important;
+                        outline: none !important;
+                    }
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }                  
+
+                .txt {
+                    width: 106.47px;
+                    @include tituloRegular($tamanho12, $k5, normal);
+                    margin: 0;
+                    padding: 0;
+                    span {
+                        @include tituloBold($tamanho12, $b1, normal);
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .base-ver-preco {
+                    width: calc(100% - 106.47px);
+                }                
+
+                .ver-preco {
+                    margin: 0 0 0 8px;
+                }
+
+                .box-ver-preco {
+                    margin: 0 0 0 8px;
+                    padding: 0;
+                    width: max-content;
+                    min-height: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h3 {
+                        @include tituloBold($tamanho14, $b1, normal);
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    p {
+                        @include tituloRegular($tamanho12, $k5, normal);
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .tag-assinatura {
+                    margin: 0 0 0 8px;
+                    h4 {
+                        @include tituloBold($tamanho10, $g1, normal);
+                        margin: 0;
+                        padding: 0 8px;
+                        background-color: $b1;
+                        border-radius: 4px;
+                        width: min-content;
+                        height: 32px;
+                        word-wrap: break-word;
+                    }
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

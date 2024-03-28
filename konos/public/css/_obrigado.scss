@@ -1,0 +1,115 @@
+#section {
+    h1 {
+      @include fontBold(35px, $colorBlue);
+      text-align: center;
+    }
+    h2 {
+      @include fontRegular(28px, $colorGrayLight);
+      text-align: center;
+      span {
+        @include fontBold(28px, $colorGrayLight);
+      }
+    }
+
+    button {
+        pointer-events: all;
+        @include fontRegular(14px, $colorGrayLight);
+        height: 40px;
+        line-height: 40px;
+        background-color: $colorBlue;
+        border-radius: 4px;
+        border: none;
+        padding: 0 20px;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        &:hover {
+          background-color: $colorBlueHover;
+          -moz-transition: all 0.2s ease-out;
+          -webkit-transition: all 0.2s ease-out;
+          -o-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+        }
+        &:focus {
+          outline: none !important;
+          box-shadow: none !important;
+        }
+      }    
+  }
+  
+  ////////////////////
+  // RESPONSIVO
+  ////////////////////
+  
+  /* LARGE */
+  @media (min-width: 992px) and (max-width: 1199px) {
+  
+  }
+  /* FIM LARGE */ 
+  
+  /* MEDIUM */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #section {
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 23px;
+        span {
+          font-size: 23px;
+        }
+      }
+      p {
+        font-size: 12px;
+      }
+  
+    }
+  }
+  /* FIM MEDIUM */
+  
+  /* SMALL */
+  @media (min-width: 576px) and (max-width: 767px) {
+    #section {
+        h1 {
+            font-size: 30px;
+        }
+         h2 {
+            font-size: 23px;
+            span {
+                font-size: 23px;
+            }
+        }
+    }  
+  }
+  /* FIM SMALL */
+  
+  /* EXTRA SMALL */
+  @media (max-width: 575px) {
+        #section {       
+      h1 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 23px;
+        span {
+          font-size: 23px;
+        }
+      }
+
+    } 
+  }
+
+  @media (max-width: 321px) {
+    #section {       
+  img {
+      width: 100%;
+  }
+
+} 
+}
+  /* FIM EXTRA SMALL */
+  
+  ////////////////////
+  // FIM RESPONSIVO
+  ////////////////////

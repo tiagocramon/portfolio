@@ -1,0 +1,567 @@
+// FOOTER
+#footer {
+    margin: 0;
+    padding: 80px 0;
+    background-color: white;
+
+    .logo-institucional {
+        margin: 0 0 32px 0;
+        padding: 0;
+
+        img {
+            width: 140px;
+            height: 21px;
+            margin: 0 0 8px 0;
+            padding: 0;
+        }
+
+        p {
+            @include tituloRegular($tamanho14, $b1, $tamanho14);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .botoes-servicos {
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    .botoes-institucional {
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    .botoes-ajuda {
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    .botoes-pacientes {
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        @include tituloBold($tamanho14, $p1, $tamanho14);
+        margin: 0 0 8px 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+
+        &:hover {
+            text-decoration: none;
+            color: $p2 !important;
+            -moz-transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        &:focus {
+            box-shadow: none !important;
+            outline: none !important;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            @include textoRegular($tamanho14, $k5, $tamanho14);
+            margin: 0 16px 0 0;
+            padding: 0;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                @include textoRegular($tamanho14, $k5, $tamanho14);
+                margin: 0;
+                padding: 0;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:focus {
+                    box-shadow: none !important;
+                    outline: none !important;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: $p1;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+        }
+    }
+
+    .social-media {
+        margin: 0 0 32px 0;
+        padding: 0;
+
+        h3 {
+            @include tituloBold($tamanho14, $p1, $tamanho14);
+            margin: 0 0 8px 0;
+            padding: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 16px 0 0;
+                padding: 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                a {
+                    margin: 0;
+                    padding: 0;
+
+                    &:focus {
+                        box-shadow: none !important;
+                        outline: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .baixe-app {
+        margin: 0;
+        padding: 0;
+
+        h3 {
+            @include tituloRegular($tamanho24, $k5, $tamanho24);
+            margin: 0 0 8px 0;
+            padding: 0;
+
+            span {
+                @include tituloBold($tamanho24, $k5, $tamanho24);
+            }
+        }
+
+        p {
+            @include textoRegular($tamanho14, $k5, $tamanho14);
+            margin: 0 0 16px 0;
+            padding: 0;
+        }
+
+        .logos-lojas {
+            margin: 0;
+            padding: 0;
+
+            a {
+                margin: 0 0 8px 0;
+                padding: 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                img {
+                    width: 160px;
+                    height: 48px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .forma-de-pagamento {
+        margin: 0;
+        padding: 0;
+
+        h3 {
+            @include tituloBold($tamanho14, $p1, $tamanho14);
+            margin: 0 0 16px 0;
+            padding: 0;
+        }
+
+        .box-bandeiras {
+            margin: 0 48px 0 0;
+            padding: 0;
+
+            &:last-child {
+                margin: 0;
+                padding: 0;
+            }
+
+            h4 {
+                @include textoRegular($tamanho12, $k5, $tamanho12);
+                margin: 0;
+                padding: 0;
+            }
+
+            p {
+                @include textoRegular($tamanho10, $k5, $tamanho10);
+                margin: 0 0 8px 0;
+                padding: 0;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: 0 8px 0 0;
+                    padding: 0;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    img {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .box-yalo {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: $k1;
+            border: 1px solid $k3;
+            border-radius: 4px;
+
+            p {
+                @include textoRegular($tamanho12, $b1, $tamanho12);
+                padding: 16px;
+            }
+
+            .box-img {
+                background-color: $b1;
+                padding: 16px;
+                border-radius: 4px;
+
+                img {
+                    width: 100px;
+                    height: 50px;
+                    margin: 0;
+                }
+            }
+            &:hover {
+                text-decoration: none;
+                p {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .restricao {
+        p {
+            @include textoRegular($tamanho12, $k5, $tamanho14);
+            margin: 0;
+            padding: 0;
+
+            span {
+                @include textoBold($tamanho12, $k5, $tamanho14);
+            }
+            
+            a {
+                @include textoBold($tamanho12, $k5, $tamanho14);
+                text-decoration: none;
+
+                &:hover {
+                    color: $p1;
+                }
+            }
+        }
+    }
+
+    .divisao {
+        border-bottom: 1px solid $k3;
+        margin: 0 0 32px 0;
+        padding: 32px 0 0 0;
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #footer {
+        .botoes-pacientes {
+            margin: 0 0 32px 0;
+            padding: 0;
+        }
+
+        .baixe-app {
+            .logos-lojas {
+                a {
+                    margin: 0 8px 0 0;
+                    padding: 0;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .forma-de-pagamento {
+            .box-bandeiras {
+                margin: 0 32px 0 0;
+                padding: 0;
+
+                &:last-child {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .box-yalo {
+                width: 100%;
+                max-width: 255px;
+                margin: 32px 0 0 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #footer {
+        margin: 0;
+        padding: 40px 0;
+
+        .botoes-pacientes {
+            margin: 0 0 32px 0;
+            padding: 0;
+        }
+
+        button {
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid $k3;
+            padding-bottom: 8px;
+            background-image: url("../../images/icon-mais.svg");
+            background-position: right top 4px;
+            background-repeat: no-repeat;
+        }
+
+        ul {
+            li {
+                @include textoRegular($tamanho14, $k5, $tamanho14);
+                margin: 0 0 8px 0;
+                padding: 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .baixe-app {
+            .logos-lojas {
+                a {
+                    margin: 0 8px 0 0;
+                    padding: 0;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    img {
+                        width: 133px;
+                        height: 40px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .forma-de-pagamento {
+            .box-bandeiras {
+                margin: 0 0 16px 0;
+                padding: 0;
+            }
+
+            .box-yalo {
+                width: 100%;
+                max-width: 255px;
+                margin: 16px 0 0 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #footer {
+        margin: 0;
+        padding: 40px 0;
+
+        .botoes-pacientes {
+            margin: 0 0 32px 0;
+            padding: 0;
+        }
+
+        button {
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid $k3;
+            padding-bottom: 8px;
+            background-image: url("../../images/icon-mais.svg");
+            background-position: right top 4px;
+            background-repeat: no-repeat;
+        }
+
+        ul {
+            li {
+                @include textoRegular($tamanho14, $k5, $tamanho14);
+                margin: 0 0 8px 0;
+                padding: 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .baixe-app {
+            .logos-lojas {
+                a {
+                    margin: 0 8px 0 0;
+                    padding: 0;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    img {
+                        width: 133px;
+                        height: 40px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .forma-de-pagamento {
+            .box-bandeiras {
+                margin: 0 0 16px 0;
+                padding: 0;
+            }
+
+            .box-yalo {
+                width: 100%;
+                max-width: 255px;
+                margin: 16px 0 0 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #footer {
+        margin: 0;
+        padding: 40px 0;
+
+        .botoes-pacientes {
+            margin: 0 0 32px 0;
+            padding: 0;
+        }
+
+        button {
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid $k3;
+            padding-bottom: 8px;
+            background-image: url("../../images/icon-mais.svg");
+            background-position: right top 4px;
+            background-repeat: no-repeat;
+        }
+
+        ul {
+            li {
+                @include textoRegular($tamanho14, $k5, $tamanho14);
+                margin: 0 0 8px 0;
+                padding: 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .baixe-app {
+            .logos-lojas {
+                a {
+                    margin: 0 8px 0 0;
+                    padding: 0;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    img {
+                        width: 133px;
+                        height: 40px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .forma-de-pagamento {
+            .box-bandeiras {
+                margin: 0 0 16px 0;
+                padding: 0;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                ul {
+                    li {
+                        margin: 8px 8px 0 0;
+                        padding: 0;
+
+                        &:last-child {
+                            margin: 8px 0 0 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            .box-yalo {
+                width: 100%;
+                max-width: 255px;
+                margin: 16px 0 0 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

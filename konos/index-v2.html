@@ -1,0 +1,415 @@
+<?php header("Access-Control-Allow-Origin: *"); ?>
+
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/particules.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/base.css">
+    <link href="public/images/icon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Konos</title>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T6JJW9K');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6JJW9K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!-- Parallax -->
+    <div id="parallax">
+        <div class="circle-01" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <img src="public/images/circle-01.png">
+        </div>
+        <div class="circle-02" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <img src="public/images/circle-02.png">
+        </div>
+        <div class="circle-03" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <img src="public/images/circle-03.png">
+        </div>
+        <div class="circle-04" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <img src="public/images/circle-04.png">
+        </div>
+        <div class="circle-05" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <img src="public/images/circle-05.png">
+        </div>
+        <div class="circle-06" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <img src="public/images/circle-06.png">
+        </div>
+        <div class="circle-07" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <img src="public/images/circle-07.png">
+        </div>
+        <div class="circle-08" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <img src="public/images/circle-08.png">
+        </div>
+        <div class="circle-09" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <img src="public/images/circle-09.png">
+        </div>
+        <div class="circle-10" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <img src="public/images/circle-10.png">
+        </div>
+        <div class="circle-11" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <img src="public/images/circle-11.png">
+        </div>
+        <div class="circle-12" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <img src="public/images/circle-12.png">
+        </div>
+        <div class="circle-13" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <img src="public/images/circle-13.png">
+        </div>
+        <div class="circle-14" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <img src="public/images/circle-14.png">
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="container mb-50-n">
+        <div class="d-flex mt-20-n justify-content-center">
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="0" class="pointer-events-none">
+                <img src="public/images/logo-konos-header.svg" alt="Konos">
+            </div>
+            <div class="ml-auto align-self-center d-flex flex-row">
+                <div class="ml-auto align-self-center mr-15-n d-xl-block d-lg-block d-md-block d-sm-block d-none">
+                    <button type="button" class="btn btn-primary cadastro">CADASTRAR</button>
+                </div>
+                <div class="ml-auto align-self-center">
+                    <button type="button" class="btn btn-primary login">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main role="main">
+        <!-- Banner -->
+        <div id="banner" class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 mb-15-n pointer-events-none">
+                    <h1 class="pointer-events-none">O futuro
+                        da saúde começa aqui!</h1>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 mb-15-n pointer-events-none">
+                    <h2 class="pointer-events-none">Descubra
+                        como ir além de um
+                        <span>Prontuário Eletrônico.</span>
+                    </h2>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12 mb-30-n pointer-events-none">
+                    <p class="pointer-events-none">Preencha os dados abaixo e utilize o Konos agora mesmo gratuitamente.</p>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 mb-100-n mb-50-n-sm mb-50-n-xs">
+                    <form action="obrigado.html" method="get" class="d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-row flex-column align-items-xl-end align-items-lg-end align-items-md-end align-items-sm-end justify-content-center">
+                        <div class="form-group mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2">
+                            <label for="exampleInputPassword1" class="d-xl-block d-lg-block d-md-block d-sm-block d-none">E-MAIL</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Seu e-mail" required="required">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="Botao">QUERO CONHECER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Chamadas -->
+        <div id="chamadas" class="container mb-100-n mb-50-n-sm mb-50-n-xs">
+            <div class="box-chamadas">
+                <div class="box-slideshow">
+                    <div class="slideshow mx-auto mb-100-n mb-50-n-md mb-50-n-sm mb-50-n-xs">
+                        <img src="public/images/konos-recepcao.png" alt="Recepção">
+                        <img src="public/images/konos-prontuario.png" alt="Prontuário">
+                        <img src="public/images/konos-dashboard.png" alt="Dashboard">
+                        <img src="public/images/konos-agendamento.png" alt="Agendamento">
+                    </div>
+                </div>
+
+                <div class="chamadas">
+                    <h3 class="text-center mb-30-n" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">Inove,
+                        aumente a produtividade e eleve a receita com o Konos</h3>
+                    <div class="traco mx-auto mb-50-n" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
+                    <div class="chamadas-colunas d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column align-items-end justify-content-center">
+                        <div class="colunas text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                            <img src="public/images/icon-produtividade.svg" alt="Produtividade" class="mb-30-n mb-15-n-md mb-15-n-sm mb-15-n-xs">
+                            <h3 class="mb-30-n mb-15-n-md mb-15-n-sm mb-15-n-xs">Produtividade</h3>
+                            <p>Praticidade que você precisa no dia a dia da sua clínica, otimizando o seu atendimento com
+                                telas simplificadas e eficiência operacional.</p>
+                        </div>
+                        <div class="colunas text-center px-70-n px-0-n-md px-0-n-sm px-0-n-xs py-50-n-md py-50-n-sm py-50-n-xs" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+                            <img src="public/images/icon-rerceita.svg" alt="Receita" class="mb-30-n mb-15-n-md mb-15-n-sm mb-15-n-xs">
+                            <h3 class="mb-30-n mb-15-n-md mb-15-n-sm mb-15-n-xs">Receita</h3>
+                            <p>Reduza seus custos de mão de obra com nossa ferramenta de automação e concentre mais tempo
+                                no atendimento ao paciente.</p>
+                        </div>
+                        <div class="colunas text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+                            <img src="public/images/icon-inovacao.svg" alt="Inovação" class="mb-30-n mb-15-n-md mb-15-n-sm mb-15-n-xs">
+                            <h3 class="mb-30-n mb-15-n-md mb-15-n-sm mb-15-n-xs">Inovação</h3>
+                            <p>Um time composto por médicos que entendem e vivenciam a rotina do profissional da saúde e
+                                que nos ajudam a inovar o sistema a todo o momento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div id="features" class="container">
+            <div class="row mb-100-n mb-0-n-md mb-0-n-sm mb-0-n-xs">
+                <div class="col-xl-4 offset-xl-1 col-lg-5 offset-lg-0 col-md-10 offset-md-1 col-sm-12 col-12 align-self-center text-xl-right text-lg-right text-md-center text-sm-center text-center" data-aos="fade-right" data-aos-duration="500" data-aos-delay="0">
+                    <h3 class="mb-10-n">PRONTUÁRIO ELETRÓNICO</h3>
+                    <h4 class="mb-30-n mb-15-n-md mb-15-n-sm mb-15-n-xs">Prescreva medicamentos com um único clique</h4>
+                    <p>
+                        Intuitivo e muito prático, o Prontuário Eletrônico do Konos foi pensado para que o Médico possa prescrever medicamentos,
+                        solicitar e acompanhar exames com um único clique
+                    </p>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 mb-30-n-md mb-30-n-sm order-xl-last order-lg-last order-md-first order-sm-first order-first" data-aos="fade-left" data-aos-duration="500" data-aos-delay="0">
+                    <img src="public/images/img-features-prontuario.png" alt="Prontuário" class="float-right d-xl-block d-lg-none d-md-none d-sm-none d-none">
+                    <img src="public/images/img-features-prontuario-lg.png" alt="Prontuário" class="float-right d-xl-none d-lg-block d-md-none d-sm-none d-none">
+                    <img src="public/images/img-features-prontuario-md.png" alt="Prontuário" class="d-xl-none d-lg-none d-md-block d-sm-block d-block mx-auto">
+                </div>
+            </div>
+            <div class="traco-features my-50-n-md my-50-n-sm my-50-n-xs mx-auto d-xl-none d-lg-none d-md-block d-sm-block d-block" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
+            <div class="row mb-100-n mb-0-n-md mb-0-n-sm mb-0-n-xs">
+                <div class="col-xl-7 col-lg-7 col-md-12 mb-30-n-md mb-30-n-sm" data-aos="fade-right" data-aos-duration="500" data-aos-delay="0">
+                    <img src="public/images/img-features-agendamento.png" alt="Agendamento" class="float-left d-xl-block d-lg-none d-md-none d-sm-none d-none">
+                    <img src="public/images/img-features-agendamento-lg.png" alt="Agendamento" class="float-left d-xl-none d-lg-block d-md-none d-sm-none d-none">
+                    <img src="public/images/img-features-agendamento-md.png" alt="Agendamento" class="d-xl-none d-lg-none d-md-block d-sm-block d-block mx-auto">
+                </div>
+
+                <div class="col-xl-4 col-lg-5 offset-lg-0 col-md-10 offset-md-1 align-self-center text-xl-left text-lg-left text-md-center text-sm-center text-center" data-aos="fade-left" data-aos-duration="500" data-aos-delay="0">
+                    <h3 class="mb-10-n">AGENDAMENTO</h3>
+                    <h4 class="mb-30-n mb-15-n-md mb-15-n-sm mb-15-n-xs">Reduza o número de ausência dos pacientes</h4>
+                    <p>
+                        Controle total sobre os agendamentos da sua clínica. O Konos possuí processos automatizados para confirmação e lembretes
+                        de agendamento via SMS e e-mails, reduzindo drasticamente o número de faltas
+                    </p>
+                </div>
+            </div>
+            <div class="traco-features my-50-n-md my-50-n-sm my-50-n-xs mx-auto d-xl-none d-lg-none d-md-block d-sm-block d-block" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
+            <div class="row mb-200-n mb-100-n-sm mb-100-n-xs">
+                <div class="col-xl-4 offset-xl-1 col-lg-5 offset-lg-0 col-md-10 offset-md-1 align-self-center text-xl-right text-lg-right text-md-center text-sm-center text-center" data-aos="fade-right" data-aos-duration="500" data-aos-delay="0">
+                    <h3 class="mb-10-n">RECEPÇÃO</h3>
+                    <h4 class="mb-30-n mb-15-n-md mb-15-n-sm mb-15-n-xs">Acompanhamento em tempo real do atendimento</h4>
+                    <p>
+                        Acompanhe o fluxo de atendimento da sua clínica em tempo real. Veja os status de quem confirmou, quem cancelou, quem está
+                        aguardando atendimento e quem está sendo atendido
+                    </p>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-12 mb-30-n-md mb-30-n-sm order-xl-last order-lg-last order-md-first order-sm-first order-first" data-aos="fade-left" data-aos-duration="500" data-aos-delay="0">
+                    <img src="public/images/img-features-recepcao.png" alt="Recepção" class="float-right d-xl-block d-lg-none d-md-none d-sm-none d-none">
+                    <img src="public/images/img-features-recepcao-lg.png" alt="Recepção" class="float-right d-xl-none d-lg-block d-md-none d-sm-none d-none">
+                    <img src="public/images/img-features-recepcao-md.png" alt="Recepção" class="d-xl-none d-lg-none d-md-block d-sm-block d-block mx-auto">
+                </div>
+            </div>
+        </div>
+
+        <!-- Cadastrar e Dúvidas -->
+        <div id="avisamos" class="container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <div class="row justify-content-md-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
+                    <div class="box-avisamos">
+                        <h3 class="text-center mb-30-n">Cadastre-se agora mesmo</h3>
+                        <div class="traco mx-auto mb-30-n"></div>
+                        <p class="text-center mb-50-n">Preencha os dados abaixo e utilize o Konos agora mesmo gratuitamente.</p>
+                        <form action="obrigado.html" method="get" class="d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-row flex-column align-items-xl-end align-items-lg-end align-items-md-end align-items-sm-end justify-content-center">
+                            <div class="form-group mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2">
+                                <label for="exampleInputPassword1" class="d-xl-block d-lg-block d-md-block d-sm-block d-none">E-MAIL</label>
+                                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Seu e-mail" required="required">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" id="Botao">QUERO CONHECER</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="duvidas" class="container" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+            <div class="box-duvida">
+                <div class="row text-center">
+                    <div class="col-xl-4 offset-xl-4 col-lg-4 offset-lg-4 col-md-8 offset-md-2 col-sm-12 offset-sm-0 col-12 offset-0 px-30-n-xs">
+                        <h3 class="mb-10-n">Está em dúvida de como o Konos pode ajudar?</h3>
+                        <p class="mb-30-n">Entre em contato conosco clicando abaixo.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-fale-conosco" onclick="ga('send', 'event', 'Modal','Clicou', 'Abriu modal fale conosco');">FALE
+                            CONOSCO AGORA MESMO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="container-fluid">
+        <div class="container px-0-n-xs" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+            <div class="row mb-30-n">
+                <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 offset-md-0 col-sm-12 offset-sm-0 col-12 offset-0 d-flex justify-content-between">
+                    <div class="left d-flex align-items-start flex-column">
+                        <div class="apps mb-30-n-sm">
+                            <p class="mb-1">EM BREVE PARA VOCÊ</p>
+                            <div class="imgs-apps d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-row flex-column justify-content-start">
+                                <img src="public/images/google-play.svg" alt="Google Play" class="mr-xl-2 mr-lg-2 mr-md-2 mr-sm-2 mr-0 mb-xl-0 mb-lg-0 mb-md-0 mb-sm-0 mb-2">
+                                <img src="public/images/app-store.svg" alt="App Store">
+                            </div>
+                        </div>
+                        <div class="contato d-flex mt-auto">
+                            <div class="email d-flex">
+                                <img src="public/images/icon-email.svg" alt="duvidas@konos.me" class="mr-2">
+                                <div class="align-self-center">
+                                    <a href="mailto:duvidas@konos.me">duvidas@konos.me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right d-xl-block d-lg-block d-md-block d-sm-none d-none">
+                        <img src="public/images/logo-konos-footer.svg" alt="Konos">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 offset-md-0 col-sm-12 offset-sm-0 col-12 offset-0">
+                    <p class="restricao">
+                        <span>“Konos. (2018)”</span>
+                        <br /> Comunidade daqueles que influenciam a saúde pela plataforma integrada de prontuário eletrônico
+                        que gera conhecimento em rede aos médicos e pacientes.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bg Banner e Particulas -->
+    <div id="bg-banner">
+        <div id="particles-js"></div>
+    </div>
+
+    <!-- Bg circle whute gde -->
+    <div id="bg-circle-white"></div>
+
+    <!-- Bg circle gray peq -->
+    <div id="bg-circle-gray"></div>
+
+    <!-- Bg circle blue peq -->
+    <div id="bg-circle-blue"></div>
+
+    <!-- Modal Fale Conosco -->
+    <div class="modal fade" id="modal-fale-conosco" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Entre em contato conosco</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+
+                            <div class="row mb-30-n mb-0-n-sm mb-0-n-xs">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-15-n-sm mb-15-n-xs">
+                                    <label for="exampleInputPassword1">SEU NOME
+                                        <span>*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="InputNome" placeholder="Seu nome" required="required">
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-15-n-sm mb-15-n-xs">
+                                    <label for="exampleInputPassword1">SEU E-MAIL
+                                        <span>*</span>
+                                    </label>
+                                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Seu e-mail" required="required">
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-15-n-sm mb-15-n-xs">
+                                    <label for="exampleInputPassword1">SEU CELULAR
+                                    </label>
+                                    <input type="text" class="form-control" id="InputCelular" placeholder="Seu celular" data-mask="(00) 00000-0000" data-mask-selectonfocus="true">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="exampleInputPassword1">DEIXE A SUA MENSAGEM
+                                        <span>*</span>
+                                    </label>
+                                    <textarea class="form-control" id="TextArea" placeholder="Escreva aqui" required="required"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-start">
+                        <button type="submit" class="btn btn-primary" id="Botao">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cadastro com Sucesso -->
+    <div class="modal fade" id="modal-cadastro" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Lançamento em breve</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="mb-10-n">Obrigado por efetuar o seu cadastro.</h3>
+                                    <p>Aguarde, em breve enviaremos detalhes de como você pode testar o Konos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-start">
+                        <button type="button" class="btn btn-secondary bot-fechar" data-dismiss="modal">FECHAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="public/js/plugins/particles.js"></script>
+    <script src="public/js/plugins/app.js"></script>
+    <script src="public/js/plugins/jquery.mask.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="public/js/geral/geral.js"></script>
+    <script src="public/js/plugins/jquery.cycle.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</body>
+
+</html>

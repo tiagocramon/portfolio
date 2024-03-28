@@ -1,0 +1,296 @@
+// FOOTER CHAMADAS
+#footer-chamadas {
+    margin: 0;
+    padding: 0;
+
+    .box-footer-chamada-esquerda {
+        background-color: $b1;
+        margin: 0;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                .box-footer-chamada {
+                    .link {
+                        color: $g2;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;                        
+                    }
+                }
+            }
+        }
+
+        .box-footer-chamada {
+            width: 555px;
+            margin: 0;
+            padding: 80px 56px 80px 0;
+
+            img {
+                width: 71px;
+                height: 61px;
+            }
+
+            h2 {
+                @include tituloBold($tamanho28, $g1, $tamanho28);
+                margin: 0 0 32px 0;
+                padding: 0;
+            }
+
+            .txt {
+                @include textoRegular($tamanho14, white, normal);
+                margin: 0 0 16px 0;
+                padding: 0;             
+            }
+
+            .link {
+                @include tituloBold($tamanho16, $g1, normal);
+                margin: 0;
+                padding: 0;
+                text-decoration: underline;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    color: $g2;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+        }
+    }
+
+    .box-footer-chamada-direita {
+        background-color: $b2;
+        margin: 0;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                .box-footer-chamada {
+                    .link {
+                        color: $p2;
+                        -moz-transition: all 0.2s ease-out;
+                        -webkit-transition: all 0.2s ease-out;
+                        -o-transition: all 0.2s ease-out;
+                        transition: all 0.2s ease-out;                        
+                    }
+                }
+            }
+        }        
+
+        .box-footer-chamada {
+            width: 555px;
+            margin: 0;
+            padding: 80px 0 80px 56px;
+
+            img {
+                width: 71px;
+                height: 61px;
+            }            
+
+            h2 {
+                @include tituloBold($tamanho28, $p1, $tamanho28);
+                margin: 0 0 32px 0;
+                padding: 0;
+            }
+
+            .txt {
+                @include textoRegular($tamanho14, white, normal);
+                margin: 0 0 16px 0;
+                padding: 0;               
+            }
+
+            .link {
+                @include tituloBold($tamanho16, $p1, normal);
+                margin: 0;
+                padding: 0;
+                text-decoration: underline;
+                -moz-transition: all 0.2s ease-out;
+                -webkit-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+
+                &:hover {
+                    color: $p2;
+                    -moz-transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                    transition: all 0.2s ease-out;
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #footer-chamadas {
+        .box-footer-chamada-esquerda {
+            .box-footer-chamada {
+                width: 463px;
+                margin: 0;
+                padding: 80px 56px 80px 0;
+            }
+        }
+
+        .box-footer-chamada-direita {
+            .box-footer-chamada {
+                width: 463px;
+                margin: 0;
+                padding: 80px 0 80px 56px;
+            }
+        }        
+    }    
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #footer-chamadas {
+        .box-footer-chamada-esquerda {
+            .box-footer-chamada {
+                width: 345px;
+                margin: 0;
+                padding: 40px 32px 40px 0;
+
+                h2 {
+                    @include tituloBold($tamanho24, $g1, $tamanho24);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+                }
+
+                .link {
+                    @include tituloBold($tamanho14, $g1, $tamanho14);
+                }
+            }
+        }
+
+        .box-footer-chamada-direita {
+            .box-footer-chamada {
+                width: 345px;
+                margin: 0;
+                padding: 40px 0 40px 32px;
+
+                h2 {
+                    @include tituloBold($tamanho24, $p1, $tamanho24);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+                }
+
+                .link {
+                    @include tituloBold($tamanho14, $p1, $tamanho14);
+                }
+            }
+        }        
+    }      
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #footer-chamadas {
+        .box-footer-chamada-esquerda {
+            a {
+                margin: 0 auto;
+            }
+            .box-footer-chamada {
+                width: 100%;
+                margin: 0 auto;
+                padding: 40px 15px;
+
+                h2 {
+                    @include tituloBold($tamanho24, $g1, $tamanho24);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+                }
+
+                .link {
+                    @include tituloBold($tamanho14, $g1, $tamanho14);
+                }
+            }
+        }
+
+        .box-footer-chamada-direita {
+            a {
+                margin: 0 auto;
+            }
+            .box-footer-chamada {
+                width: 100%;
+                margin: 0 auto;
+                padding: 40px 15px;
+
+                h2 {
+                    @include tituloBold($tamanho24, $p1, $tamanho24);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+                }
+
+                .link {
+                    @include tituloBold($tamanho14, $p1, $tamanho14);
+                }
+            }
+        }        
+    }     
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #footer-chamadas {
+        .box-footer-chamada-esquerda {
+            a {
+                margin: 0 auto;
+            }
+            .box-footer-chamada {
+                width: 100%;
+                margin: 0 auto;
+                padding: 40px 15px;
+
+                h2 {
+                    @include tituloBold($tamanho24, $g1, $tamanho24);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+                }
+
+                .link {
+                    @include tituloBold($tamanho14, $g1, $tamanho14);
+                }
+            }
+        }
+
+        .box-footer-chamada-direita {
+            a {
+                margin: 0 auto;
+            }
+            .box-footer-chamada {
+                width: 100%;
+                margin: 0 auto;
+                padding: 40px 15px;
+
+                h2 {
+                    @include tituloBold($tamanho24, $p1, $tamanho24);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+                }
+
+                .link {
+                    @include tituloBold($tamanho14, $p1, $tamanho14);
+                }
+            }
+        }        
+    }     
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

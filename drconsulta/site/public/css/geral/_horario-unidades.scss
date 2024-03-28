@@ -1,0 +1,112 @@
+// HORARIO UNIDADES
+#horario-unidades {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k2;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-horario-unidades {
+        background-color: $b1;
+        margin: 0;
+        padding: 32px 80px;
+        border-radius: 4px;
+
+        h3 {
+            @include tituloBold($tamanho24, $g1, $tamanho24);
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #horario-unidades {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k2;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-horario-unidades {
+            background-color: $b1;
+            margin: 0;
+            padding: 24px 40px;
+            border-radius: 4px;
+
+            h3 {
+                @include tituloBold($tamanho20, $g1, $tamanho20);
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #horario-unidades {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k2;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-horario-unidades {
+            background-color: $b1;
+            margin: 0;
+            padding: 24px 40px;
+            border-radius: 4px;
+
+            h3 {
+                @include tituloBold($tamanho20, $g1, $tamanho20);
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #horario-unidades {
+        margin: 0;
+        padding: 40px 0;
+        background-color: $k2;
+
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-horario-unidades {
+            background-color: $b1;
+            margin: 0;
+            padding: 24px 40px;
+            border-radius: 4px;
+
+            h3 {
+                @include tituloBold($tamanho20, $g1, $tamanho20);
+            }
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

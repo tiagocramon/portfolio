@@ -1,0 +1,255 @@
+// VIDEO
+#video {
+    cursor: pointer;
+    &:hover {
+        .overlay {
+            background-color: rgba(10, 17, 109, 0.7);
+            width: 100%;
+            height: 100%;
+            transition: background-color 0.3s ease-out;
+        }
+
+        .box-txt-video {
+            .box-video {
+                button {
+                    background-color: $g2 !important;
+                }
+            }
+        }
+    }
+    .img-video {
+        margin: 0;
+        padding: 0;
+        //background-image: url("../../images/banner-video-xl.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .bannerVideoChrome {
+        background-image: url("../../images/banner-video-xl.webp") !important;
+    }
+    
+    .bannerVideoNotChrome {
+        background-image: url("../../images/banner-video-xl.jpg") !important;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        transition: background-color 0.3s ease-out;
+    }
+
+    .box-txt-video {
+        background-color: $b1;
+        margin: 0;
+        padding: 0;
+
+        .box-video {
+            width: 555px;
+            margin: 0;
+            padding: 80px 0 80px 56px;
+
+            h2 {
+                @include tituloBold($tamanho24, white, $tamanho24);
+                margin: 0 0 32px 0;
+                padding: 0;
+            }
+
+            p {
+                @include textoRegular($tamanho18, white, $tamanho20);
+                margin: 0 0 32px 0;
+                padding: 0;
+
+                span {
+                    color: $g1;
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #video {
+        .img-video {
+            margin: 0;
+            padding: 0;
+            //background-image: url("../../images/banner-video-lg.jpg");
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .bannerVideoChrome {
+            background-image: url("../../images/banner-video-lg.webp") !important;
+        }
+        
+        .bannerVideoNotChrome {
+            background-image: url("../../images/banner-video-lg.jpg") !important;
+        }
+
+        .box-txt-video {
+            .box-video {
+                width: 463px;
+                margin: 0;
+                padding: 80px 0 80px 56px;
+            }
+        }
+    }
+}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #video {
+        .img-video {
+            height: 250px;
+            margin: 0;
+            padding: 0;
+            //background-image: url("../../images/banner-video-md.jpg");
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .bannerVideoChrome {
+            background-image: url("../../images/banner-video-md.webp") !important;
+        }
+        
+        .bannerVideoNotChrome {
+            background-image: url("../../images/banner-video-md.jpg") !important;
+        }
+
+        .box-txt-video {
+            background-color: $b1;
+            margin: 0;
+            padding: 0;
+
+            .box-video {
+                width: 100%;
+                margin: 0 auto;
+                padding: 40px 15px;
+
+                h2 {
+                    @include tituloBold($tamanho20, white, $tamanho20);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+                }
+
+                p {
+                    @include textoRegular($tamanho16, white, $tamanho18);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+
+                    span {
+                        color: $g1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #video {
+        .img-video {
+            height: 250px;
+            margin: 0;
+            padding: 0;
+            //background-image: url("../../images/banner-video-sm.jpg");
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .bannerVideoChrome {
+            background-image: url("../../images/banner-video-sm.webp") !important;
+        }
+        
+        .bannerVideoNotChrome {
+            background-image: url("../../images/banner-video-sm.jpg") !important;
+        }
+
+        .box-txt-video {
+            background-color: $b1;
+            margin: 0;
+            padding: 0;
+
+            .box-video {
+                width: 100%;
+                margin: 0 auto;
+                padding: 40px 15px;
+
+                h2 {
+                    @include tituloBold($tamanho20, white, $tamanho20);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+                }
+
+                p {
+                    @include textoRegular($tamanho16, white, $tamanho18);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+
+                    span {
+                        color: $g1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #video {
+        .img-video {
+            height: 250px;
+            margin: 0;
+            padding: 0;
+            //background-image: url("../../images/banner-video-xs.jpg");
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .bannerVideoChrome {
+            background-image: url("../../images/banner-video-xs.webp") !important;
+        }
+        
+        .bannerVideoNotChrome {
+            background-image: url("../../images/banner-video-xs.jpg") !important;
+        }
+
+        .box-txt-video {
+            background-color: $b1;
+            margin: 0;
+            padding: 0;
+
+            .box-video {
+                width: 100%;
+                margin: 0 auto;
+                padding: 40px 15px;
+
+                h2 {
+                    @include tituloBold($tamanho20, white, $tamanho20);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+                }
+
+                p {
+                    @include textoRegular($tamanho16, white, $tamanho18);
+                    margin: 0 0 24px 0;
+                    padding: 0;
+
+                    span {
+                        color: $g1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

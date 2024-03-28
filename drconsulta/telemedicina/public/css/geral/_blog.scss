@@ -1,0 +1,238 @@
+// BLOG
+#blog {
+    margin: 0;
+    padding: 80px 0;
+    background-color: $k2;
+
+    h2 {
+        @include tituloBold($tamanho32, $b1, $tamanho32);
+        margin: 0 0 32px 0;
+        padding: 0;
+    }
+
+    .owl-stage-outer {
+        margin: 0 0 32px 0;
+    }
+
+    .owl-dots {
+        height: 16px;
+        margin: 0;
+        padding: 0;
+
+        .owl-dot {
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+
+            span {
+                width: 16px;
+                height: 16px;
+                margin: 0 8px;
+                padding: 0;
+                background: transparent;
+                border: 1px solid $k3;
+
+                &:hover {
+                    background: $k3;
+                }
+            }
+        }
+
+        .owl-dot.active {
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+
+            span {
+                width: 16px;
+                height: 16px;
+                margin: 0 8px;
+                padding: 0;
+                background: $k4;
+                border: none;
+            }
+        }
+    }
+
+    .box-blog {
+        background-color: white;
+        border-radius: 4px;
+
+        img {
+            width: 220px;
+            height: 180px;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .img-post {
+            display: table;
+        }
+
+        .img-post-xs {
+            display: none;
+        }
+
+        .txt-box-blog {
+            width: 100%;
+            margin: 0;
+            padding: 24px;
+
+            p {
+                @include textoRegular($tamanho16, $k5, $tamanho16);
+                margin: 0 0 8px 0;
+                padding: 0;
+            }
+
+            a {
+                display: inline-flex !important;
+            }
+        }
+    }
+}
+
+////////////////////
+// RESPONSIVO
+////////////////////
+/* LARGE */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* MEDIUM */
+@media (min-width: 768px) and (max-width: 991px) {
+    #blog {
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+    
+        .owl-dots {
+            height: 16px;
+            margin: 0;
+            padding: 0;       
+        }
+
+        .box-blog {
+            .txt-box-blog {
+                p {
+                    @include textoRegular($tamanho14, $k5, $tamanho14);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                }
+    
+                a {
+                    display: inline-flex !important;
+                }
+            }
+        }        
+    }
+}
+
+/* SMALL */
+@media (min-width: 576px) and (max-width: 767px) {
+    #blog {
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+    
+        .owl-dots {
+            height: 16px;
+            margin: 0;
+            padding: 0;       
+        }
+
+        .box-blog {
+            .txt-box-blog {
+                p {
+                    @include textoRegular($tamanho14, $k5, $tamanho14);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                }
+    
+                a {
+                    display: inline-flex !important;
+                }
+            }
+        }        
+    }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    #blog {
+        margin: 0;
+        padding: 40px 0;
+    
+        h2 {
+            @include tituloBold($tamanho28, $b1, $tamanho28);
+            margin: 0 0 24px 0;
+            padding: 0;
+        }
+    
+        .owl-stage-outer {
+            margin: 0 0 24px 0;
+        }
+    
+        .owl-dots {
+            height: 16px;
+            margin: 0;
+            padding: 0;       
+        }
+
+        .box-blog {
+            img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                margin: 0;
+                padding: 0;
+                border-radius: 4px 4px 0 0;
+            }
+
+            .img-post {
+                display: none;
+            }
+    
+            .img-post-xs {
+                display: table;
+            }
+
+            .txt-box-blog {
+                text-align: center;
+                p {
+                    @include textoRegular($tamanho14, $k5, $tamanho14);
+                    margin: 0 0 8px 0;
+                    padding: 0;
+                }
+    
+                a {
+                    display: flex !important;
+                }
+            }
+        }        
+    }
+}
+
+////////////////////
+// FIM RESPONSIVO
+////////////////////

@@ -1,0 +1,60 @@
+// PAGINACAO
+.pagination-lg {
+    .page-item {
+        @include textoRegular($tamanho18, $b1, normal);
+    }
+    .page-link {
+        @include textoRegular($tamanho18, $b1, $tamanho56);
+        height: 56px;
+        padding: 0 24px;
+        margin-left: -1px;
+    }
+}
+
+.page-item {
+    @include textoRegular($tamanho16, $b1, normal);
+}
+
+.page-link {
+    @include textoRegular($tamanho16, $b1, $tamanho40);
+    height: 40px;
+    padding: 0 16px;
+    margin-left: -1px;
+    border-color: $k3 !important;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    &:hover {
+        background: $k1;
+        -moz-transition: all 0.2s ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.pagination-sm {
+    .page-item {
+        @include textoRegular($tamanho14, $b1, normal);
+    }
+    .page-link {
+        @include textoRegular($tamanho14, $b1, $tamanho32);
+        height: 32px;
+        padding: 0 8px;
+        margin-left: -1px;
+    }
+}
+
+.page-item {
+    &.disabled {
+        .page-link {
+            color: $k3 !important;
+            background-color: white;
+        }
+    }
+}
